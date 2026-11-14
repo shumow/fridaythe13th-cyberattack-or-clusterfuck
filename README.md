@@ -35,6 +35,37 @@ The full timeline, with a source on every row, is in [the analysis](analysis/ind
 
 </details>
 
+## Coincidence
+
+This is the answer nobody clicks on. It says the two events have nothing to do with each other: Microsoft's network fell over on Thursday, the FAA's fell over on Friday, and the only thing joining them is the week.
+
+Coincidence is not a mechanism. It is what is left when there is no mechanism, which makes it the default, and every other answer in the title has to beat it. It also cannot be proved. Nobody will ever publish a root cause that reads "unrelated." The most it can do is survive: the two root causes come out, they share nothing, and people stop asking.
+
+So the fair test is not whether coincidence is satisfying. It never is. The test is whether the overlap is rare enough that the default needs replacing. Taken alone it looks rare, one or two percent. Counted honestly it is closer to fifteen. That arithmetic belongs to the next section, because correlation is the same question asked from the other side.
+
+<details>
+<summary><b>Show the work:</b> the null hypothesis, and what would reject it</summary>
+
+**The null.** $H_0$: major Microsoft 365 outages and nationwide ground stops arrive independently, and nothing that happened on Thursday changed the chance of what happened on Friday. Every other answer in the title is a way of rejecting $H_0$.
+
+**What the null predicts.** These are the numbers derived in the next block, read as statements about $H_0$:
+
+| Question | Under $H_0$ |
+| --- | --- |
+| Chance the ground stop lands inside an open major Microsoft outage | 0.98% to 2.17% |
+| Chance that at least one of ten equally striking events that week lines up | 9.4% to 19.7% |
+| Rate of coincidental pairs relative to caused ones | $\lambda_G W / \varepsilon$, with $\lambda_G W$ about 1 in 2,300 |
+
+**What would reject it.** Any one of these, none of which is on the public record as of Friday night:
+
+- a published root cause on either side that names the other, or names something the two share;
+- a report that the FAA's network contractors had degraded email, chat or sign-on when the update went out;
+- an attribution of either failure to an attacker.
+
+**What cannot confirm it.** Nothing can. Two published root causes with no shared element are the best evidence coincidence will ever get, and the denials are not that: they are statements made before the root causes exist.
+
+</details>
+
 ## Correlation
 
 This is the one answer we can be sure of, and it is the least interesting. The two events are correlated in the only sense that matters to a headline writer: they happened close together. The question is whether that proximity is surprising.
