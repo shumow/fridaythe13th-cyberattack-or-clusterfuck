@@ -1,6 +1,8 @@
 # Correlation, Causation, Cyberattack, Clusterfuck, or Just Friday the 13th?
 
 > **Draft, as of Friday night, 13 November 2026.** The prose is a first pass and is being rewritten. The claims under it are not jokes: every section ends with a **Show the work** block you can click open for the arithmetic, the sources, and how far each source can be trusted. Every number comes out of [`scripts/show_your_work.py`](scripts/show_your_work.py).
+>
+> **Personal statements only.** Everything here is my own opinion, worked out from public reporting. None of it is an official Microsoft position, and none of it draws on inside information.
 
 First, the important fact: it was Friday the 13th. Every flight in the United States was grounded, a tanker ran into a riverboat in New Orleans, and the world's email had been down for a day. We will set this hypothesis aside for most of what follows, though the reader is free to carry a prior.
 
@@ -178,7 +180,7 @@ The 13th contributed nothing. The Friday may have.
 
 Except that holds for one side only. The FAA update is reported as going out on Friday. Nobody has said when Microsoft's change went out. Microsoft said only that a recent network configuration change "correlates with the start of impact," and the start of impact was Thursday, 11:17 am Eastern. That is when the symptoms appeared, not when the change shipped. Large fleets roll changes out in stages, so a change that left the door on Tuesday, which happened to be Patch Tuesday, could reach the configuration that mattered on Thursday without anyone lying. Thursday is the earliest the public record lets us place it; it is not the only place. On the Microsoft side the Friday story may be a Tuesday story, or a Wednesday story, and the Friday superstition does not cover those at all.
 
-Microsoft told us what correlated, not what shipped. These are all personal statements, not to be taken as an official Microsoft position. And if you think I'm holding out on you...
+Microsoft told us what correlated, not what shipped. Again, these are all personal statements, not to be taken as an official Microsoft position. And if you think I'm holding out on you...
 
 > *"[Don't] Torture me for the secret recipe, it's no use, I only know half. I don't speaka da English, I only do the math."* — MF DOOM, "Sofa King," DANGERDOOM, *The Mouse and the Mask*
 
