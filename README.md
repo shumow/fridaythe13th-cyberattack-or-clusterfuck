@@ -1,4 +1,4 @@
-# Correlation, Causation, Cyberattack, Clusterfuck, or Just Friday the 13th?
+# Coincidence, Correlation, Causation, Cyberattack, Clusterfuck, or Just Friday the 13th?
 
 > **Draft, as of Friday night, 13 November 2026.** The prose is a first pass and is being rewritten. The claims under it are not jokes: every section ends with a **Show the work** block you can click open for the arithmetic, the sources, and how far each source can be trusted. Every number comes out of [`scripts/show_your_work.py`](scripts/show_your_work.py).
 >
@@ -6,7 +6,7 @@
 
 First, the important fact: it was Friday the 13th. Every flight in the United States was grounded, a tanker ran into a riverboat in New Orleans, and the world's email had been down for a day. We will set this hypothesis aside for most of what follows, though the reader is free to carry a prior.
 
-The serious version of the question is whether the Microsoft 365 outage that began on Thursday and the FAA ground stop that began on Friday have anything to do with each other. There are five candidate answers, and the title lists them in roughly ascending order of how much fun they are. Let us take them in order of how much evidence they have, which is a different order.
+The serious version of the question is whether the Microsoft 365 outage that began on Thursday and the FAA ground stop that began on Friday have anything to do with each other. There are six candidate answers, and the title lists them in roughly ascending order of how much fun they are. Let us take them in order of how much evidence they have, which is a different order.
 
 ## What happened, briefly and without adjectives
 
@@ -200,6 +200,7 @@ The most economical reading of the whole affair is also the dullest: two product
 
 ## So which is it?
 
+- **Coincidence:** the default, and nothing in the arithmetic rules it out.
 - **Correlation:** yes, trivially.
 - **Causation:** a narrow path through people, open in principle, denied, unmeasured, and worth a few percent on assumed inputs.
 - **Cyberattack:** denied by everyone, least likely, highest stakes.
@@ -208,7 +209,7 @@ The most economical reading of the whole affair is also the dullest: two product
 
 Everything above rests on Friday-night reporting. Microsoft's denial has two independent sources. Mullin's has been quoted everywhere but every quote credits CNN, so it is one account of one briefing. The network-update story is unnamed sources to one outlet. Microsoft's own rollback is something Microsoft calls correlated, not causal. The disciplined move is to write down what we believed on Friday and why, and revise once, when the root causes are published, rather than nudging the posterior every time an unconfirmed item lands.
 
-Until then, the honest answer to the title is: the second one, possibly, through the fourth one, probably not, and the fifth one, in the sense that counts.
+Until then, the honest answer to the title is: the third one, possibly, through the fifth one, probably not, and the sixth one, in the sense that counts.
 
 ## What is in this repo
 
