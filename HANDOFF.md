@@ -2,6 +2,14 @@
 
 Status as of Saturday, 14 November 2026.
 
+## Update, Tuesday 17 November 2026
+
+- Added chapter 2, the cluster: `analysis/chapter-2-the-cluster.md`, `scripts/the_week_after.py`, `data/`, and a new README section with placeholder prose. Friday's text is untouched apart from a dated banner at the top of the README.
+- Both of Friday's outages now have accounts on the record. They share no vendor or update, so the same-vendor branch is closed on what is public.
+- Friday's numbers are still not revised: Microsoft's report is preliminary (final after 20 November) and the FAA's cause is unconfirmed.
+- Open, in order of how much they matter: (1) the base rate of nationally reported outages at the low bar, measured from an outage tracker for a fixed list of organisations; (2) the final Microsoft report and FAA findings, then the one-time revision; (3) the FAA router vendor and site at source; (4) the Wall Street Journal's NSA report read in full; (5) replace the ten rows of `data/outages.csv` that are from memory; (6) Dan's prose for the new section.
+- The status dated 14 November below is kept as it was.
+
 ## Where things stand
 
 - The piece lives in `README.md` in two layers: prose on top, a "Show the work" block under each section. The prose is the Friday-night draft; Dan is rewriting it.
