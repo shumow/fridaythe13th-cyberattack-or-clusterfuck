@@ -1,0 +1,182 @@
+# The 178 organisations Report URI lists as serving malicious code via Optimizely, 16 Nov 2026.
+# Source: https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/
+# Captured 17 Nov 2026 through an automated summary of that page, so check names against the page itself.
+# The page groups them by sector; its "News & Media" group is the ten lines marked [news].
+Paychex
+HSBC US
+Equifax
+SmartAsset
+HSBC Hong Kong
+ABN AMRO
+TaxAct
+HSBC Mexico
+HSBC Singapore
+NetCredit
+Associated Bank
+S-Pankki
+Equifax Canada
+Equifax UK
+The Work Number (Equifax)
+Funding Circle
+HSBC Australia
+CashNetUSA
+OnDeck
+ICS Cards
+HSBC UAE
+HSBC Malaysia
+Rest Super
+HSBC Taiwan
+HSBC Vietnam
+HSBC Egypt
+HSBC Philippines
+SmartAdvisor Match (SmartAsset)
+Compare Club
+ABN AMRO Lease
+Energy Scout
+Hang Seng Investment
+Zoom
+Bitly
+Salesforce
+GitLab
+Optimizely
+Mixpanel
+Typeform
+InMotion Hosting
+Wasabi
+Perforce / Zend / Puppet
+Tableau
+Hootsuite
+Smartsheet
+MuleSoft
+Thales / Imperva
+Tricentis
+Web Hosting Hub
+QR Code Generator
+ServiceChannel
+Brandfolder
+Intelex
+Enverus
+Accruent
+IKEA
+ASOS
+Mattel
+American Eagle
+Scheels
+Ariat
+American Girl
+StackSocial
+Crocs India
+Levi's Japan
+Todd Snyder
+Levi's Indonesia
+Just Russel
+Loloi Rugs
+Levi's Australia
+Levi's Malaysia
+Levi's Philippines
+Levi's Singapore
+Levi's Korea
+Levi's New Zealand
+Peacock
+D&D Beyond
+Wizards of the Coast
+NOW TV
+Zattoo
+Crave
+Starz
+SkyShowtime
+Bravo
+SeaWorld
+WOW (Sky Deutschland)
+NOW Italia
+CNN [news]
+BBC [news]
+Fox News [news]
+NPR [news]
+CTV News [news]
+Fox Sports [news]
+BNN Bloomberg / CP24 [news]
+TSN [news]
+Top Gear [news]
+BBC Earth [news]
+Alaska Airlines / Hawaiian Airlines
+Transavia
+Air France-KLM
+KLM Netherlands
+Trafalgar
+Contiki
+Insight Vacations
+The Travel Corporation
+Costsaver
+Invisalign
+Takeda
+Covetrus
+iTero (Align)
+Covetrus Pharmacy
+myCovetrus
+RaySafe (Fluke)
+Takeda Oncology
+Fluke
+eMaint (Fluke)
+Fluke Networks
+Vaillant Germany
+Fluke Process Instruments
+Fluke Biomedical
+Landauer
+Vaillant Spain
+Virgin Media
+Virgin Media O2
+Vodafone Australia
+O2
+TPG Telecom
+Mint Mobile
+TalkTalk
+Ledger
+IG
+OANDA / Coinpass
+interactive investor
+TMS Brokers
+Betashares
+Asurion / uBreakiFix
+Mutual of Omaha
+Admiral
+Securian Financial
+eRenterPlan
+AKA (Danish unemployment fund)
+Buildium (managebuilding.com)
+Loft Living apartments
+Buildium
+HireAHelper
+Flytte.no (and sister comparison sites)
+MovingPlace
+Restaurant ordering sites (order.online)
+Heineken
+Home Chef
+Starbucks Canada
+Cinnabon
+Resideo
+Honeywell Home
+myQ (Chamberlain)
+Chamberlain
+First Alert
+Change.org
+ASPCA
+UNICEF USA
+DonorsChoose
+Betsson
+PokerStars
+tombola
+Betfred
+Freshfields
+CohnReznick
+Baringa
+Cro Metrics
+ShipStation / ShipEngine
+Stamps.com
+ShipEngine
+Lucid Motors
+O'Brien Glass
+Chevrolet dealer network (Bill Rapp and others)
+Walden University
+Perlego
+Chamberlain University

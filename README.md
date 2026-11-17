@@ -2,6 +2,8 @@
 
 > **Draft, as of Friday night, 13 November 2026.** The prose is a first pass and is being rewritten. The claims under it are not jokes: every section ends with a **Show the work** block you can click open for the arithmetic, the sources, and how far each source can be trusted. Every number comes out of [`scripts/show_your_work.py`](scripts/show_your_work.py).
 
+> **Update, Tuesday 17 November 2026.** The week got worse, and both of Friday's outages now have an account on the record. Everything from here down to "So which is it?" is left as written on Friday so you can see what was believed then. Three things in it are now known to be wrong or settled: the Microsoft outage was over 4 hours 44 minutes before the ground stop, not still open; Microsoft's faulty change shipped in July, not on Patch Tuesday; and the two failures share no vendor or update. See [17 November: the cluster](#17-november-the-cluster).
+
 First, the important fact: it was Friday the 13th. Every flight in the United States was grounded, a tanker ran into a riverboat in New Orleans, and the world's email had been down for a day. We will set this hypothesis aside for most of what follows, though the reader is free to carry a prior.
 
 The serious version of the question is whether the Microsoft 365 outage that began on Thursday and the FAA ground stop that began on Friday have anything to do with each other. There are five candidate answers, and the title lists them in roughly ascending order of how much fun they are. Let us take them in order of how much evidence they have, which is a different order.
@@ -208,6 +210,87 @@ Everything above rests on Friday-night reporting. Microsoft's denial has two ind
 
 Until then, the honest answer to the title is: the second one, possibly, through the fourth one, probably not, and the fifth one, in the sense that counts.
 
+## 17 November: the cluster
+
+*Placeholder prose, to be replaced. The blocks under it are the work.*
+
+By Tuesday the pair had become a crowd. Chase spent Monday unable to move money at its usual speed. CNN reported that the NSA's classified internal network was down. And one thing in the same week really was an attack: someone wrote their own code into 178 organisations' websites through a marketing tool, and three of the country's largest news sites were among them, including the one with the NSA exclusive.
+
+Meanwhile both of Friday's outages acquired explanations, and the explanations have nothing to do with each other. Microsoft's was a defect in its own gateway software that had been sitting there since July. The FAA's was a new router at a remote site that would not stop introducing itself to the rest of the network. No shared vendor, no shared update, no wire.
+
+So the question moves up a level. Two draws from the same distribution are the distribution. Are four?
+
+<details>
+<summary><b>Show the work:</b> what is on the record now, and what Friday got wrong</summary>
+
+- **Microsoft.** Preliminary post-incident report, 15 November: lock contention on Windows servers in Microsoft's own networking gateway, from a fix rolled out worldwide since July 2026, exposed when Teams traffic failed over about 15 hours before, with nearly 14% of gateway capacity already out. Impact ran 16:20 UTC Thursday to 16:10 UTC Friday. Read through [365Fanatic](https://www.365fanatic.com/m365-outage-12-november-2026/) and [Cyber Security News](https://cybersecuritynews.com/microsoft-outage-incident-report); the report itself was not read.
+- **FAA.** Duffy, 14 November: during copper-to-fibre work by L3Harris, a newly installed router flooded the network with more than 1,000 connection attempts every four to five seconds. Whether user error, installer error or a faulty router is not established. [Scripps News](https://www.scrippsnews.com/life/travel/what-caused-the-faa-ground-stop-officials-point-to-router-failure). The router is reported as Cisco by CBS News, seen here only through [Wikipedia](https://en.wikipedia.org/wiki/2026_FAA_nationwide_ground_stop).
+
+| Friday said | Now |
+| --- | --- |
+| The ground stop landed inside an open Microsoft incident | Microsoft's impact ended 4 hours 44 minutes before the ground stop |
+| Microsoft's change may have shipped on Patch Tuesday | Right shape, wrong date: rolled out since July, exposed in November |
+| The same vendor update on both sides is open | Closed on the public accounts: Microsoft's own software on one side, a router on the other |
+| The Friday superstition covers the FAA side only | Stands |
+
+Microsoft's report is preliminary and the FAA's cause is unconfirmed, so Friday's numbers are still not revised.
+
+</details>
+
+<details>
+<summary><b>Show the work:</b> is four in five days unusual?</summary>
+
+Simulate two years of outages arriving at random at rate $\lambda$ per year, slide a five-day window along, record the largest count, repeat 100,000 times. The window can land anywhere, so picking it after the fact is already paid for.
+
+| $\lambda$ per year | 2 or more | 3 or more | 4 or more | 6 or more |
+| --- | --- | --- | --- | --- |
+| 8 | 0.775 | 0.079 | 0.003 | 0.000 |
+| 12 | 0.958 | 0.229 | 0.014 | 0.000 |
+| 20 | 1.000 | 0.646 | 0.092 | 0.000 |
+| 30 | 1.000 | 0.949 | 0.338 | 0.004 |
+| 60 | 1.000 | 1.000 | 0.982 | 0.131 |
+
+The rate fitted from [`data/outages.csv`](data/outages.csv) under a strict definition is 12.4 per year. At that rate four in five days is a 1.6% event, 2.1 sigma; three is 25%; Friday's pair alone is 96%.
+
+What the window does not pay for is deciding afterwards which events count. Chase is the third. NSA Net is the fourth, and it is public only because six people talked; comparable outages in the previous two years would not be in the list. The same week's coverage also mentions United and Amtrak, which would make six, and no rate fitted from "biggest outages" roundups can produce six. That says the bar for what gets reported dropped this week, and the base rate at that lower bar has not been measured. At 30 a year, four in five days is a 34% event.
+
+Ten of the 28 rows in the list are from memory with no page behind them. The file marks which.
+
+</details>
+
+<details>
+<summary><b>Show the work:</b> what a denial is worth</summary>
+
+For each statement: the probability of hearing it if the event was an attack, divided by the probability of hearing it if it was not. All of these ratios are assumptions, with reasons, in [`data/denials.csv`](data/denials.csv).
+
+| Event | Day-one denial | Strongest statement since |
+| --- | --- | --- |
+| Microsoft 365 | 0.9 | 0.15, a published mechanism |
+| FAA | 0.9 | 0.4, named officials and a mechanism, cause unconfirmed |
+| Chase | 0.7 | 0.7 |
+| NSA Net | 0.9 | 0.9, unnamed sources, nothing checkable |
+
+Against "all four were attacks", the day-one denials multiply to 0.51 and the strongest statements to 0.038. Four generic denials are worth a factor of two. Two checkable mechanisms are worth a factor of twenty-five. Mullin's "98 percent certainty" is scored at 1.0: [Townhall via WCBM](https://wcbm.com/national-headline/markwayne-mullin-addresses-fears-of-a-cyberattack-after-a-string-of-major-us-outages/).
+
+The outage with the weakest denial is the one whose root cause will never be published.
+
+</details>
+
+<details>
+<summary><b>Show the work:</b> was the news hacked?</summary>
+
+Yes, and it does not reach the NSA story.
+
+- [Report URI](https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/) lists 178 organisations; ten are news and media, including CNN, Fox News and NPR. Of an assumed list of ten large U.S. news sites, that is three.
+- The code could rewrite what a visitor sees. It was built to swap cryptocurrency addresses, skim cards and push iOS exploit kits.
+- It was live for at most 18 hours 50 minutes on Monday, 04:21 to 23:11 UTC. A syndicated copy of the NSA story was published by [WRAL](https://www.wral.com/news/local/national-security-communications-network-outage-november-2026/) at 16:41 UTC on Tuesday, 17.5 hours after the all-clean.
+- The story that does overlap is Chase: the outage began inside the window. Chase's account was carried by AP, Reuters and Barron's, so it does not depend on CNN's page.
+- The NSA story still rests on one newsroom and six unnamed sources. A Wall Street Journal report blaming a software update was seen only as a headline.
+
+</details>
+
+The full chapter, with the recipe for recreating every step, is [`analysis/chapter-2-the-cluster.md`](analysis/chapter-2-the-cluster.md).
+
 ## What is in this repo
 
 | Path | What it is |
@@ -217,6 +300,9 @@ Until then, the honest answer to the title is: the second one, possibly, through
 | [`analysis/causal-diagram.png`](analysis/causal-diagram.png) | The block diagram of how each link is known |
 | [`scripts/show_your_work.py`](scripts/show_your_work.py) | Reproduces every number above; standard library only |
 | [`analysis/numbers-output.txt`](analysis/numbers-output.txt) | That script's output |
+| [`analysis/chapter-2-the-cluster.md`](analysis/chapter-2-the-cluster.md) | 17 November: the cluster, the denials, the news channel, and how to recreate it all |
+| [`scripts/the_week_after.py`](scripts/the_week_after.py) | Reproduces every number in the 17 November chapter |
+| [`data/`](data) | The outage list, the denials table, and the 178 affected organisations |
 | [`HANDOFF.md`](HANDOFF.md) | What is still open |
 
-To check the numbers: `python3 scripts/show_your_work.py`.
+To check the numbers: `python3 scripts/show_your_work.py` for Friday, `python3 scripts/the_week_after.py` for 17 November.
