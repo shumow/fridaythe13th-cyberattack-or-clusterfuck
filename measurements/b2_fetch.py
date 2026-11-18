@@ -4,9 +4,10 @@ Every attempt is appended to measurements/b2_requests.csv (URL, UTC time,
 HTTP status, SHA-256 of the response body, a label). Each successful body is
 kept gzipped in measurements/b2_raw/, named by the SHA-1 of its URL.
 One request at a time, at least 6 seconds apart; on a refusal, wait 60
-seconds and try once more.
+seconds and try once more. BACKOFF holds the waits between attempts; a caller
+may replace it, and any other value is a departure from the protocols.
 """
-import csv, gzip, hashlib, os, time, urllib.parse, urllib.request, urllib.error
+import csv, gzip, hashlib, os, sys, time, urllib.parse, urllib.request, urllib.error
 from datetime import datetime, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -15,6 +16,13 @@ LOG = os.path.join(HERE, "b2_requests.csv")
 STAMP = os.path.join(RAW, ".last_request")
 ENDPOINT = "https://api.gdeltproject.org/api/v2/doc/doc"
 GAP = 6.5
+BACKOFF = (60,)  # seconds to wait after each refusal; one more try per entry
+
+
+
+def say(msg):
+    """Progress, to stderr so that redirected output files stay clean."""
+    print(datetime.now().strftime("%H:%M:%S"), msg, file=sys.stderr, flush=True)
 
 
 def url_for(params):
@@ -38,6 +46,7 @@ def _wait():
         last = 0
     d = GAP - (time.time() - last)
     if d > 0:
+        say(f"  throttle: waiting {d:.1f} s since the last request")
         time.sleep(d)
 
 
@@ -60,19 +69,27 @@ def refused(status, body):
 
 
 def fetch(params, label="", use_cache=True):
-    """Return (ok, text). ok is False when both attempts were refused."""
+    """Return (ok, text). ok is False when every attempt was refused."""
     os.makedirs(RAW, exist_ok=True)
     url = url_for(params)
     path = os.path.join(RAW, hashlib.sha1(url.encode()).hexdigest() + ".gz")
     if use_cache and os.path.exists(path):
+        say(f"{label}: answered from the cache, nothing sent")
         return True, gzip.open(path, "rt", encoding="utf-8", errors="replace").read()
-    for attempt in (1, 2):
+    waits = tuple(BACKOFF) + (None,)
+    for n, wait in enumerate(waits, 1):
+        say(f"{label}: attempt {n} of {len(waits)}, sending...")
+        t0 = time.time()
         status, body = _once(url)
         _log(url, status, body, label)
+        what = "no HTTP answer" if status == 0 else f"HTTP {status}"
+        say(f"{label}: {what}, {len(body)} bytes, {time.time() - t0:.1f} s"
+            + ("" if not refused(status, body) else " (refused)"))
         if not refused(status, body):
             with gzip.GzipFile(path, "wb", mtime=0) as g:
                 g.write(body)
             return True, body.decode("utf-8", "replace")
-        if attempt == 1:
-            time.sleep(60)
+        if wait is not None:
+            say(f"{label}: waiting {wait:g} s before trying again")
+            time.sleep(wait)
     return False, body.decode("utf-8", "replace")
