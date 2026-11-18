@@ -1,0 +1,7 @@
+{
+  "OUT_IT": "(outage OR outages OR \"ground stop\") (network OR internet OR software OR online OR website OR systems) sourcecountry:US sourcelang:english",
+  "BOTH": "(outage OR outages OR \"ground stop\") (network OR internet OR software OR online OR website OR systems) (cyberattack OR cyberattacks OR \"cyber attack\" OR hack OR hacked OR hackers) sourcecountry:US sourcelang:english",
+  "ATT": "(cyberattack OR cyberattacks OR \"cyber attack\" OR hack OR hacked OR hackers) sourcecountry:US sourcelang:english",
+  "BOTH_STRICT": "(outage OR outages OR \"ground stop\") (network OR internet OR software OR online OR website OR systems) (cyberattack OR cyberattacks OR \"cyber attack\") sourcecountry:US sourcelang:english",
+  "OUT_PLAIN": "(outage OR outages OR \"ground stop\") sourcecountry:US sourcelang:english"
+}

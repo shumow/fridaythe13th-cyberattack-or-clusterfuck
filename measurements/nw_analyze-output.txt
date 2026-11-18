@@ -1,0 +1,43 @@
+== Events: the outside counter (ThousandEyes weekly U.S. outage counts, a_instrument.csv) ==
+baseline, 12 weeks from 17 Aug to 8 Nov 2026: mean 323.1; sample sd 118.2; range 160 to 537
+week of 9 to 15 Nov: 282; 0.87 times the baseline mean; z = -0.35; rank 8 of 13
+
+== Coverage: the news archive (nw_series.csv) ==
+ATT: 69 days in the file; missing from the 93: 24
+BOTH: 69 days in the file; missing from the 93: 24
+BOTH_STRICT: 69 days in the file; missing from the 93: 24
+OUT_IT: 69 days in the file; missing from the 93: 24
+OUT_PLAIN: 69 days in the file; missing from the 93: 24
+
+-- statistic 1: weekly coverage, OUT_IT --
+baseline weeks, matching articles per 10,000 monitored: mean 4.56; sd 1.51; range 1.80 to 7.45
+week of 9 to 15 Nov: 12.75; 2.80 times the baseline mean; z = +5.43; rank 1 of 13
+the same from raw counts: baseline mean 256 a week; target 120; z = -0.66; rank 9 of 13
+baseline daily mean: 4.97; 16 Nov: nan; 17 Nov: nan
+
+-- statistic 2: weekly coverage, ATT --
+baseline weeks, matching articles per 10,000 monitored: mean 11.87; sd 4.60; range 6.18 to 22.77
+week of 9 to 15 Nov: 16.25; 1.37 times the baseline mean; z = +0.95; rank 2 of 13
+the same from raw counts: baseline mean 652 a week; target 153; z = -0.95; rank 9 of 13
+baseline daily mean: 12.66; 16 Nov: nan; 17 Nov: nan
+
+-- statistic 3: the framing share, BOTH / OUT_IT --
+pooled over the baseline: 8.8%; pooled over 13 to 17 Nov: 35.6%
+twelve baseline weeks: lowest 0.0%, median 7.1%, highest 16.7%
+week of 9 to 15 Nov: 29.2%; z = +3.93; rank 1 of 13
+by day: 9 Nov 0.0%; 10 Nov 10.0%; 11 Nov 22.2%; 12 Nov 0.0%; 13 Nov 15.4%; 14 Nov 42.1%; 15 Nov 57.1%; 16 Nov nan%; 17 Nov nan%
+
+-- statistic 3: the framing share, BOTH_STRICT / OUT_IT --
+pooled over the baseline: 5.9%; pooled over 13 to 17 Nov: 35.6%
+twelve baseline weeks: lowest 0.0%, median 3.7%, highest 14.7%
+week of 9 to 15 Nov: 28.3%; z = +4.71; rank 1 of 13
+by day: 9 Nov 0.0%; 10 Nov 0.0%; 11 Nov 22.2%; 12 Nov 0.0%; 13 Nov 15.4%; 14 Nov 42.1%; 15 Nov 57.1%; 16 Nov nan%; 17 Nov nan%
+
+-- statistic 4: the multiplier --
+coverage at 2.80 times its baseline, the outside counter at 0.87 times its own: multiplier 3.20
+above 1 means coverage rose more than the counter did. The counter is a weak witness (RESULTS.md, part A).
+
+-- statistic 5: how much of OUT_PLAIN the second group keeps --
+baseline: 42.7%; 13 to 17 Nov: 75.6%
+
+chart written: measurements/news-wave.png

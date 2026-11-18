@@ -1,0 +1,53 @@
+overnight: one request every 15 min while refused, until Wed 10:24 (at most 45 requests)
+00:24:37 n1-OUT_IT: attempt 1 of 1, sending...
+00:24:49 n1-OUT_IT: HTTP 429, 444 bytes, 11.3 s (refused)
+00:24:49 n1-OUT_IT: refused. Sleeping 15 min; next try at 00:39, giving up at 10:24. Ctrl-C is safe.
+00:39:49 n1-OUT_IT: attempt 1 of 1, sending...
+00:40:00 n1-OUT_IT: HTTP 429, 444 bytes, 11.3 s (refused)
+00:40:00 n1-OUT_IT: refused. Sleeping 15 min; next try at 00:55, giving up at 10:24. Ctrl-C is safe.
+00:55:00 n1-OUT_IT: attempt 1 of 1, sending...
+00:55:12 n1-OUT_IT: HTTP 429, 444 bytes, 11.9 s (refused)
+00:55:12 n1-OUT_IT: refused. Sleeping 15 min; next try at 01:10, giving up at 10:24. Ctrl-C is safe.
+01:10:12 n1-OUT_IT: attempt 1 of 1, sending...
+01:10:26 n1-OUT_IT: HTTP 429, 444 bytes, 13.9 s (refused)
+01:10:26 n1-OUT_IT: refused. Sleeping 15 min; next try at 01:25, giving up at 10:24. Ctrl-C is safe.
+01:25:26 n1-OUT_IT: attempt 1 of 1, sending...
+01:25:38 n1-OUT_IT: HTTP 429, 444 bytes, 11.7 s (refused)
+01:25:38 n1-OUT_IT: refused. Sleeping 15 min; next try at 01:40, giving up at 10:24. Ctrl-C is safe.
+01:40:38 n1-OUT_IT: attempt 1 of 1, sending...
+01:40:49 n1-OUT_IT: HTTP 429, 444 bytes, 11.5 s (refused)
+01:40:49 n1-OUT_IT: refused. Sleeping 15 min; next try at 01:55, giving up at 10:24. Ctrl-C is safe.
+01:55:49 n1-OUT_IT: attempt 1 of 1, sending...
+01:56:01 n1-OUT_IT: HTTP 429, 444 bytes, 11.8 s (refused)
+01:56:01 n1-OUT_IT: refused. Sleeping 15 min; next try at 02:11, giving up at 10:24. Ctrl-C is safe.
+02:11:01 n1-OUT_IT: attempt 1 of 1, sending...
+02:11:19 n1-OUT_IT: HTTP 200, 4276 bytes, 17.6 s
+OUT_IT: 69 days, 3189 articles
+02:11:19 n1-BOTH: attempt 1 of 1, sending...
+02:11:19   throttle: waiting 6.5 s since the last request
+02:11:37 n1-BOTH: HTTP 429, 444 bytes, 17.9 s (refused)
+02:11:37 n1-BOTH: refused. Sleeping 15 min; next try at 02:26, giving up at 10:24. Ctrl-C is safe.
+02:26:37 n1-BOTH: attempt 1 of 1, sending...
+02:26:54 n1-BOTH: HTTP 200, 4298 bytes, 16.9 s
+BOTH: 69 days, 304 articles
+02:26:54 n1-ATT: attempt 1 of 1, sending...
+02:26:54   throttle: waiting 6.5 s since the last request
+02:27:10 n1-ATT: HTTP 429, 444 bytes, 16.6 s (refused)
+02:27:10 n1-ATT: refused. Sleeping 15 min; next try at 02:42, giving up at 10:24. Ctrl-C is safe.
+02:42:10 n1-ATT: attempt 1 of 1, sending...
+02:42:23 n1-ATT: HTTP 200, 4282 bytes, 13.1 s
+ATT: 69 days, 7976 articles
+02:42:23 n1-BOTH_STRICT: attempt 1 of 1, sending...
+02:42:23   throttle: waiting 6.5 s since the last request
+02:42:42 n1-BOTH_STRICT: HTTP 200, 4267 bytes, 18.2 s
+BOTH_STRICT: 69 days, 215 articles
+02:42:42 n1-OUT_PLAIN: attempt 1 of 1, sending...
+02:42:42   throttle: waiting 6.5 s since the last request
+02:42:59 n1-OUT_PLAIN: HTTP 429, 444 bytes, 17.0 s (refused)
+02:42:59 n1-OUT_PLAIN: refused. Sleeping 15 min; next try at 02:57, giving up at 10:24. Ctrl-C is safe.
+02:57:59 n1-OUT_PLAIN: attempt 1 of 1, sending...
+02:58:08 n1-OUT_PLAIN: HTTP 429, 444 bytes, 9.7 s (refused)
+02:58:08 n1-OUT_PLAIN: refused. Sleeping 15 min; next try at 03:13, giving up at 10:24. Ctrl-C is safe.
+03:13:08 n1-OUT_PLAIN: attempt 1 of 1, sending...
+03:13:22 n1-OUT_PLAIN: HTTP 200, 4241 bytes, 14.0 s
+OUT_PLAIN: 69 days, 7365 articles

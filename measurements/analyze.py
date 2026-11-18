@@ -66,9 +66,12 @@ for r in a:
         continue
     if r["us_outages"]:
         x = int(r["us_outages"])
-        rank = 1 + sum(v > x for v in y2026)
+        # y2026 already holds a published target week, so count the others.
+        others = [v for d, v in series if d >= date(2025, 12, 29)
+                  and d != date.fromisoformat(r["week_start"])]
+        rank = 1 + sum(v > x for v in others)
         print(f"target week of {r['week_start']}: {x}; z = {(x - m) / s:.2f}; "
-              f"rank {rank} of {len(y2026) + 1} weeks of 2026")
+              f"rank {rank} of {len(others) + 1} weeks of 2026")
     else:
         print(f"target week of {r['week_start']}: not yet published")
 print(f"weeks of 2026 published: {len(y2026)}; lowest {min(y2026)}, median "
