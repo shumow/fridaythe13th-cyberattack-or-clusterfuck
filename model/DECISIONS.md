@@ -17,7 +17,8 @@
 > - The freeze and the log live on the branch `claude/stoic-feynman-pwhm51`.
 > - Item 11: yes. The repo is the source of truth, and `scripts/validate.py` checks that from git history. Dan also wants changing stories and inconsistencies tracked, as bookkeeping for now (`bookkeeping/inconsistencies.csv`), with the fuller version left as an open item for future research in `HANDOFF.md`.
 > - Item 12: add a dated note to chapter 2 now. Done on 18 November, with a matching one-line note beside the same claim in the README. The text itself waits for the one-time revision.
-> - Item 13 is still open.
+> - Item 13: Dan will get the Wall Street Journal text himself, on 18 November or after. Open until then.
+> - The reclassification search runs under `measurements/PROTOCOL-3.md`, committed before any searching.
 
 Written 17 November 2026. The model in this folder is a draft. It freezes when a commit adds `model/model_v1.sha256`, and that commit waits for the answers below. Until then no event from the week can be run through the model, so the log, the dated curves and chapter 3 all wait too. The measurements do not wait.
 
