@@ -28,7 +28,7 @@ For a session whose shell can reach the internet. The text session that wrote th
 
 ## Update, Tuesday 17 November 2026, night: the news wave (branch `news-wave`)
 
-Written on 18 November at 06:35 UTC by a text session, from Dan's voice session that evening. This block is on the branch `news-wave` only. That branch sits on top of the Code session's `claude/stoic-feynman-pwhm51`, which sits on `model-v1-draft`, and it has a draft pull request into `model-v1-draft`. Nothing is on `main`.
+Written on 18 November at 06:35 UTC by a text session, from Dan's voice session that evening. This block is on the branch `news-wave` only. That branch sits on top of the Code session's `claude/stoic-feynman-pwhm51`, which sits on `model-v1-draft`, and it has a draft pull request into `model-v1-draft`, #3. Nothing is on `main`.
 
 - **Vocabulary.** The piece now separates three things that used to share the name "frequency illusion": a real cluster (events up), a news wave (events flat, coverage up) and the frequency illusion proper (both flat, one reader sees or notices more). "News wave" is Dan's word for the middle one. The table is at the top of `measurements/PROTOCOL-3.md`.
 - **In the README.** A dated subsection, "The news wave", under Correlation: placeholder prose and a Show the work block. A dated placeholder note under Just Friday the 13th, which makes the date the oldest news wave there is. Dan's prose replaces both placeholders; the line he liked is in the first one ("did not break more often ... got better press"). Friday's text is otherwise untouched.
