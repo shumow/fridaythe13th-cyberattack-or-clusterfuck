@@ -58,6 +58,8 @@ This block is on the branch `model-v1-draft` only (draft pull request #2). `main
 ## Open
 
 1. **Dan's prose.** As each line arrives, put the technical block under it: the number, the derivation, the source, and how far the source can be trusted.
+   - **Banked line, Dan, 18 November 2026, for "So which is it?" (the closing section), verbatim from voice:** "The honest position is we don't know yet, and because we're doing science here, we will never truly know. We have scientific models that we hope make good predictions, and if they stop making good predictions, we revise them."
+   - **Style.** The README now opens with Dan's own prose. The rewrite of every other section follows that voice. Dan writes or refines each section; the session cleans up and keeps the "Show the work" blocks.
 2. **The DOOM line.** The README has a visible placeholder in the Friday the 13th section for Dan to fill in himself.
 3. **Root causes.** Neither Microsoft nor the FAA or L3Harris has published one. When they do: compare vendor and version of the network change on each side, then revise the analysis once.
 4. **Mullin's denial.** Still rests on CNN alone. Find a transcript or wire story that can be opened.
