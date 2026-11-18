@@ -11,6 +11,17 @@ On the branch `claude/stoic-feynman-pwhm51` (not yet merged into `model-v1-draft
 - **Version 2, agreed so far:** a news-wave and misinformation layer (Dan's point, the main addition); the suggested changes in items 5 and 7 to 10 of `DECISIONS.md`; measured attack priors and visibility; a sensitivity table with every ratio halved and doubled; an interface with sliders.
 - **Still stopped:** the second-round measurements (`PROTOCOL-2.md`). The archive rate-limits this container; see the dated note in the next block.
 
+- **Bookkeeping.** When a run notices that an account has changed or that two sources disagree, it adds a row to `bookkeeping/inconsistencies.csv`.
+
+### Story changes, for future research (open)
+
+Dan, 18 November: keep track of inconsistencies and of stories that change; a proper version "would require hashes"; not central now. What exists is a hand-kept list in `bookkeeping/`. What a proper version would need:
+
+- A snapshot of every cited page at the time it is read: the fetched text, a SHA-256 of it and the fetch time, kept in the repo or in an archive with the hash in the repo. Then "the page said X on the 13th" can be checked, and a silent edit shows as a changed hash.
+- Re-fetching cited pages on a schedule and diffing them, so that updated stories (CBS at 4:29 pm against 6:36 pm, CNN's two versions of the NSA story) are caught by machine.
+- A way to do this for pages that refuse automated reads (CNN, NBC, Reuters, WSJ, NYT), which today are known only through copies and excerpts.
+- A question worth asking of the result: is the rate of changed or contradicted accounts in a week like this one higher than in an ordinary week? That belongs with the news-wave layer of version 2.
+
 ### Run log
 
 - 18 Nov 10:01 UTC. First run. 5 counted events, 3 after the ground stop. P(campaign): calm 0.03%, middle 0.3%, suspicious 3.4%. P(at least one attack): 3.0%, 8.9%, 27%. Found since the last notes: an Apple services outage on Tuesday afternoon, blamed on an internal update (off the panel, context row).
