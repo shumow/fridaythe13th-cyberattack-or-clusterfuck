@@ -1,0 +1,277 @@
+PROTOCOL-4.md, from /Users/dbone/Claude/Projects/fridaythe13th-cyberattack-or-clusterfuck/gdelt-local/data/articles/*/*.parquet
+days in the table: 94 (2026-08-17 to 2026-11-18); not used: 2026-11-18
+baseline: 12 weeks, 2026-08-17 to 2026-11-08; target week 2026-11-09 to 2026-11-15; after 2026-11-13 to 2026-11-17
+days with no rows: none
+
+== 1. Weekly headline coverage, US ==
+  OUT_TECH [US, all rows]
+    baseline weeks, share: lowest  0.011%  median  0.021%  highest  0.077%  mean  0.024%
+    9 to 15 Nov, share:  1.812%  z = +101.00  rank 1 of 13
+    baseline weeks, count: lowest 39  median 72  highest 279  mean 86.2
+    9 to 15 Nov, count: 6121  z = +94.22  rank 1 of 13
+    baseline daily mean share  0.024%; 16 Nov  3.056%; 17 Nov  2.915%
+  OUT_TECH [US, distinct titles]
+    baseline weeks, share: lowest  0.016%  median  0.025%  highest  0.059%  mean  0.028%
+    9 to 15 Nov, share:  0.996%  z = +86.06  rank 1 of 13
+    baseline weeks, count: lowest 35  median 54.5  highest 129  mean 59.9
+    9 to 15 Nov, count: 2107  z = +82.78  rank 1 of 13
+    baseline daily mean share  0.027%; 16 Nov  1.862%; 17 Nov  1.803%
+  OUT_TECH_TH (electricity removed by theme) [US, all rows]
+    baseline weeks, share: lowest  0.015%  median  0.027%  highest  0.083%  mean  0.033%
+    9 to 15 Nov, share:  1.835%  z = +102.92  rank 1 of 13
+    baseline weeks, count: lowest 54  median 99.5  highest 301  mean 116.6
+    9 to 15 Nov, count: 6198  z = +96.42  rank 1 of 13
+    baseline daily mean share  0.033%; 16 Nov  3.075%; 17 Nov  2.915%
+  OUT_TECH_TH (electricity removed by theme) [US, distinct titles]
+    baseline weeks, share: lowest  0.022%  median  0.039%  highest  0.075%  mean  0.040%
+    9 to 15 Nov, share:  1.017%  z = +72.03  rank 1 of 13
+    baseline weeks, count: lowest 49  median 86  highest 164  mean 87.9
+    9 to 15 Nov, count: 2152  z = +69.79  rank 1 of 13
+    baseline daily mean share  0.040%; 16 Nov  1.891%; 17 Nov  1.828%
+
+== 2. Attack headlines, US ==
+  ATT_T [US, all rows]
+    baseline weeks, share: lowest  0.106%  median  0.183%  highest  0.459%  mean  0.237%
+    9 to 15 Nov, share:  0.202%  z = -0.29  rank 7 of 13
+    baseline weeks, count: lowest 378  median 662.5  highest 1667  mean 846.8
+    9 to 15 Nov, count: 683  z = -0.38  rank 7 of 13
+    baseline daily mean share  0.224%; 16 Nov  0.227%; 17 Nov  0.485%
+  ATT_T [US, distinct titles]
+    baseline weeks, share: lowest  0.096%  median  0.149%  highest  0.247%  mean  0.161%
+    9 to 15 Nov, share:  0.193%  z = +0.63  rank 4 of 13
+    baseline weeks, count: lowest 209  median 321  highest 554  mean 350.2
+    9 to 15 Nov, count: 408  z = +0.50  rank 4 of 13
+    baseline daily mean share  0.156%; 16 Nov  0.243%; 17 Nov  0.302%
+
+== 3. Headline framing share, US ==
+  BOTH_T / OUT_TECH [US, all rows]
+    baseline pooled  1.354% (14 of 1034);  13 to 17 Nov pooled  1.693% (154 of 9096)
+    baseline weeks: lowest  0.000%  median  0.000%  highest 10.390%
+    9 to 15 Nov  2.091%  z = +0.13  rank 3 of 13
+    02 to 12 Nov  0.000% (0 of 361)  against 13 to 17 Nov  1.693%
+    by day: 09:0/5  10:0/8  11:0/4  12:0/305  13:14/1555  14:113/3485  15:1/759  16:3/1524  17:23/1773
+  BOTH_T / OUT_TECH [US, distinct titles]
+    baseline pooled  1.113% (8 of 719);  13 to 17 Nov pooled  3.011% (97 of 3222)
+    baseline weeks: lowest  0.000%  median  0.000%  highest  6.383%
+    9 to 15 Nov  3.560%  z = +0.96  rank 3 of 13
+    02 to 12 Nov  0.000% (0 of 155)  against 13 to 17 Nov  3.011%
+    by day: 09:0/5  10:0/8  11:0/4  12:0/103  13:10/595  14:64/1099  15:1/293  16:2/567  17:20/668
+  BOTH_T_STRICT / OUT_TECH [US, all rows]
+    baseline pooled  0.290% (3 of 1034);  13 to 17 Nov pooled  1.572% (143 of 9096)
+    baseline weeks: lowest  0.000%  median  0.000%  highest  1.923%
+    9 to 15 Nov  2.009%  z = +2.09  rank 1 of 13
+    02 to 12 Nov  0.000% (0 of 361)  against 13 to 17 Nov  1.572%
+    by day: 09:0/5  10:0/8  11:0/4  12:0/305  13:9/1555  14:113/3485  15:1/759  16:1/1524  17:19/1773
+  BOTH_T_STRICT / OUT_TECH [US, distinct titles]
+    baseline pooled  0.417% (3 of 719);  13 to 17 Nov pooled  2.762% (89 of 3222)
+    baseline weeks: lowest  0.000%  median  0.000%  highest  2.632%
+    9 to 15 Nov  3.370%  z = +2.73  rank 1 of 13
+    02 to 12 Nov  0.000% (0 of 155)  against 13 to 17 Nov  2.762%
+    by day: 09:0/5  10:0/8  11:0/4  12:0/103  13:6/595  14:64/1099  15:1/293  16:1/567  17:17/668
+
+== 4. Theme framing share, US ==
+  BOTH_TH / OUT_TECH [US, all rows]
+    baseline pooled  7.930% (82 of 1034);  13 to 17 Nov pooled 33.982% (3091 of 9096)
+    baseline weeks: lowest  0.717%  median  9.494%  highest 23.077%
+    9 to 15 Nov 30.436%  z = +2.70  rank 1 of 13
+    02 to 12 Nov  3.324% (12 of 361)  against 13 to 17 Nov 33.982%
+    by day: 09:1/5  10:2/8  11:0/4  12:4/305  13:462/1555  14:1164/3485  15:230/759  16:665/1524  17:570/1773
+  BOTH_TH / OUT_TECH [US, distinct titles]
+    baseline pooled  8.762% (63 of 719);  13 to 17 Nov pooled 33.861% (1091 of 3222)
+    baseline weeks: lowest  1.333%  median 10.556%  highest 19.149%
+    9 to 15 Nov 26.910%  z = +2.62  rank 1 of 13
+    02 to 12 Nov  7.742% (12 of 155)  against 13 to 17 Nov 33.861%
+    by day: 09:1/5  10:2/8  11:0/4  12:4/103  13:162/595  14:339/1099  15:59/293  16:240/567  17:291/668
+  BOTH_TH_STRICT / OUT_TECH [US, all rows]
+    baseline pooled  7.930% (82 of 1034);  13 to 17 Nov pooled 33.982% (3091 of 9096)
+    baseline weeks: lowest  0.717%  median  9.494%  highest 23.077%
+    9 to 15 Nov 30.436%  z = +2.70  rank 1 of 13
+    02 to 12 Nov  3.324% (12 of 361)  against 13 to 17 Nov 33.982%
+    by day: 09:1/5  10:2/8  11:0/4  12:4/305  13:462/1555  14:1164/3485  15:230/759  16:665/1524  17:570/1773
+  BOTH_TH_STRICT / OUT_TECH [US, distinct titles]
+    baseline pooled  8.762% (63 of 719);  13 to 17 Nov pooled 33.861% (1091 of 3222)
+    baseline weeks: lowest  1.333%  median 10.556%  highest 19.149%
+    9 to 15 Nov 26.910%  z = +2.62  rank 1 of 13
+    02 to 12 Nov  7.742% (12 of 155)  against 13 to 17 Nov 33.861%
+    by day: 09:1/5  10:2/8  11:0/4  12:4/103  13:162/595  14:339/1099  15:59/293  16:240/567  17:291/668
+
+== 1. Weekly headline coverage, ALL ==
+  OUT_TECH [ALL, all rows]
+    baseline weeks, share: lowest  0.012%  median  0.024%  highest  0.083%  mean  0.033%
+    9 to 15 Nov, share:  1.507%  z = +64.79  rank 1 of 13
+    baseline weeks, count: lowest 82  median 162  highest 565  mean 225.8
+    9 to 15 Nov, count: 9739  z = +61.68  rank 1 of 13
+    baseline daily mean share  0.033%; 16 Nov  1.825%; 17 Nov  1.810%
+  OUT_TECH [ALL, distinct titles]
+    baseline weeks, share: lowest  0.017%  median  0.026%  highest  0.046%  mean  0.030%
+    9 to 15 Nov, share:  0.848%  z = +80.57  rank 1 of 13
+    baseline weeks, count: lowest 74  median 110.5  highest 199  mean 130.6
+    9 to 15 Nov, count: 3604  z = +79.03  rank 1 of 13
+    baseline daily mean share  0.029%; 16 Nov  1.098%; 17 Nov  1.185%
+  OUT_TECH_TH (electricity removed by theme) [ALL, all rows]
+    baseline weeks, share: lowest  0.020%  median  0.035%  highest  0.072%  mean  0.042%
+    9 to 15 Nov, share:  1.523%  z = +79.56  rank 1 of 13
+    baseline weeks, count: lowest 135  median 237  highest 490  mean 280.4
+    9 to 15 Nov, count: 9846  z = +76.28  rank 1 of 13
+    baseline daily mean share  0.041%; 16 Nov  1.851%; 17 Nov  1.849%
+  OUT_TECH_TH (electricity removed by theme) [ALL, distinct titles]
+    baseline weeks, share: lowest  0.028%  median  0.040%  highest  0.059%  mean  0.042%
+    9 to 15 Nov, share:  0.865%  z = +74.21  rank 1 of 13
+    baseline weeks, count: lowest 122  median 170.5  highest 255  mean 182.3
+    9 to 15 Nov, count: 3677  z = +72.92  rank 1 of 13
+    baseline daily mean share  0.041%; 16 Nov  1.126%; 17 Nov  1.217%
+
+== 2. Attack headlines, ALL ==
+  ATT_T [ALL, all rows]
+    baseline weeks, share: lowest  0.104%  median  0.192%  highest  0.544%  mean  0.244%
+    9 to 15 Nov, share:  0.232%  z = -0.09  rank 6 of 13
+    baseline weeks, count: lowest 704  median 1295  highest 3730  mean 1649.6
+    9 to 15 Nov, count: 1501  z = -0.17  rank 6 of 13
+    baseline daily mean share  0.235%; 16 Nov  0.305%; 17 Nov  0.398%
+  ATT_T [ALL, distinct titles]
+    baseline weeks, share: lowest  0.102%  median  0.166%  highest  0.337%  mean  0.183%
+    9 to 15 Nov, share:  0.223%  z = +0.59  rank 4 of 13
+    baseline weeks, count: lowest 442  median 717  highest 1491  mean 795.6
+    9 to 15 Nov, count: 950  z = +0.50  rank 4 of 13
+    baseline daily mean share  0.180%; 16 Nov  0.247%; 17 Nov  0.337%
+
+== 3. Headline framing share, ALL ==
+  BOTH_T / OUT_TECH [ALL, all rows]
+    baseline pooled  0.886% (24 of 2709);  13 to 17 Nov pooled  1.577% (207 of 13130)
+    baseline weeks: lowest  0.000%  median  0.199%  highest  6.061%
+    9 to 15 Nov  1.704%  z = +0.36  rank 4 of 13
+    02 to 12 Nov  0.000% (0 of 535)  against 13 to 17 Nov  1.577%
+    by day: 09:0/9  10:0/16  11:0/8  12:0/420  13:35/3708  14:126/4650  15:5/928  16:5/1760  17:36/2084
+  BOTH_T / OUT_TECH [ALL, distinct titles]
+    baseline pooled  1.149% (18 of 1567);  13 to 17 Nov pooled  2.858% (143 of 5003)
+    baseline weeks: lowest  0.000%  median  0.523%  highest  5.319%
+    9 to 15 Nov  2.969%  z = +0.99  rank 3 of 13
+    02 to 12 Nov  0.000% (0 of 269)  against 13 to 17 Nov  2.858%
+    by day: 09:0/9  10:0/15  11:0/8  12:0/163  13:28/1422  14:74/1583  15:5/404  16:4/711  17:32/883
+  BOTH_T_STRICT / OUT_TECH [ALL, all rows]
+    baseline pooled  0.258% (7 of 2709);  13 to 17 Nov pooled  1.470% (193 of 13130)
+    baseline weeks: lowest  0.000%  median  0.000%  highest  1.258%
+    9 to 15 Nov  1.622%  z = +2.44  rank 1 of 13
+    02 to 12 Nov  0.000% (0 of 535)  against 13 to 17 Nov  1.470%
+    by day: 09:0/9  10:0/16  11:0/8  12:0/420  13:29/3708  14:126/4650  15:3/928  16:3/1760  17:32/2084
+  BOTH_T_STRICT / OUT_TECH [ALL, distinct titles]
+    baseline pooled  0.447% (7 of 1567);  13 to 17 Nov pooled  2.638% (132 of 5003)
+    baseline weeks: lowest  0.000%  median  0.000%  highest  2.128%
+    9 to 15 Nov  2.775%  z = +2.79  rank 1 of 13
+    02 to 12 Nov  0.000% (0 of 269)  against 13 to 17 Nov  2.638%
+    by day: 09:0/9  10:0/15  11:0/8  12:0/163  13:23/1422  14:74/1583  15:3/404  16:3/711  17:29/883
+
+== 4. Theme framing share, ALL ==
+  BOTH_TH / OUT_TECH [ALL, all rows]
+    baseline pooled  7.309% (198 of 2709);  13 to 17 Nov pooled 36.131% (4744 of 13130)
+    baseline weeks: lowest  0.664%  median  6.503%  highest 35.152%
+    9 to 15 Nov 33.833%  z = +2.65  rank 2 of 13
+    02 to 12 Nov  6.355% (34 of 535)  against 13 to 17 Nov 36.131%
+    by day: 09:2/9  10:2/16  11:1/8  12:17/420  13:1342/3708  14:1635/4650  15:296/928  16:758/1760  17:713/2084
+  BOTH_TH / OUT_TECH [ALL, distinct titles]
+    baseline pooled  8.679% (136 of 1567);  13 to 17 Nov pooled 35.938% (1798 of 5003)
+    baseline weeks: lowest  1.163%  median  8.125%  highest 19.753%
+    9 to 15 Nov 31.687%  z = +3.53  rank 1 of 13
+    02 to 12 Nov  8.922% (24 of 269)  against 13 to 17 Nov 35.938%
+    by day: 09:2/9  10:2/15  11:1/8  12:8/163  13:494/1422  14:527/1583  15:108/404  16:276/711  17:393/883
+  BOTH_TH_STRICT / OUT_TECH [ALL, all rows]
+    baseline pooled  7.309% (198 of 2709);  13 to 17 Nov pooled 36.131% (4744 of 13130)
+    baseline weeks: lowest  0.664%  median  6.503%  highest 35.152%
+    9 to 15 Nov 33.833%  z = +2.65  rank 2 of 13
+    02 to 12 Nov  6.355% (34 of 535)  against 13 to 17 Nov 36.131%
+    by day: 09:2/9  10:2/16  11:1/8  12:17/420  13:1342/3708  14:1635/4650  15:296/928  16:758/1760  17:713/2084
+  BOTH_TH_STRICT / OUT_TECH [ALL, distinct titles]
+    baseline pooled  8.679% (136 of 1567);  13 to 17 Nov pooled 35.938% (1798 of 5003)
+    baseline weeks: lowest  1.163%  median  8.125%  highest 19.753%
+    9 to 15 Nov 31.687%  z = +3.53  rank 1 of 13
+    02 to 12 Nov  8.922% (24 of 269)  against 13 to 17 Nov 35.938%
+    by day: 09:2/9  10:2/15  11:1/8  12:8/163  13:494/1422  14:527/1583  15:108/404  16:276/711  17:393/883
+
+== 5. The multiplier ==
+  outside counter (U.S.): target 282, baseline mean 323.1, ratio 0.873
+  US, all rows: coverage ratio 75.011; multiplier 85.939
+  US, distinct titles: coverage ratio 36.190; multiplier 41.462
+  ALL, all rows: coverage ratio 45.027; multiplier 51.587
+  ALL, distinct titles: coverage ratio 28.149; multiplier 32.249
+
+== 6. What the exclusion removes ==
+  US: OUT_TECH / OUT_T  baseline 31.515%  after 97.785%
+  US: OUT_TECH_TH / OUT_T  baseline 42.639%  after 99.043%
+  ALL: OUT_TECH / OUT_T  baseline 42.131%  after 97.367%
+  ALL: OUT_TECH_TH / OUT_T  baseline 52.333%  after 98.858%
+
+== 7. Against the search API (descriptive) ==
+  API days returned: 69; with norm at least 20% of its median (102774): 57
+  rank correlation, API OUT_IT share against bulk OUT_TECH share (US): +0.212 over 57 days
+  day: API norm / bulk U.S. rows with a title
+    2026-08-17   116203 /   52117
+    2026-08-18   169174 /   63216
+    2026-08-19   157610 /   61734
+    2026-08-20   171970 /   62194
+    2026-08-21   160721 /   60266
+    2026-08-22    98241 /   29107
+    2026-08-23    88414 /   21417
+    2026-08-24   117661 /   52018
+    2026-08-25   132186 /   62239
+    2026-08-26   179831 /   68652
+    2026-08-27   172877 /   64443
+    2026-08-28   125894 /   58118
+    2026-08-29    91911 /   29827
+    2026-08-30    79465 /   23800
+    2026-08-31   107519 /   52756
+    2026-09-01   116481 /   63645
+    2026-09-02   105316 /   63950
+    2026-09-03   120602 /   62667
+    2026-09-04   156481 /   60906
+    2026-09-05   102774 /   30111
+    2026-09-06    98645 /   22382
+    2026-09-07   118079 /   34807
+    2026-09-08    77318 /   57681
+    2026-09-09   158938 /   66299
+    2026-09-10   155062 /   66349
+    2026-09-11   154253 /   62704
+    2026-09-12   120863 /   31726
+    2026-09-13    29203 /   24255
+    2026-09-20   105485 /   26187
+    2026-09-21   108510 /   52964
+    2026-09-22   105779 /   62861
+    2026-09-23   149817 /   65998
+    2026-09-24   155942 /   62994
+    2026-09-25    58811 /   60844
+    2026-09-27    77392 /   23999
+    2026-09-28   121105 /   55922
+    2026-09-29   134919 /   63319
+    2026-09-30   111356 /   64092
+    2026-10-01   174731 /   65403
+    2026-10-02    61712 /   60929
+    2026-10-06     3958 /   58986
+    2026-10-08      678 /   62533
+    2026-10-10     1836 /   32013
+    2026-10-15    95273 /   61968
+    2026-10-16   150288 /   59415
+    2026-10-17    94046 /   29567
+    2026-10-18    76163 /   24122
+    2026-10-19   146057 /   53092
+    2026-10-20   156425 /   61711
+    2026-10-21   166970 /   63887
+    2026-10-22   123805 /   65549
+    2026-10-23    69302 /   61928
+    2026-10-24    77623 /   31563
+    2026-10-25    31912 /   24522
+    2026-10-26     4483 /   52387
+    2026-10-27     2218 /   62882
+    2026-11-03     5672 /   59953
+    2026-11-04     2220 /   71514
+    2026-11-05     7479 /   62698
+    2026-11-06    55749 /   61284
+    2026-11-07    29862 /   32045
+    2026-11-08    28220 /   23489
+    2026-11-09    13394 /   50406
+    2026-11-10    27148 /   61173
+    2026-11-11    21325 /   57973
+    2026-11-12    21707 /   56997
+    2026-11-13     5213 /   56628
+    2026-11-14     3545 /   31770
+    2026-11-15     1819 /   22796
+
+chart written: bulk-news-wave.png

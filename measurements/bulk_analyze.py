@@ -169,7 +169,11 @@ def spearman(xs, ys):
 
 
 def coverage(c, pop, m, label):
-    """Statistics 1 and 2: weekly coverage of one measure."""
+    """Statistics 1 and 2: weekly coverage of one measure.
+
+    Returns {unit: (target week's share, baseline mean share)} for statistic 5.
+    """
+    kept = {}
     for col, unit in ((0, "all rows"), (1, "distinct titles")):
         share = [ratio(total(c, pop, m, a, b, col), total(c, pop, "ALL_ROWS", a, b, col))
                  for a, b in BASE_WEEKS]
@@ -190,7 +194,8 @@ def coverage(c, pop, m, label):
         print(f"    baseline daily mean share {pct(mean(base_days))}; " + "; ".join(
             f"{d:%d %b} {pct(ratio(c.get((d, pop, m), (0, 0))[col], c.get((d, pop, 'ALL_ROWS'), (0, 0))[col]))}"
             for d in days(TARGET[1] + timedelta(1), AFTER[1])))
-    return t_share, mean(share)
+        kept[unit] = (t_share, mean(share))
+    return kept
 
 
 def framing(c, pop, num, den, label):
@@ -280,8 +285,9 @@ def main():
         print(f"  outside counter (U.S.): target {target}, baseline mean {mean(base):.1f}, "
               f"ratio {counter:.3f}")
         for pop in POPS:
-            t, b = cov[pop]
-            print(f"  {pop}: coverage ratio {t / b:.3f}; multiplier {t / b / counter:.3f}")
+            for unit, (t, b) in cov[pop].items():
+                print(f"  {pop}, {unit}: coverage ratio {t / b:.3f}; "
+                      f"multiplier {t / b / counter:.3f}")
 
     print("\n== 6. What the exclusion removes ==")
     for pop in POPS:
