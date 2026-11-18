@@ -4,7 +4,7 @@
 >
 > **Personal statements only.** Everything here is my own opinion, worked out from public reporting. None of it is an official Microsoft position, and none of it draws on inside information.
 
-> **Update, Tuesday 17 November 2026.** The week got worse, and both of Friday's outages now have an account on the record. Everything from here down to "So which is it?" is left as written on Friday so you can see what was believed then. Three things in it are now known to be wrong or settled: the Microsoft outage was over 4 hours 44 minutes before the ground stop, not still open; Microsoft's faulty change shipped in July, not on Patch Tuesday; and the two failures share no vendor or update. See [17 November: the cluster](#17-november-the-cluster).
+> **Update, Tuesday 17 November 2026.** The week got worse, and both of Friday's outages now have an account on the record. Everything from here down to "So which is it?" is left as written on Friday so you can see what was believed then. Three things in it are now known to be wrong or settled: the Microsoft outage was over 4 hours 44 minutes before the ground stop, not still open; Microsoft's faulty change shipped in July, not on Patch Tuesday; and the two failures share no vendor or update. See [17 November: the cluster](#17-november-the-cluster). Two later additions sit inside that stretch and are dated: [the news wave](#the-news-wave), under Correlation, and a note under Just Friday the 13th.
 
 I am a professional paranoid person.  I’m paid to be paranoid by a large tech firm.  So, when email goes down, computers stop working, banks are not banking, the news is reporting NSA secret networks have gone down, or generally strange things are afoot at the Circle K, people start calling me asking if there’s a cyberattack happening.  I mean, by the way, both people in my professional and personal life start reaching out.  Usually professional people email or send teams messages first, but sometimes that’s not the case.  If the shit has really hit the fan, I receive signal messages first.  Sometimes the shit is not going down, but email and teams have.  So, don’t freak out if I’m receiving signal messages (I also have a shady past and sometimes it’s just old partners in crime touching base.)
 
@@ -161,6 +161,56 @@ With $\lambda_G = 2/25$ per year (two nationwide ground stops since 2001) and $W
 
 </details>
 
+### The news wave
+
+> **Added Tuesday 17 November.** Not part of Friday's text.
+
+*Placeholder prose, to be replaced. The block under it is the work.*
+
+There is a second correlation in this story, and Microsoft is not in it. It runs between an outage and the next report of an outage. Ground every flight in the country, and within two hours an undated notice on one weather office's web page is a second federal failure. By Monday, one bank with a bug is "major banks". The internet did not break more often this week. It got better press.
+
+That is a claim, so it gets a block like the others. The block says: half measured.
+
+<details>
+<summary><b>Show the work:</b> three rates, and which of them rose</summary>
+
+**Three rates.** "I keep seeing outage stories" can mean three different things, and each needs its own counter.
+
+| What happened | Outages | Stories | What you saw |
+| --- | --- | --- | --- |
+| A real cluster | up | up | up |
+| A news wave | flat | up | up |
+| Frequency illusion | flat | flat | up, or the same and noticed more |
+
+**The claims above, scored.**
+
+| Claim | Standing |
+| --- | --- |
+| "Did not break more often" | Half supported. The one fixed counter in hand, ThousandEyes' weekly count of U.S. network outages, read 282 for 9 to 15 November against a mean of 263.4 for the eight weeks before: z = 0.22, an ordinary week. That counter is a weak witness. It did not rise in the weeks of the AWS, Azure or Cloudflare outages of late 2025, and it cannot see a private network, so the ground stop is not in it. |
+| "Got better press" | Not measured. Counting stories by date needs a news archive, and no session has got a count out of it yet. The protocol, the five queries and the script are committed and waiting. |
+| An undated notice as a second federal failure | The Weather Service, 13 November: a notice with no posting time on one office's page, reported as a nationwide problem within two hours of the ground stop. The agency answered the same afternoon that there was no radar outage and blamed outdated pages. Its answer covers the radars, not its communications in general. |
+| One bank as "major banks" | 16 November: the wires named up to six more banks beside Chase from user reports. Three of those said they had no problem. |
+| Not in the prose, and it cuts the other way | United's and Chase's outages would have been national news in an ordinary week too. A national story was visible for 5 of 6 comparable airline groundings in two years and for 3 of 4 comparable bank outages. Their being reported is not evidence of a lowered bar. |
+| Friday the 13th as the oldest news wave (the note further down) | A figure of speech with a finding behind it: after a key event, coverage presents earlier and later events as like it, and the impression is of more events whether or not there are more (Kepplinger and Habermeier, 1995; abstract read, paper not opened). No number depends on it. |
+
+**What the week's count loses.** Three of the failures reported between the 13th and the 17th do not, on what is public, look like separate failures. Amtrak's booking trouble was on the Friday, during the ground stop, and looks like a knock-on of it; our own table had filed it under the Monday. The Weather Service's rests on the undated notice. The other banks named beside Chase came from user reports, and those that answered said they were fine or pointed at transfers with another bank. That is what a news wave looks like from inside: reports multiplying around one real event.
+
+**The number this section is waiting for.**
+
+```math
+\text{multiplier} = \frac{\text{stories this week} \,/\, \text{stories in a usual week}}{\text{outages this week} \,/\, \text{outages in a usual week}}
+```
+
+Above 1 means the stories outran the outages. The denominator exists: 282 against a twelve-week mean of 323.1, which is 0.87. The numerator does not. Beside it will go the share of outage stories that use the word "cyberattack" or "hack", before and after the 13th.
+
+**Not measured at all.** What any one reader saw. That is the third column, and it is where the frequency illusion proper lives.
+
+**Can the counters be gamed?** Yes, each in its own way, and the cheapest to game, by our reckoning, is the count of stories. So they are not read as a lie detector. Set against each other, they rule things out. An operator's published mechanism, confirmed by someone with direct sight, rules out a phantom failure. A spike in user reports that the operator and an outside counter do not share rules out a real one. A story that also ran where a known compromise could not reach rules out that compromise as its source. What is left after the eliminations is the shape a deception would have to have. The list of what each counter can be fooled by, and what no public counter can separate, is [`measurements/INSTRUMENTS.md`](measurements/INSTRUMENTS.md).
+
+**Where the numbers come from.** [`measurements/RESULTS.md`](measurements/RESULTS.md) for the Weather Service, Amtrak, the banks and the like-for-like comparisons; [`measurements/RESULTS-3.md`](measurements/RESULTS-3.md) for the counter's reading of the week; [`measurements/PROTOCOL-3.md`](measurements/PROTOCOL-3.md) for how the stories will be counted, written before any counting. The counter was read through Network World's running report by an automated reader, twice. The numbers are printed by `python3 measurements/analyze.py` and `python3 measurements/nw_analyze.py`.
+
+</details>
+
 ## Causation
 
 There is no wire. Air traffic control voice and data ride a private network that L3Harris runs for the FAA; it does not pass through Exchange Online, and a controller's radio does not care whether anyone's calendar loads. If Microsoft caused the ground stop, it did so through people.
@@ -270,6 +320,8 @@ The most economical reading of the whole affair is also the dullest: two product
 
 </details>
 
+> **Added Tuesday 17 November**, a placeholder for the punchline. Friday the 13th is the oldest news wave there is. The date does nothing to a tanker or a router. What it does is tell you which of the day's mishaps belong together, and from then on each of them is an instance. A ground stop does the same job for a week. See [the news wave](#the-news-wave).
+
 ## So which is it?
 
 - **Coincidence:** the default, and nothing in the arithmetic rules it out.
@@ -376,6 +428,7 @@ The full chapter, with the recipe for recreating every step, is [`analysis/chapt
 | [`analysis/chapter-2-the-cluster.md`](analysis/chapter-2-the-cluster.md) | 17 November: the cluster, the denials, the news channel, and how to recreate it all |
 | [`scripts/the_week_after.py`](scripts/the_week_after.py) | Reproduces every number in the 17 November chapter |
 | [`data/`](data) | The outage list, the denials table, and the 178 affected organisations |
+| [`measurements/`](measurements) | Draft: the measurements behind the news wave. Protocols written before counting, results, and [what each counter can be fooled by](measurements/INSTRUMENTS.md) |
 | [`HANDOFF.md`](HANDOFF.md) | What is still open |
 
 To check the numbers: `python3 scripts/show_your_work.py` for Friday, `python3 scripts/the_week_after.py` for 17 November.

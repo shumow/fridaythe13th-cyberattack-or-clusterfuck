@@ -42,6 +42,7 @@ A status page, a statement, a post-incident report.
 - **Has already misled us:** it reads high in 26% of past weeks, its level drifts through the year, and it did not rise in the weeks of the AWS, Azure or Cloudflare outages of late 2025 (`RESULTS.md`, part A). A bank's internal bug or a classified network never appears on it.
 - **On purpose:** hard to inflate from outside, since that takes real failures on real paths. Easy to stay under: fail something it does not watch.
 - **Also:** we read it at two removes, from a trade publication's running page, through a reader that returns summaries.
+- **Latest reading:** for the week of the ground stop it read ordinary, 282 against a baseline of 263.4 (`RESULTS-3.md`). The ground stop itself is not in it.
 
 ### 4. The news archive (GDELT)
 

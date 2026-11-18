@@ -1,0 +1,9 @@
+== Events: the outside counter (ThousandEyes weekly U.S. outage counts, a_instrument.csv) ==
+baseline, 12 weeks from 17 Aug to 8 Nov 2026: mean 323.1; sample sd 118.2; range 160 to 537
+week of 9 to 15 Nov: 282; 0.87 times the baseline mean; z = -0.35; rank 8 of 13
+
+== Coverage: the news archive (nw_series.csv) ==
+not measured: nw_series.csv does not exist. The archive has not answered; see nw_requests.csv.
+
+== The multiplier ==
+not computed: there is no coverage series.

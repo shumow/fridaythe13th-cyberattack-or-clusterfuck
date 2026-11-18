@@ -136,6 +136,10 @@ Four is a thin list for two years. Of the ten pages opened, four were about outa
 
 **A precedent for the coincidence.** On 15 January 2025 two panel banks, Citi and Capital One, went down on the same day. Banking Dive wrote at the time that it was unknown whether the two were connected.
 
+## Addendum: the outside counter has the week (18 November, 06:25 UTC)
+
+Part A is finished for the week of the ground stop. Network World's page, now dated 17 November, gives 282 U.S. outages for 9 to 15 November (419 worldwide), read twice. Against the protocol's eight-week baseline that is z = 0.22, "ordinary", and 19th of the 46 weeks of 2026 published. There is no entry yet for 16 to 22 November. The write-up, with what the reading is and is not worth, is in `RESULTS-3.md`. Part A's text above is left as written on the 17th.
+
 ## Deviations from the protocol
 
 - **A.** The whole series back to 30 December 2024 was collected, not 2026 only. The two checks on the statistic were added after seeing the series and before any target value exists.
