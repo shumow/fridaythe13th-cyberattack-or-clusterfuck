@@ -11,7 +11,8 @@
 > - Item 6: three observers (calm, middle, suspicious). This is what version 1 has.
 > - Item 7: take the outside counter (ThousandEyes) out of the model and keep it as a chart. Version 1's frozen rules still have a slot for it, so no `instrument` row is to be logged under version 1; version 2 removes the slot.
 > - Item 8: set quiet-week visibility by class from measurement where there is one, and keep the tier figures elsewhere. A version 2 change. The only measured class so far is short airline groundings, 5 of 6.
-> - Items 9 and 10: frozen as the draft has them. The suggested changes go to version 2 unless Dan says otherwise.
+> - Item 9: add both rules in version 2. An event caused by a logged event is recorded but not counted as an arrival. A report the organisation denies enters with a 0.2 chance of having happened. Dan also wants the statistic itself tracked: how many knock-ons and denied reports gather around each real event, over time, and whether that number looks suspicious. It feeds the news-wave layer. Tally at the freeze: 1 knock-on (Amtrak, 13 Nov); 2 denied-report items (the Weather Service on 13 Nov; the other banks on 16 Nov, where 6 organisations were named, 3 denied any issue, 1 confirmed only delayed transfers and 2 did not comment). No baseline exists yet for an ordinary week.
+> - Item 10: frozen as the draft has it. The suggested change goes to version 2 unless Dan says otherwise.
 > - Raised by Dan before the freeze: the model has no place for a news wave or for misinformation. Agreed as the main addition for version 2; the gap is named in `MODEL-v1.md` under "What freezing does not fix". Until then phantoms and denied reports are logged as `context` rows.
 > - The freeze and the log live on the branch `claude/stoic-feynman-pwhm51`.
 > - Items 11 to 13 are still open.
