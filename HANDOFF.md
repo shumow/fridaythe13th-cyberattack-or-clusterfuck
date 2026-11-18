@@ -25,6 +25,7 @@ Dan, 18 November: keep track of inconsistencies and of stories that change; a pr
 ### Run log
 
 - 18 Nov 10:01 UTC. First run. 5 counted events, 3 after the ground stop. P(campaign): calm 0.03%, middle 0.3%, suspicious 3.4%. P(at least one attack): 3.0%, 8.9%, 27%. Found since the last notes: an Apple services outage on Tuesday afternoon, blamed on an internal update (off the panel, context row).
+- 18 Nov 10:08 UTC. Nine prospective rows from what the reclassification searches turned up. A ransomware group (n0n) listed JPMorgan Chase, Visa and Mastercard on its leak site; logged against the Chase outage as an unverified attack claim, which doubles its attack odds (middle observer: 1.3% to 2.5%). Visa confirmed a security incident at a third-party provider, no outage. The Director of National Intelligence gave a different wording of the NSA cause (a vulnerability patch that did not come back up). Rubio and Clayton: blanket reassurances. Three leads to check next run: the FBI assisting the FAA review, Wells Fargo confirming problems of its own, a Gmail disruption. P(campaign): 0.04%, 0.4%, 4.4%. P(at least one attack): 3.3%, 10%, 31%. All from search summaries; no page could be opened from this container (page fetches are blocked by the environment's network rules).
 
 Status as of Saturday, 14 November 2026.
 
