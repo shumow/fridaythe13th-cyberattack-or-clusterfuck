@@ -1,0 +1,32 @@
+{
+  "comment": "Fixed query strings for PROTOCOL-3.md, committed before any request. Order is the order of running.",
+  "suffix": " sourcecountry:US sourcelang:english",
+  "series": {
+    "startdatetime": "20260817000000",
+    "enddatetime": "20261118000000",
+    "mode": "TimelineVolRaw",
+    "format": "json"
+  },
+  "groups": {
+    "out": ["outage", "outages", "\"ground stop\""],
+    "it": ["network", "internet", "software", "online", "website", "systems"],
+    "att": ["cyberattack", "cyberattacks", "\"cyber attack\"", "hack", "hacked", "hackers"],
+    "att_strict": ["cyberattack", "cyberattacks", "\"cyber attack\""]
+  },
+  "queries": [
+    {"name": "OUT_IT", "groups": ["out", "it"]},
+    {"name": "BOTH", "groups": ["out", "it", "att"]},
+    {"name": "ATT", "groups": ["att"]},
+    {"name": "BOTH_STRICT", "groups": ["out", "it", "att_strict"]},
+    {"name": "OUT_PLAIN", "groups": ["out"]}
+  ],
+  "headlines": {
+    "query": "OUT_IT",
+    "first_day": "2026-11-02",
+    "last_day": "2026-11-17",
+    "mode": "ArtList",
+    "format": "json",
+    "maxrecords": 250,
+    "sort": "DateAsc"
+  }
+}
