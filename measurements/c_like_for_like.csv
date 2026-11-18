@@ -1,0 +1,7 @@
+airline,event_date,duration,stated_cause,flights_delayed,qualifies,dated_from,coverage_query_run_utc,national_list_domains_in_results,national_wire_or_network_copies_in_results,note
+Southwest,2026-10-09,about 2 hours,third-party technology provider (Amadeus),1500+,yes,Simple Flying (opened),2026-11-17T23:36Z,0,0,results were trade sites and older Southwest events; one NewsNation item of unknown date
+American,2026-07-28,45 minutes,technology issue,1387,yes,Simple Flying (opened),2026-11-17T23:36Z,0,2,one Fox Television Stations story on about 12 station sites; one ABC stations story on about 7
+JetBlue,2026-03-10,brief (55 minutes per one headline),system outage,172 per one headline,yes,airlive.net URL date and headlines,2026-11-17T23:36Z,0,3,ABC News story on goodmorningamerica.com; an AP headline on a Jamaican paper; a Reuters headline on Arab News
+United,2025-09-23,ground stop 30 minutes; resolved within an hour,connectivity failure,170+ per one headline,yes,Simple Flying (opened),2026-11-17T23:36Z,0,3,Fox Business; a Reuters-style headline on two foreign papers; Yahoo copy
+United,2025-08-06,"a few hours (began 17:12 CDT; end not stated)",technology disruption,1000+,duration not confirmed at 3 hours or less,Simple Flying and The Points Guy (opened),2026-11-17T23:36Z,0,2,one NPR story on about 10 member-station sites; UPI
+American,2024-12-24,not stated on the opened page,third-party vendor technology issue,,duration not confirmed at 3 hours or less,The Points Guy (opened),2026-11-17T23:36Z,1,2,npr.org itself plus member stations; Fox Weather

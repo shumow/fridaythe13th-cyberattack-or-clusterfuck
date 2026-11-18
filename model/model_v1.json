@@ -1,0 +1,59 @@
+{
+  "version": "1",
+  "primer_event": "faa-ground-stop",
+  "attention_window_days": 14,
+  "rate_prior": {"median_per_week": 2.0, "sigma_log": 0.8, "grid_low": 0.05, "grid_high": 40.0, "grid_points": 240},
+  "campaign_extra_rate_per_week": 3.0,
+  "attack_prior_cap": 0.5,
+  "observers": {
+    "calm": {"campaign_prior": 0.001, "attack_prior_mult": 0.3333333333},
+    "middle": {"campaign_prior": 0.01, "attack_prior_mult": 1.0},
+    "suspicious": {"campaign_prior": 0.1, "attack_prior_mult": 3.0}
+  },
+  "classes": {
+    "cloud_saas": {"attack_prior": 0.05, "stays_wrong": 0.15},
+    "aviation_system": {"attack_prior": 0.02, "stays_wrong": 0.30},
+    "airline_ops": {"attack_prior": 0.03, "stays_wrong": 0.15},
+    "bank": {"attack_prior": 0.03, "stays_wrong": 0.15},
+    "rail": {"attack_prior": 0.02, "stays_wrong": 0.25},
+    "telecom": {"attack_prior": 0.03, "stays_wrong": 0.15},
+    "markets": {"attack_prior": 0.03, "stays_wrong": 0.15},
+    "federal_civil": {"attack_prior": 0.03, "stays_wrong": 0.30},
+    "federal_classified": {"attack_prior": 0.05, "stays_wrong": 0.80}
+  },
+  "tiers_quiet_week_visibility": {"A": 0.95, "B": 0.25, "C": 0.03},
+  "existence": {
+    "single_newsroom_anonymous": 0.85,
+    "several_newsrooms": 0.97,
+    "on_record": 0.995,
+    "on_record_plus_data": 0.999
+  },
+  "survival_median_days": {"premature": 4.0, "wrong": 180.0},
+  "ladder": ["denial_generic", "mechanism_anonymous", "mechanism_named", "rca_preliminary", "rca_final"],
+  "kinds": {
+    "denial_generic": [0.9, 1.0],
+    "mechanism_anonymous": [0.7, 0.95],
+    "mechanism_named": [0.4, 0.9],
+    "rca_preliminary": [0.1, 0.6],
+    "rca_final": [0.03, 0.5],
+    "independent_corroboration": [0.3, 0.3],
+    "regulator_finding": [0.02, 0.05],
+    "official_contradiction": [1.5, 1.2],
+    "attack_claim_unverified": [2.0, 2.0],
+    "attack_attribution_credible": [30.0, 30.0],
+    "official_reversal": [1000.0, 1000.0]
+  },
+  "resolving_kinds": ["attack_attribution_credible", "official_reversal"],
+  "no_effect_kinds": ["blanket_reassurance", "context", "checkpoint"],
+  "instrument": {"delta": 1.0, "cap": 5.0},
+  "panel": {
+    "federal": ["any U.S. federal agency system"],
+    "airlines_and_rail": ["American", "Delta", "United", "Southwest", "Alaska (incl. Hawaiian)", "JetBlue", "Spirit", "Frontier", "Allegiant", "Sun Country", "Amtrak"],
+    "banks_and_payments": ["JPMorgan Chase", "Bank of America", "Citi", "Wells Fargo", "U.S. Bank", "PNC", "Truist", "Capital One", "Goldman Sachs", "TD Bank", "Visa", "Mastercard", "American Express", "Zelle", "Fedwire and FedACH", "The Clearing House"],
+    "telecom": ["Verizon", "AT&T", "T-Mobile", "Comcast", "Charter", "Starlink"],
+    "cloud": ["Amazon Web Services", "Microsoft (Azure, Microsoft 365)", "Google (Cloud, Workspace)", "Cloudflare", "Akamai", "Fastly", "Oracle Cloud"],
+    "markets": ["NYSE", "Nasdaq", "CME", "DTCC"]
+  },
+  "national_outlets": ["AP", "Reuters", "Bloomberg", "The New York Times", "The Wall Street Journal", "The Washington Post", "CNN", "NBC", "ABC", "CBS", "Fox News", "NPR", "CNBC", "USA Today", "Axios", "Time"],
+  "inclusion_rule": "An event is counted when all three hold: the organisation is on the panel; an IT or communications system was down or degraded for at least 30 minutes; and a national outlet or wire on the list reported it within 48 hours."
+}

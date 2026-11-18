@@ -2,6 +2,43 @@
 
 Status as of Saturday, 14 November 2026.
 
+## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
+
+For a session whose shell can reach the internet. The text session that wrote this could not: on 18 November at 00:28 UTC its request to the archive was refused by the egress proxy with HTTP 403. Dan has said he is turning network access on.
+
+**Start here.** `git fetch origin && git checkout model-v1-draft`. This block exists only on that branch. Read `measurements/RESULTS.md` for what the first round found and `measurements/PROTOCOL-2.md` for what to run.
+
+**The job.**
+
+1. Test the network yourself, do not assume. One request from the shell:
+   `curl -sS -m 30 'https://api.gdeltproject.org/api/v2/doc/doc?query=outage&mode=timelinevolraw&format=csv&timespan=1w' | head`
+   If it is refused, add one dated line under this block with the error, push, and stop. Do not route around a refusal and do not report another failed pilot.
+2. If it works, run `PROTOCOL-2.md` in its own order: the three gates, part B2 (the backwards count), part C2 (coverage within 48 hours for the airline and bank events), part A (one re-read). Expect about 500 requests at one every six seconds, so under an hour of waiting plus the reading.
+3. Write `measurements/RESULTS-2.md`, commit and push to `model-v1-draft`, then replace this block with a short dated status.
+
+**Rules.**
+
+- Work on `model-v1-draft` only. Nothing goes to `main`: no data, no merge.
+- Do not freeze the model: no `model/model_v1.sha256`, no `log/`, no `output/`, and no change to `model/model_v1.json`, `model/MODEL-v1.md` or `scripts/pipeline.py`. The open choices are Dan's and are listed in `model/DECISIONS.md`.
+- Do not edit `data/outages.csv`, the README or the chapters. Corrections wait for the one-time revision.
+- `PROTOCOL-2.md` was committed before any counting. Do not edit it. Where it cannot be followed as written, do the nearest thing and list the deviation in `RESULTS-2.md`. Commit the query strings before touching a sampled week, as it says.
+- Every number in a write-up comes from a script in the repo. Record which pages were opened and which were seen only as a title.
+
+## Update, Tuesday 17 November 2026, evening: the measurements (branch `model-v1-draft`)
+
+This block is on the branch `model-v1-draft` only (draft pull request #2). `main` has no model, no measurements and no new data.
+
+- **State of the model.** `model/` and `scripts/pipeline.py` are a draft. Nothing is frozen: there is no `model/model_v1.sha256`, no `log/`, no `output/`. The open choices at the end of `model/MODEL-v1.md` wait for Dan.
+- **Measurements.** `measurements/PROTOCOL.md` was committed before any counting. First results and every deviation are in `measurements/RESULTS.md`; the numbers come from `python3 measurements/analyze.py`.
+  - A (ThousandEyes weekly counts): baseline in hand, the week of 9 to 15 November not published as of 18 November 00:00 UTC. To finish: re-read the Network World 2026 page, fill the target row of `a_instrument.csv`, rerun.
+  - B (the inclusion rule applied to past weeks): the pilot shows the search method cannot do the job. Needs a replacement instrument before the 28-row table can be redone.
+  - C (like for like): done for airlines. For banks the first step is done: four past outages found, written up in an addendum to `RESULTS.md`. Coverage for both is to be redone with the dated archive.
+- **Second round.** `measurements/PROTOCOL-2.md`, committed before its counting, replaces the failed search method with a dated news archive. It is the task at the top of this file.
+- **Decisions.** Everything that waits for Dan is in `model/DECISIONS.md`, thirteen items, each with a suggested answer.
+- **Found on the way, not yet applied anywhere.** (1) The FAA published its own account on 15 November; it names Juniper routers and two sites, where chapter 2 says "reportedly Cisco". (2) Amtrak's outage was Friday 13 November, during the ground stop; `data/outages.csv` has it on the 16th. (3) A reported Weather Service outage on the 13th was denied by the agency. (4) Two federal systems were taken offline by security incidents in October. All four are written up in `measurements/RESULTS.md` under "Found on the way". They wait for the one-time revision and, once the model is frozen, for the log.
+- **Of the open items below:** item 3 of the first list (router vendor and site at source) is answered by the FAA's page. Item 4 (Mullin) is half answered: ISMG quotes him on "zero evidence" of a cyberattack; his "not connected" remark still rests on CNN.
+- **This session's limits.** The shell has no network access, so nothing could be installed or fetched by script. The search tool returns titles and links only and refuses a filter made of national news domains.
+
 ## Update, Tuesday 17 November 2026
 
 - Added chapter 2, the cluster: `analysis/chapter-2-the-cluster.md`, `scripts/the_week_after.py`, `data/`, and a new README section with placeholder prose. Friday's text is untouched apart from a dated banner at the top of the README.

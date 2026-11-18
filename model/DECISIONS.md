@@ -1,0 +1,83 @@
+# Decisions waiting for Dan
+
+Written 17 November 2026. The model in this folder is a draft. It freezes when a commit adds `model/model_v1.sha256`, and that commit waits for the answers below. Until then no event from the week can be run through the model, so the log, the dated curves and chapter 3 all wait too. The measurements do not wait.
+
+Each item gives what the draft does now, what the first measurements say about it, and the choices. The first choice listed is the one I would take. "Take the suggestions" is a complete answer.
+
+## The one that sets the timetable
+
+**1. Freeze now and improve by version, or measure first and freeze later?**
+
+The draft's attack priors and visibility figures are judgments. Some of them can be measured, but only with the dated archive, which needs a session with network access.
+
+- **Freeze now with the judgments, measure for version 2.** The rules already allow it: a change is a numbered version with a changelog and the whole log is rerun, so both curves show. Every day without a freeze turns more of the week's news into hindsight rows.
+- **Measure first, freeze once.** One model, no version 2 on day three. The cost is that everything reported before the freeze is scored by rules written after seeing it.
+
+**The deadline either way.** Microsoft's final report is due after 20 November, and the FAA's root cause could come any day. Whatever is frozen before they arrive scores them by rules written first. Whatever is not, scores them in hindsight.
+
+## The five open choices in `MODEL-v1.md`
+
+**2. Are the three states right?** Benign; attack with an account that is honestly premature; attack with an account that stays wrong, no motive modelled.
+
+- **Keep the three.** They are the two cases you asked for plus the innocent one.
+- Collapse to two (benign, attack) and drop the question of whether the account stays wrong.
+
+**3. What a statement is worth.** The draft's principle: a statement from the side responsible moves "premature" a lot and "stays wrong" hardly at all, because a wrong account would say the same thing. Only independent evidence moves "stays wrong".
+
+- **Keep the principle and the drafted numbers**, and show a sensitivity table with every ratio halved and doubled.
+- Keep the principle, and you set the anchors yourself: a preliminary published report (now 0.1 and 0.6), a regulator's finding (0.02 and 0.05).
+
+**4. Attack priors: assumed or measured?** The draft assumes 2% to 5% by class.
+
+- **Assumed for version 1, with the three observers spreading them ninefold; measured for version 2** from the archive's event list, class by class, wherever there are at least 20 events.
+- Measured before any freeze. This is the long road in item 1.
+
+The first measurements say one thing here. Seven federal systems turned up by accident and two were security incidents. That is a tilted sample, but 3% for federal systems is the prior most likely to be wrong.
+
+The search you asked for on the 17th, for outages first called "not an attack" and later reclassified, has not been started. It would also give the number behind the draft's four-day median for an honest account to correct itself. Say the word and it starts with its own protocol.
+
+**5. The campaign layer.** The draft counts events for 14 days after the ground stop, with a campaign adding 3 a week to a base rate centred on 2 a week.
+
+- **Let a campaign start before the ground stop**: count over a calendar window fixed in advance, 1 October to 30 November. The two October security incidents (the bankruptcy courts' noticing system and FEC filing) then count. Keep the 14 days after the ground stop for the attention analysis only.
+- Keep the window as drafted, starting at the ground stop.
+
+**6. Three observers or one prior?**
+
+- **Three** (calm, middle, suspicious). If they converge the evidence is doing the work.
+- One.
+
+## Four smaller ones the measurements raised
+
+**7. The outside counter.** The draft lets a ThousandEyes z-score move the campaign odds up to fivefold. On 87 past weeks it reads high 26% of the time and did not rise in the weeks of the AWS, Azure or Cloudflare outages.
+
+- **Take it out of the model** and keep it as a chart.
+- Keep it, capped at a factor of 1.5.
+
+**8. Quiet-week visibility.** The draft says a tier-B event has a 0.25 chance of being national news in a quiet week. For short airline groundings the measured figure is 5 of 6.
+
+- **Set visibility by class from measurement where there is one**, and keep the tier figures elsewhere.
+- Keep the tier figures.
+
+**9. Knock-ons and denied reports.** Amtrak's outage was a knock-on of the ground stop. The Weather Service outage was denied by the agency. The draft has no rule for either.
+
+- **Add both**: an event caused by a logged event is recorded but not counted as an arrival, and a report the organisation denies enters with a 0.2 chance of having happened.
+- Leave them out of the log altogether.
+
+**10. Federal systems.** The panel says "any U.S. federal agency system", which cannot be counted.
+
+- **Use the fixed list in `measurements/PROTOCOL-2.md`.**
+- Keep it open-ended and accept that its base rate is a guess.
+
+## Three that are not about the model
+
+**11. The source of truth.** On the 17th you asked for the rules to be written down before agents run, with "some sort of source of truth for validating". I took that to mean: the repo is the source of truth, rules are committed before the rows they score, and `scripts/validate.py` checks that from git history. Is that what you meant?
+
+**12. Cisco or Juniper.** Chapter 2, on `main`, says the FAA's router was "reportedly Cisco". The FAA's own page of 15 November says Juniper.
+
+- **Add a dated note to chapter 2 now.** A note is not a rewrite, and the public page is contradicted by the primary source.
+- Hold it for the one-time revision with everything else.
+
+**13. The Wall Street Journal's NSA story.** It is the best remaining check on whether the software-update account is independent of CNN's six sources, and it is behind a paywall.
+
+- **Paste the text into a chat**, or
+- let a session read it through the browser on your computer, signed in as you.
