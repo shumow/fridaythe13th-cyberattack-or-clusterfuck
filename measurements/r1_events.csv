@@ -1,0 +1,13 @@
+org,country,outage_began,first_account,acknowledged_as_attack,acknowledged_by,delay_days,from_queries,status,note
+Colt Technology Services,UK,12 August 2025 (per summary),'technical issue' (per summary),confirmed a cyberattack; WarLock ransomware (per summary),the organisation,not fixed,2,unresolved: page not opened,Dates of the first account and the acknowledgment not in the summary.
+Dish Network,US,February 2023 (from memory; not in summary),"'internal systems issue', 'VPN issue' (per summary)",confirmed ransomware; SEC filing (per summary),"the organisation, in an SEC filing",not fixed,2,unresolved: page not opened,
+Collins Aerospace (RTX) airport check-in,US / Europe,September 2025,not in summary,RTX confirmed ransomware in a later SEC filing (per summary),SEC filing,not fixed,5,unresolved: page not opened,Was on the list of expected cases in the protocol.
+Kettering Health,US,May 2025 (from memory; not in summary),'IT outage' (per summary),confirmed ransomware; named Interlock on 6 June (per summary),the organisation,not fixed,7,unresolved: page not opened,"The summary's 6 June date is for naming the group, not for the first acknowledgment."
+McLaren Health Care,US,early August (year not in summary),'IT and phone system disruptions' (per summary),"confirmed a cyberattack, later ransomware (per summary)",the organisation,not fixed,7,unresolved: page not opened,
+CommonSpirit Health,US,October 2022,'IT outage' (per summary),confirmed ransomware (per summary),the organisation,not fixed,7,unresolved: page not opened,
+UMC Health System (Lubbock),US,not in summary,'IT outage' (per summary),the first confirmation already named ransomware (per summary),the organisation,not fixed,7,unresolved: page not opened; may not be a reclassification,
+Maryland hospital (unnamed in the title),US,not in summary,'IT outage' (title),ransomware (title),not in summary,not fixed,7,unresolved: page not opened,
+Foxconn (Wisconsin),US,not in summary,'technical issue' (per summary),title says cyberattack confirmed; summary says ransomware not confirmed,the organisation,not fixed,2,unresolved: page not opened,
+National Presto Industries,US,1 March 2025,the 8-K's own first description is 'a system outage caused by a cybersecurity incident',same filing,SEC filing,0,4,not a reclassification on the summary: the first account seen already says cybersecurity,
+City of St. Paul,US,2025,not in summary,not in summary,not in summary,not fixed,6,unresolved: page not opened,
+Microsoft (an earlier outage),US,not in summary,not in summary,an update says Microsoft 'confirmed' an attempted cyberattack (per summary),"the organisation, per the summary",not fixed,1,unresolved: page not opened; which outage it is about is unknown,

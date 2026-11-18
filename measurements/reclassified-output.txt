@@ -1,0 +1,18 @@
+R1 searches run: 8; results saved: 74
+  this week's outages: 44 (59%)
+  candidate past case: 15 (20%)
+  other: 15 (20%)
+  by query, share about this week's outages:
+    query 1: 8 of 9
+    query 2: 6 of 9
+    query 3: 6 of 9
+    query 4: 1 of 9
+    query 5: 7 of 10
+    query 6: 8 of 9
+    query 7: 0 of 10
+    query 8: 8 of 9
+Pages attempted: 12; opened: 0
+Candidate past cases: 12
+  unresolved: 11
+  not a reclassification on the summary: 1
+Reclassified events with both dates fixed: 0
