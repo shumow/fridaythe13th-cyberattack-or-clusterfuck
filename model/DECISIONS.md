@@ -10,7 +10,8 @@
 > - Item 5: let a campaign start before the ground stop. Count over the calendar window fixed in advance, 1 October to 30 November 2026, so the two October security incidents count; keep the 14 days after the ground stop for the attention analysis only. Answered after the freeze, so this is a version 2 change.
 > - Item 6: three observers (calm, middle, suspicious). This is what version 1 has.
 > - Item 7: take the outside counter (ThousandEyes) out of the model and keep it as a chart. Version 1's frozen rules still have a slot for it, so no `instrument` row is to be logged under version 1; version 2 removes the slot.
-> - Items 8 to 10: frozen as the draft has them. The suggested changes go to version 2 unless Dan says otherwise.
+> - Item 8: set quiet-week visibility by class from measurement where there is one, and keep the tier figures elsewhere. A version 2 change. The only measured class so far is short airline groundings, 5 of 6.
+> - Items 9 and 10: frozen as the draft has them. The suggested changes go to version 2 unless Dan says otherwise.
 > - Raised by Dan before the freeze: the model has no place for a news wave or for misinformation. Agreed as the main addition for version 2; the gap is named in `MODEL-v1.md` under "What freezing does not fix". Until then phantoms and denied reports are logged as `context` rows.
 > - The freeze and the log live on the branch `claude/stoic-feynman-pwhm51`.
 > - Items 11 to 13 are still open.
