@@ -2,6 +2,19 @@
 
 Status as of Saturday, 14 November 2026.
 
+## Update, Tuesday 17 November 2026, evening: the measurements (branch `model-v1-draft`)
+
+This block is on the branch `model-v1-draft` only (draft pull request #2). `main` has no model, no measurements and no new data.
+
+- **State of the model.** `model/` and `scripts/pipeline.py` are a draft. Nothing is frozen: there is no `model/model_v1.sha256`, no `log/`, no `output/`. The open choices at the end of `model/MODEL-v1.md` wait for Dan.
+- **Measurements.** `measurements/PROTOCOL.md` was committed before any counting. First results and every deviation are in `measurements/RESULTS.md`; the numbers come from `python3 measurements/analyze.py`.
+  - A (ThousandEyes weekly counts): baseline in hand, the week of 9 to 15 November not published as of 18 November 00:00 UTC. To finish: re-read the Network World 2026 page, fill the target row of `a_instrument.csv`, rerun.
+  - B (the inclusion rule applied to past weeks): the pilot shows the search method cannot do the job. Needs a replacement instrument before the 28-row table can be redone.
+  - C (like for like): done for airlines. Banks, rail and federal systems are next.
+- **Found on the way, not yet applied anywhere.** (1) The FAA published its own account on 15 November; it names Juniper routers and two sites, where chapter 2 says "reportedly Cisco". (2) Amtrak's outage was Friday 13 November, during the ground stop; `data/outages.csv` has it on the 16th. (3) A reported Weather Service outage on the 13th was denied by the agency. (4) Two federal systems were taken offline by security incidents in October. All four are written up in `measurements/RESULTS.md` under "Found on the way". They wait for the one-time revision and, once the model is frozen, for the log.
+- **Of the open items below:** item 3 of the first list (router vendor and site at source) is answered by the FAA's page. Item 4 (Mullin) is half answered: ISMG quotes him on "zero evidence" of a cyberattack; his "not connected" remark still rests on CNN.
+- **This session's limits.** The shell has no network access, so nothing could be installed or fetched by script. The search tool returns titles and links only and refuses a filter made of national news domains.
+
 ## Update, Tuesday 17 November 2026
 
 - Added chapter 2, the cluster: `analysis/chapter-2-the-cluster.md`, `scripts/the_week_after.py`, `data/`, and a new README section with placeholder prose. Friday's text is untouched apart from a dated banner at the top of the README.
