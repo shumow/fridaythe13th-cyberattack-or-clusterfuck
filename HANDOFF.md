@@ -24,6 +24,8 @@ For a session whose shell can reach the internet. The text session that wrote th
 - `PROTOCOL-2.md` was committed before any counting. Do not edit it. Where it cannot be followed as written, do the nearest thing and list the deviation in `RESULTS-2.md`. Commit the query strings before touching a sampled week, as it says.
 - Every number in a write-up comes from a script in the repo. Record which pages were opened and which were seen only as a title.
 
+**18 November 2026, 02:25 UTC, Code session (branch `claude/stoic-feynman-pwhm51`).** The network gate passed once the archive's host was allowed, but the run is stopped before Gate 2. The archive rate-limits this container's outbound address: of 26 logged attempts between 01:38 and 02:22 UTC, spaced from 6.5 seconds to 2 minutes apart, 2 were answered (the rest HTTP 429 or a reset connection). Both answers were "Your query was too short or too long", for the airline query with twelve names (about 600 characters) and with six (393). No query has worked, no sampled week has been touched, and `b2_queries.json` does not exist. The initial test and its retries outside the logger (five requests, one answered) are not in `b2_requests.csv`. Waiting for Dan.
+
 ## Update, Tuesday 17 November 2026, evening: the measurements (branch `model-v1-draft`)
 
 This block is on the branch `model-v1-draft` only (draft pull request #2). `main` has no model, no measurements and no new data.
