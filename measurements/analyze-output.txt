@@ -65,6 +65,17 @@ all six found: n=6; a national outlet's own domain in the results: 1; a national
 events found in the two-year window: 6 (first 2024-12-24, last 2026-10-09): at least 3.0 a year, a lower bound from three searches
 chance of at least one such grounding in any given 5 days at that rate: 4.0%
 
+== C. Like for like, banks: step 1 (PROTOCOL-2.md, part C1) ==
+trade-site searches: 3; results: 30; pages opened: 10
+events inside the two-year window that meet the rule: 4; with three hours or more confirmed: 2
+    2025-01-15 Citi: mobile app login; about 24 hours
+    2025-01-15 Capital One: direct deposits, balances and login; 4 to 5 days
+    2025-04-29 Citi: online and mobile banking; not stated
+    2025-05-02 Zelle: transfers at several banks; not re-read in this pass; chapter 2 has it running into the next day (Tom's Guide)
+two panel banks with trouble starting the same day, 2025-01-15: Citi and Capital One
+old coverage method, each event's own search: a national outlet's own domain in 0 of 4; a wire or network story visible in 1 of 4
+a national story seen anywhere in this pass, other searches and opened pages included: 3 of 4
+
 == By-catch: dated events the pilot turned up while looking for other weeks ==
 dated events at panel organisations: 15; inside the two-year window: 12; of those, absent from data/outages.csv: 8
 absent ones by class: federal 7, other 1

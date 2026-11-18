@@ -240,6 +240,41 @@ rate = len(c) / years
 print(f"chance of at least one such grounding in any given 5 days at that "
       f"rate: {1 - math.exp(-rate * 5 / 365):.1%}")
 
+# ---------------------------------------------------------------- C, banks
+print("\n== C. Like for like, banks: step 1 (PROTOCOL-2.md, part C1) ==")
+cb = rows("c_banks.csv")
+found = rows("c_banks_raw_results.csv")
+opened = rows("c_banks_pages_opened.csv")
+print(f"trade-site searches: "
+      f"{len({r['query'] for r in found if r['step'].startswith('find')})}; "
+      f"results: {sum(r['step'].startswith('find') for r in found)}; pages "
+      f"opened: {len(opened)}")
+conf = [r for r in cb if r["duration_confirmed"] == "yes"]
+print(f"events inside the two-year window that meet the rule: {len(cb)}; "
+      f"with three hours or more confirmed: {len(conf)}")
+for r in cb:
+    print(f"    {r['event_date']} {r['org']}: {r['what']}; {r['duration']}")
+starts = {}
+for r in cb:
+    starts.setdefault(r["event_date"], []).append(r["org"])
+for d, orgs in sorted(starts.items()):
+    if len(orgs) > 1:
+        print(f"two panel banks with trouble starting the same day, {d}: "
+              f"{' and '.join(orgs)}")
+own = sum(int(r["national_list_domains_in_results"]) > 0 for r in cb)
+vis = sum(int(r["national_list_domains_in_results"]) > 0 or
+          int(r["national_wire_or_network_copies_in_results"]) > 0
+          for r in cb)
+anyev = sum(int(r["national_list_domains_in_results"]) > 0 or
+            int(r["national_wire_or_network_copies_in_results"]) > 0 or
+            r["national_story_seen_elsewhere_in_this_pass"].startswith("yes")
+            for r in cb)
+print(f"old coverage method, each event's own search: a national outlet's "
+      f"own domain in {own} of {len(cb)}; a wire or network story visible "
+      f"in {vis} of {len(cb)}")
+print(f"a national story seen anywhere in this pass, other searches and "
+      f"opened pages included: {anyev} of {len(cb)}")
+
 # ---------------------------------------------------------------- by-catch
 print("\n== By-catch: dated events the pilot turned up while looking for "
       "other weeks ==")
