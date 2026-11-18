@@ -258,13 +258,14 @@ So the question moves up a level. Two draws from the same distribution are the d
 <summary><b>Show the work:</b> what is on the record now, and what Friday got wrong</summary>
 
 - **Microsoft.** Preliminary post-incident report, 15 November: lock contention on Windows servers in Microsoft's own networking gateway, from a fix rolled out worldwide since July 2026, exposed when Teams traffic failed over about 15 hours before, with nearly 14% of gateway capacity already out. Impact ran 16:20 UTC Thursday to 16:10 UTC Friday. Read through [365Fanatic](https://www.365fanatic.com/m365-outage-12-november-2026/) and [Cyber Security News](https://cybersecuritynews.com/microsoft-outage-incident-report); the report itself was not read.
-- **FAA.** Duffy, 14 November: during copper-to-fibre work by L3Harris, a newly installed router flooded the network with more than 1,000 connection attempts every four to five seconds. Whether user error, installer error or a faulty router is not established. [Scripps News](https://www.scrippsnews.com/life/travel/what-caused-the-faa-ground-stop-officials-point-to-router-failure). The router is reported as Cisco by CBS News, seen here only through [Wikipedia](https://en.wikipedia.org/wiki/2026_FAA_nationwide_ground_stop).
+- **FAA.** Duffy, 14 November: during copper-to-fibre work by L3Harris, a newly installed router flooded the network with more than 1,000 connection attempts every four to five seconds. Whether user error, installer error or a faulty router is not established, and the FAA says it does not have a root cause. [Scripps News](https://www.scrippsnews.com/life/travel/what-caused-the-faa-ground-stop-officials-point-to-router-failure). The site was El Dorado, Arkansas. The new routers are Juniper, replacing Cisco units about 25 years old, and on 17 November the FAA paused the installations: [CNBC](https://www.cnbc.com/2026/11/17/faa-ground-stop-routers.html), [AP via HuffPost](https://www.huffpost.com/entry/ap-us-nationwide-ground-stop_n_6afca1d4e4b0e902c23b50fc). [CBS News](https://www.cbsnews.com/news/faa-issues-nationwide-ground-stop/) reports instead that the FAA believed the old Cisco routers were at fault. All four pages were opened.
 
 | Friday said | Now |
 | --- | --- |
 | The ground stop landed inside an open Microsoft incident | Microsoft's impact ended 4 hours 44 minutes before the ground stop |
 | Microsoft's change may have shipped on Patch Tuesday | Right shape, wrong date: rolled out since July, exposed in November |
-| The same vendor update on both sides is open | Closed on the public accounts: Microsoft's own software on one side, a router on the other |
+| The same vendor update on both sides is open | Closed on the public accounts: Microsoft's own software on one side, a Juniper or Cisco router on the other |
+| Mullin's denial rests on CNN alone | CBS News and KCRA carry it on their own reporting |
 | The Friday superstition covers the FAA side only | Stands |
 
 Microsoft's report is preliminary and the FAA's cause is unconfirmed, so Friday's numbers are still not revised.
@@ -288,23 +289,25 @@ The rate fitted from [`data/outages.csv`](data/outages.csv) under a strict defin
 
 What the window does not pay for is deciding afterwards which events count. Chase is the third. NSA Net is the fourth, and it is public only because six people talked; comparable outages in the previous two years would not be in the list. The same week's coverage also mentions United and Amtrak, which would make six, and no rate fitted from "biggest outages" roundups can produce six. That says the bar for what gets reported dropped this week, and the base rate at that lower bar has not been measured. At 30 a year, four in five days is a 34% event.
 
-Ten of the 28 rows in the list are from memory with no page behind them. The file marks which.
+Every row in the list has a page behind it: 24 opened, 4 known from search excerpts. Ten were first written from memory and then checked, which moved one date and no rate. The list is still incomplete, so 12.4 a year is a floor. And the tiers are not applied evenly: United's ground stop in August 2025 counts under the strict definition and United's halt this Monday does not. Count it and the week has five, a 0.1% event at the fitted rate.
 
 </details>
 
 <details>
 <summary><b>Show the work:</b> what a denial is worth</summary>
 
-For each statement: the probability of hearing it if the event was an attack, divided by the probability of hearing it if it was not. All of these ratios are assumptions, with reasons, in [`data/denials.csv`](data/denials.csv).
+For each statement: the probability of hearing it if the event was an attack, divided by the probability of hearing it if it was not. All of these ratios are assumptions, with reasons and with a low and a high for each, in [`data/denials.csv`](data/denials.csv).
 
 | Event | Day-one denial | Strongest statement since |
 | --- | --- | --- |
 | Microsoft 365 | 0.9 | 0.15, a published mechanism |
 | FAA | 0.9 | 0.4, named officials and a mechanism, cause unconfirmed |
 | Chase | 0.7 | 0.7 |
-| NSA Net | 0.9 | 0.9, unnamed sources, nothing checkable |
+| NSA Net | 0.9 | 0.8, unnamed sources say a software patch, nothing checkable |
 
-Against "all four were attacks", the day-one denials multiply to 0.51 and the strongest statements to 0.038. Four generic denials are worth a factor of two. Two checkable mechanisms are worth a factor of twenty-five. Mullin's "98 percent certainty" is scored at 1.0: [Townhall via WCBM](https://wcbm.com/national-headline/markwayne-mullin-addresses-fears-of-a-cyberattack-after-a-string-of-major-us-outages/).
+Against "all four were attacks", the day-one denials multiply to 0.51 and the strongest statements to 0.034. Four generic denials are worth a factor of two. The strongest account per event is worth a factor of thirty.
+
+Those are central guesses. Across the ranges in the file the first factor runs from 1.1 to 7 and the second from 4 to 500. The ordering survives every setting; the size is not measured. And the products say nothing about a coordinated cover story, under which every denial would be issued either way and every ratio is 1. Mullin's "98 percent certainty" is scored at 1.0: [Townhall via WCBM](https://wcbm.com/national-headline/markwayne-mullin-addresses-fears-of-a-cyberattack-after-a-string-of-major-us-outages/).
 
 The outage with the weakest denial is the one whose root cause will never be published.
 
@@ -319,7 +322,7 @@ Yes, and it does not reach the NSA story.
 - The code could rewrite what a visitor sees. It was built to swap cryptocurrency addresses, skim cards and push iOS exploit kits.
 - It was live for at most 18 hours 50 minutes on Monday, 04:21 to 23:11 UTC. A syndicated copy of the NSA story was published by [WRAL](https://www.wral.com/news/local/national-security-communications-network-outage-november-2026/) at 16:41 UTC on Tuesday, 17.5 hours after the all-clean.
 - The story that does overlap is Chase: the outage began inside the window. Chase's account was carried by AP, Reuters and Barron's, so it does not depend on CNN's page.
-- The NSA story still rests on one newsroom and six unnamed sources. A Wall Street Journal report blaming a software update was seen only as a headline.
+- The NSA story no longer rests on one newsroom. [Nextgov](https://www.nextgov.com/digital-government/2026/11/classified-nsa-communications-network-down-people-familiar-say/417277/) has six people, four of whom tie it to software upgrades, and Reuters relays one person telling the Wall Street Journal the network was offline for a patch. Every source is unnamed and the NSA has said nothing on the record.
 
 </details>
 

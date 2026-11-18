@@ -5,7 +5,7 @@ Microsoft impact ended before the ground stop by: 4:44:00
 
 == The outage list (data/outages.csv) ==
 rows: 28 | before this week: 22 | this week: 6
-how each row is sourced: {'memory': 10, 'opened': 15, 'excerpt': 3}
+how each row is sourced: {'opened': 24, 'excerpt': 4}
 strict (tier A): 16 events in 725 d = 8.1/yr (lower bound); 15 in the well-covered 440 d = 12.4/yr
 loose (A and B): 22 events in 725 d = 11.1/yr (lower bound); 20 in the well-covered 440 d = 16.6/yr
 this week, strict: 4 events: Microsoft, FAA, JPMorgan Chase, NSA
@@ -22,26 +22,28 @@ lam/yr   k>=2      k>=3      k>=4      k>=5      k>=6
     30   1.000    0.949    0.338    0.043    0.004    
     40   1.000    0.997    0.668    0.141    0.016    
     60   1.000    1.000    0.982    0.569    0.131    
-fitted strict (tier A), lam=12.4/yr: P(>=3)=0.249, P(>=4)=0.016, P(>=6)=0.000  [k>=4 is 2.1 sigma]
-fitted loose (A and B), lam=16.6/yr: P(>=3)=0.468, P(>=4)=0.047, P(>=6)=0.000  [k>=4 is 1.7 sigma]
+fitted strict (tier A), lam=12.4/yr: P(>=2)=0.965, P(>=3)=0.249, P(>=4)=0.016, P(>=5)=0.001, P(>=6)=0.000  [k>=4 is 2.1 sigma]
+fitted loose (A and B), lam=16.6/yr: P(>=2)=0.997, P(>=3)=0.468, P(>=4)=0.047, P(>=5)=0.003, P(>=6)=0.000  [k>=4 is 1.7 sigma]
 
 == Sanity check on the simulation (first-order approximation) ==
 lam=12: P(>=4) is roughly 1-exp(-N*tail) = 0.016
 lam=30: P(>=4) is roughly 1-exp(-N*tail) = 0.400
 
 == Denials as evidence (data/denials.csv) ==
-  Microsoft 365    lr=0.9   no indication of malicious activity
-  Microsoft 365    lr=0.15  preliminary post-incident report: latent gateway defect fr
-  FAA              lr=0.9   no indication of a nefarious act
-  FAA              lr=0.4   router flooding the network during copper-to-fibre mainten
-  JPMorgan Chase   lr=0.7   software bug in on-premise hardware systems; no evidence i
-  NSA Net          lr=0.9   no evidence of a cyberattack at this point
-  All of the above lr=1.0   98 percent certainty this is not a cyberattack; the homela
-product, day-one denials only: 0.51
-product, strongest statement per event: 0.038  {'Microsoft 365': 0.15, 'FAA': 0.4, 'JPMorgan Chase': 0.7, 'NSA Net': 0.9}
-prior 0.01: after day-one denials 0.0051; after the specific accounts 0.00038
-prior 0.001: after day-one denials 0.00051; after the specific accounts 3.8e-05
-prior 0.0001: after day-one denials 5.1e-05; after the specific accounts 3.8e-06
+  Microsoft 365    day_one  lr=0.9   [0.7, 1.0]  no indication of malicious activity
+  Microsoft 365    later    lr=0.15  [0.05, 0.4]  preliminary post-incident report: latent
+  FAA              day_one  lr=0.9   [0.7, 1.0]  no indication of a nefarious act
+  FAA              later    lr=0.4   [0.2, 0.7]  router flooding the network during coppe
+  JPMorgan Chase   day_one  lr=0.7   [0.4, 0.9]  software bug in on-premise hardware syst
+  NSA Net          day_one  lr=0.9   [0.7, 1.0]  no evidence of a cyberattack at this poi
+  NSA Net          later    lr=0.8   [0.5, 1.0]  taken offline to patch software with an 
+  All of the above blanket  lr=1.0   [0.8, 1.0]  98 percent certainty this is not a cyber
+product, day-one denials only: 0.51  (range 0.14 to 0.90)
+product, strongest statement per event: 0.034  (range 0.002 to 0.252)  {'Microsoft 365': 0.15, 'FAA': 0.4, 'JPMorgan Chase': 0.7, 'NSA Net': 0.8}
+as factors against 'all four were attacks': day-one 2.0 (range 1.1 to 7.3); strongest 30 (range 4 to 500)
+prior 0.01: after day-one denials 0.0051; after the specific accounts 0.00034 (range 2e-05 to 0.0025)
+prior 0.001: after day-one denials 0.00051; after the specific accounts 3.4e-05 (range 2e-06 to 0.00025)
+prior 0.0001: after day-one denials 5.1e-05; after the specific accounts 3.4e-06 (range 2e-07 to 2.5e-05)
 
 == The Optimizely overlap ==
 organisations on the list: 178 | news and media: 10

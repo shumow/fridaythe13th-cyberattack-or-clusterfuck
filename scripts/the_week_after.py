@@ -133,7 +133,7 @@ for lam in grid:
 for label, lam in rates.items():
     p = scan(lam, RUNS, rng)
     print(f"fitted {label}, lam={lam:.1f}/yr: "
-          + ", ".join(f"P(>={k})={p[k]:.3f}" for k in (3, 4, 6))
+          + ", ".join(f"P(>={k})={p[k]:.3f}" for k in (2, 3, 4, 5, 6))
           + f"  [k>=4 is {sigma(p[4]):.1f} sigma]")
 
 section("Sanity check on the simulation (first-order approximation)")
@@ -148,25 +148,52 @@ for lam in (12, 30):
 # --------------------------------------------------------------------------
 section("Denials as evidence (data/denials.csv)")
 # lr = P(statement | it was an attack) / P(statement | it was not).  ASSUMED
+# Every ratio is a guess, so each row also carries a low and a high, and the
+# products are printed at all three. The stage column says which rows are
+# day-one denials; "blanket" rows cover every event and are left out of the
+# per-event products. Change any number in the file and rerun.
 den = list(csv.DictReader(open(data("denials.csv"), newline="")))
 for r in den:
-    print(f"  {r['event']:<16} lr={float(r['lr']):<5} {r['statement'][:58]}")
-day_one = {"Microsoft 365": 0.9, "FAA": 0.9, "JPMorgan Chase": 0.7,
-           "NSA Net": 0.9}
-best = {}
-for r in den:
-    if r["event"] in day_one:
-        best[r["event"]] = min(best.get(r["event"], 1.0), float(r["lr"]))
-prod_day_one = math.prod(day_one.values())
-prod_best = math.prod(best.values())
-print(f"product, day-one denials only: {prod_day_one:.2f}")
-print(f"product, strongest statement per event: {prod_best:.3f}  {best}")
+    print(f"  {r['event']:<16} {r['stage']:<8} lr={float(r['lr']):<5} "
+          f"[{float(r['lr_low'])}, {float(r['lr_high'])}]  "
+          f"{r['statement'][:40]}")
+per_event = [r for r in den if r["stage"] != "blanket"]
+events = list(dict.fromkeys(r["event"] for r in per_event))
+
+
+def products(col):
+    day_one, strongest = {}, {}
+    for r in per_event:
+        v = float(r[col])
+        if r["stage"] == "day_one":
+            day_one[r["event"]] = v
+        strongest[r["event"]] = min(strongest.get(r["event"], 1.0), v)
+    return (math.prod(day_one[e] for e in events),
+            math.prod(strongest[e] for e in events), strongest)
+
+
+prod_day_one, prod_best, best = products("lr")
+lo_day_one, lo_best, _ = products("lr_low")
+hi_day_one, hi_best, _ = products("lr_high")
+print(f"product, day-one denials only: {prod_day_one:.2f}  "
+      f"(range {lo_day_one:.2f} to {hi_day_one:.2f})")
+print(f"product, strongest statement per event: {prod_best:.3f}  "
+      f"(range {lo_best:.3f} to {hi_best:.3f})  {best}")
+print(f"as factors against 'all four were attacks': day-one "
+      f"{1 / prod_day_one:.1f} (range {1 / hi_day_one:.1f} to "
+      f"{1 / lo_day_one:.1f}); strongest {1 / prod_best:.0f} "
+      f"(range {1 / hi_best:.0f} to {1 / lo_best:.0f})")
+# The products treat the four events' statements as independent given the
+# hypothesis. Under a coordinated cover story they are not, and every ratio
+# is 1 by construction: denials cannot test the hypothesis that the denials
+# are coordinated.
 for prior in (1e-2, 1e-3, 1e-4):  # prior P(all four were attacks)  ASSUMED
     def post(lr, p=prior):
         o = p / (1 - p) * lr
         return o / (1 + o)
     print(f"prior {prior:g}: after day-one denials {post(prod_day_one):.2g}; "
-          f"after the specific accounts {post(prod_best):.2g}")
+          f"after the specific accounts {post(prod_best):.2g} "
+          f"(range {post(lo_best):.2g} to {post(hi_best):.2g})")
 
 # --------------------------------------------------------------------------
 section("The Optimizely overlap")

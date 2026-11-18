@@ -1,29 +1,29 @@
 date,org,sector,what_failed,official_cause,tier,source,source_status
-2024-11-25,Microsoft,cloud,"Microsoft 365: Outlook and Teams, most of a day",change-related per Microsoft,A,none,memory
-2024-12-11,Meta,consumer platform,"Facebook, Instagram, WhatsApp for hours",technical issue,B,none,memory
-2025-01-16,Capital One (FIS),banking,"deposits and payments, multi-day",failure at vendor FIS,A,none,memory
-2025-02-02,Sony PlayStation Network,consumer platform,about 24 hours,operational issue,B,Tom's Guide (my memory says Feb 7-8),opened
+2024-11-25,Microsoft,cloud,"Microsoft 365: Outlook and Teams, into a second day",a recent change per Microsoft's status posts (cause seen in excerpts only),A,Dataconomy,opened
+2024-12-11,Meta,consumer platform,"Facebook, Instagram, WhatsApp for several hours",technical issue,B,Engadget,opened
+2025-01-16,Capital One (FIS),banking,"deposits and payments, 16 to 19 January",power outage at vendor FIS,A,PYMNTS,opened
+2025-02-07,Sony PlayStation Network,consumer platform,about 24 hours,operational issue,B,TechRadar (Friday night into Saturday 8 Feb),opened
 2025-03-01,Microsoft,cloud,Outlook and Exchange Online,code change,A,Medha Cloud,excerpt
-2025-03-10,X,consumer platform,repeated outages in one day,owner claimed a cyberattack,B,none,memory
-2025-04-28,FAA Newark TRACON,aviation,radar and radio lost briefly; days of delays,telecom line failure,A,none,memory
-2025-05-02,Zelle (Fiserv),payments,transfers blocked at several banks into next day,internal error at Fiserv,A,Tom's Guide (month only; day from memory),opened
+2025-03-10,X,consumer platform,waves of outages through one day,owner claimed a cyberattack; not confirmed,B,CNN Wire via ABC7,opened
+2025-04-28,FAA Philadelphia TRACON (Newark airspace),aviation,radar and radio lost for about 90 seconds; Newark flights halted for about two hours,telecommunications outage,A,Scripps News confirms the date; details from Bloomberg and CNN excerpts,excerpt
+2025-05-02,Zelle (Fiserv),payments,unavailable for many users at several banks on Friday; backlog afterwards,internal issue at Fiserv,A,Banking Dive,opened
 2025-05-22,X,consumer platform,intermittent for days,data centre fire,B,Tom's Guide,opened
 2025-06-10,OpenAI,consumer platform,ChatGPT for over 10 hours,not stated,B,Tom's Guide,opened
-2025-06-12,Google Cloud,cloud,global API failures for about 3 hours,faulty internal change,A,Tom's Guide (undated; day from memory),memory
-2025-07-20,Alaska Airlines,aviation,system-wide ground stop,hardware failure at a data centre,A,none,memory
-2025-07-24,Starlink,telecom,global outage for about 2.5 hours,internal software failure,A,none,memory
-2025-08-06,United Airlines,aviation,ground stop,technology issue,A,none,memory
+2025-06-12,Google Cloud,cloud,global API failures for about 3 hours,invalid automated quota update crashed Service Control,A,Google Cloud incident report,opened
+2025-07-20,Alaska Airlines,aviation,system-wide ground stop for about three hours,hardware failure at its data centres,A,AP via WBTV,opened
+2025-07-24,Starlink,telecom,global outage for about 2.5 hours,failure of internal software services,A,Reuters via Daily Maverick,opened
+2025-08-06,United Airlines,aviation,ground stops at its hubs for several hours,technology issue,A,NPR via KNAU,opened
 2025-10-20,Amazon Web Services,cloud,us-east-1 for 12+ hours,DNS fault in DynamoDB,A,Reuters factbox; Tom's Guide,opened
-2025-10-29,Microsoft Azure,cloud,Azure and Microsoft 365; airlines hit,configuration change,A,Reuters factbox (month only; day from memory),opened
+2025-10-29,Microsoft Azure,cloud,Azure and Microsoft 365; airlines hit,configuration change,A,Reuters factbox (month only; day from ThousandEyes and SiliconANGLE excerpts),opened
 2025-11-18,Cloudflare,cloud,about 6 hours; X and ChatGPT down,oversized generated configuration file,A,Reuters factbox,opened
 2025-12-05,Cloudflare,cloud,brief,change made during a security fix,A,Tom's Guide,opened
-2026-01-14,Verizon,telecom,nationwide wireless for about 10 hours,software issue,A,none,memory
+2026-01-14,Verizon,telecom,mobile network from midday until late that night,software issue,A,Broadband Breakfast (ten-hour figure from excerpts),opened
 2026-01-22,Microsoft,cloud,Outlook for about 11 hours,not stated,A,Reuters factbox (month only); SourceIT,opened
 2026-08-17,Microsoft,cloud,Microsoft 365 search degraded for about 3 days,not stated,B,StatusGator,excerpt
 2026-08-31,Microsoft,cloud,Exchange Online degraded,not stated,A,Hollywood Life summary of CNBC,excerpt
 2026-11-12,Microsoft,cloud,Microsoft 365 for about 24 hours,latent defect in its own gateway software (preliminary report),A,365Fanatic; Cyber Security News,opened
-2026-11-13,FAA,aviation,nationwide ground stop for about 4.5 hours,router flooding the network during copper-to-fibre work (unconfirmed),A,Scripps News,opened
+2026-11-13,FAA,aviation,nationwide ground stop for about 4.5 hours,new router flooding the network during copper-to-fibre work; root cause not established,A,Scripps News; CNBC; AP via HuffPost,opened
 2026-11-16,JPMorgan Chase,banking,online banking slowed for most of a day,software bug in on-premise hardware systems,A,Tech Times,opened
-2026-11-16,United Airlines,aviation,outage on Monday night,not given,B,Townhall via WCBM,opened
+2026-11-16,United Airlines,aviation,computer problem halted many departures on Monday,not given; United says no sign of a cyber incident (excerpt),B,Reuters via Jerusalem Post; Townhall via WCBM,opened
 2026-11-16,Amtrak,rail,disruption (date not given; placed on the 16th),linked to airline issues,B,Townhall via WCBM,opened
-2026-11-17,NSA,federal network,NSA Net down,not stated; six unnamed sources,A,WRAL copy of CNN Wire,opened
+2026-11-17,NSA,federal network,NSA Net down,"software update or patching, per unnamed sources; no NSA statement",A,WRAL copy of CNN Wire; Nextgov; Reuters via Jerusalem Post,opened
