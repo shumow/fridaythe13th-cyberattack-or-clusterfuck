@@ -4,7 +4,9 @@
 >
 > - Item 1: freeze now with the judgments, measure for version 2.
 > - Item 2: keep the three states.
-> - Items 3 to 10: freeze the draft as written, with no edits to the rules. The suggested changes in items 5 and 7 to 10 go to version 2 with the measurements.
+> - Item 3: keep the principle and the drafted numbers; show a sensitivity table with every ratio halved and doubled, later; and build an interface with sliders for the ratios.
+> - Item 4: assumed for version 1, with the three observers spreading them ninefold; measured for version 2.
+> - Items 5 to 10: freeze the draft as written, with no edits to the rules. The suggested changes in items 5 and 7 to 10 go to version 2 with the measurements.
 > - Raised by Dan before the freeze: the model has no place for a news wave or for misinformation. Agreed as the main addition for version 2; the gap is named in `MODEL-v1.md` under "What freezing does not fix". Until then phantoms and denied reports are logged as `context` rows.
 > - The freeze and the log live on the branch `claude/stoic-feynman-pwhm51`.
 > - Items 11 to 13 are still open.

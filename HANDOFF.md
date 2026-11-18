@@ -1,5 +1,20 @@
 # Handoff
 
+## Status, 18 November 2026, 10:05 UTC: model v1 is frozen and the log is running
+
+On the branch `claude/stoic-feynman-pwhm51` (not yet merged into `model-v1-draft`).
+
+- **Frozen.** Commit `1e33a38` added `model/model_v1.sha256` at 10:00 UTC on Dan's word: freeze now with the judgments, measure for version 2. The rules are the draft as written. `model/DECISIONS.md` records what was answered.
+- **Logged.** `log/log.csv` holds 28 retrospective rows (everything public before the freeze) and then prospective rows. Outputs are in `output/`. `python3 scripts/validate.py` passes.
+- **Every two hours** a scheduled task wakes the Code session. Each run: search for new outages at panel organisations and for new statements about the logged events; add rows (prospective, `known_at` equal to `logged_at`); if nothing is new add one `checkpoint` row; rerun `python3 scripts/pipeline.py` and `python3 scripts/validate.py`; commit, push, and add one dated line to the list below.
+- **Rules for the log.** Rows are only added. The three frozen files never change. Reports that are denied, knock-ons, organisations off the panel and news-wave items go in as `context` rows. Nothing goes to `main`.
+- **Version 2, agreed so far:** a news-wave and misinformation layer (Dan's point, the main addition); the suggested changes in items 5 and 7 to 10 of `DECISIONS.md`; measured attack priors and visibility; a sensitivity table with every ratio halved and doubled; an interface with sliders.
+- **Still stopped:** the second-round measurements (`PROTOCOL-2.md`). The archive rate-limits this container; see the dated note in the next block.
+
+### Run log
+
+- 18 Nov 10:01 UTC. First run. 5 counted events, 3 after the ground stop. P(campaign): calm 0.03%, middle 0.3%, suspicious 3.4%. P(at least one attack): 3.0%, 8.9%, 27%. Found since the last notes: an Apple services outage on Tuesday afternoon, blamed on an internal update (off the panel, context row).
+
 Status as of Saturday, 14 November 2026.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
