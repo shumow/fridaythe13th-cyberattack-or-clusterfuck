@@ -6,6 +6,45 @@
 
 > **Update, Tuesday 17 November 2026.** The week got worse, and both of Friday's outages now have an account on the record. Everything from here down to "So which is it?" is left as written on Friday so you can see what was believed then. Three things in it are now known to be wrong or settled: the Microsoft outage was over 4 hours 44 minutes before the ground stop, not still open; Microsoft's faulty change shipped in July, not on Patch Tuesday; and the two failures share no vendor or update. See [17 November: the cluster](#17-november-the-cluster).
 
+I am a professional paranoid person.  I’m paid to be paranoid by a large tech firm.  So, when email goes down, computers stop working, banks are not banking, the news is reporting NSA secret networks have gone down, or generally strange things are afoot at the Circle K, people start calling me asking if there’s a cyberattack happening.  I mean, by the way, both people in my professional and personal life start reaching out.  Usually professional people email or send teams messages first, but sometimes that’s not the case.  If the shit has really hit the fan, I receive signal messages first.  Sometimes the shit is not going down, but email and teams have.  So, don’t freak out if I’m receiving signal messages (I also have a shady past and sometimes it’s just old partners in crime touching base.)
+
+[Note: This all was written before Tuesday Nov 17th, so some references may be out of date - but all the important and relevant information is here, I promise ;-P]
+
+So, when email wasn’t going through (for the third or fourth time this year) and the FAA was grounding planes for the 3rd time this century - I was receiving messages from both professional *and* personal contacts asking what the fuck was going on.  Here’s the part that may surprise you: No matter who you are, y’all are gonna get the same advice right off the bat.  And it’s straight from the big friendly, calming words on the cover your Hitchhiker’s Guide:
+
+<p align="center"><b>DON’T PAN!C</b></p>
+
+Winston Churchill (who is my second favorite Winston of the 20th century after Zedmore) also put it well when he said:
+
+<p align="center">“We have nothing to fear but fear itself.”</p>
+
+Do not mistake my pithy statements as dismissive.  I assure you, as a professional paranoid I spend far more of my time freaking out about things big and small than you, or the vast majority of people, do.  A nice side effect of that (and my shady past) is that I’m quite accustomed to operating with a blown mind.  That and my math and computer hacking skills are my main qualifications.
+
+So let me walk you through my process when my phone starts blowing up:
+
+The first thing we need to all remember is that the first casualty of war is truth.  Also in non-adversarial crises truth tends to be the first one trampled, though it usually survives, dusts itself off, and checks in at the refuge point sooner rather than later (I find truth to be a stand up gender-neutral dude in that way.)  So the first thing I do is ask people what they’re seeing, hearing, where they’re getting their information and try to correlate it across all the people calling me.
+
+Don’t quote me on this, but I suspect that before we see some cyber-pocalyptic attack, we’ll see a massive, pervasive misinformation campaign telling us there is a cyber-apocalyptic attack happening.  And you can quote me on this, but I am not the first one to point it out:  The news and our brains are the biggest weakest defended part of the global information network.  Misinformation has been the modus operandi of war since before the internet was a twinkle in the imagination of any engineer or would-be-influencer.  And because of that *We all have a responsibility in times of crisis to be calm and share information accurately to the best of our ability.* That said, we are human so it will be understandable if this isn’t really how it plays out.  That said, if you’re one of my homies, and you come at me with some histrionic bullshit I’m not going to be mad, not even particularly disappointed, I’m just going to give your statements less certainty in the future (see prior case People v. Boy Who Cried Wolf.)
+
+This last Thursday and Friday I found that the news was actually unusually consistent from people across the country (and at work.)  On Thursday, Microsoft 365 was all jacked up, and when I realized I was like “oh, that’s why I’ve had so much focus time this morning.”  This happens with enough regularity that it should not be generally considered to be a sign of a cyberattack (Though, I have to entertain the possibility because I’m a PPP.)  Thursday, I actually found to be quite pleasant.  The outage forced face-to-face in person communication in a way that I have been starved for in recent memory.  A reminder that real genuine non digitally mediated communication just hasn’t been giving us.  These in person conversations had me more than adequately convinced that we were dealing with a garden variety clusterfuck, and not any sort of cyberattack.  Since then, news of failures has increased…. But the advice still remains the same: DON’T PANIC.  And let’s do some math to figure out just how likely it is that we’re in a cyberattack or a clusterfuck.
+
+<details>
+<summary><b>Show the work:</b> which of the claims above can be checked</summary>
+
+| Claim | Standing |
+| --- | --- |
+| Email down "for the third or fourth time this year" | [`data/outages.csv`](data/outages.csv) has four Microsoft rows in 2026: 22 January, 17 August, 31 August and 12 November. Three are tier A; the fourth, a three-day search degradation, is tier B. So three or four, depending on the bar. Two of the four rest on search excerpts, not opened pages. |
+| The FAA grounding planes "for the 3rd time this century" | 11 September 2001, 11 January 2023 and 13 November 2026. The arithmetic further down uses two in the 25 years since 2001, which is the same count with the first one taken as the starting line. |
+| "DON'T PANIC" on the cover of the Guide | Douglas Adams, *The Hitchhiker's Guide to the Galaxy*: "in large, friendly letters". From memory. |
+| The fear quote | The line is Franklin Roosevelt's, from his first inaugural address in March 1933: "the only thing we have to fear is fear itself". Churchill is not known to have said it. From memory. |
+| "The first casualty of war is truth" | An old saying of disputed origin, often credited to Hiram Johnson or to Aeschylus. From memory. |
+| The news and our brains as the weakest part of the network | An opinion, and the reason the rest of this piece scores every source for how far it can be trusted. |
+| The news being "unusually consistent" on Thursday and Friday | A personal observation; nothing in this repo measures it. The 17 November section below finds the opposite pattern in the days after: reports of trouble multiplying around one real event. |
+
+Everything in this opening is personal testimony and judgment. No number later in the piece depends on it.
+
+</details>
+
 First, the important fact: it was Friday the 13th. Every flight in the United States was grounded, a tanker ran into a riverboat in New Orleans, and the world's email had been down for a day. We will set this hypothesis aside for most of what follows, though the reader is free to carry a prior.
 
 The serious version of the question is whether the Microsoft 365 outage that began on Thursday and the FAA ground stop that began on Friday have anything to do with each other. There are six candidate answers, and the title lists them in roughly ascending order of how much fun they are. Let us take them in order of how much evidence they have, which is a different order.
