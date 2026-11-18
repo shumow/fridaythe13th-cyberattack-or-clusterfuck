@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 measurements/b2_raw/.last_request
 measurements/nw_raw/.last_request
+gdelt-local/data/
+.DS_Store
+.venv/

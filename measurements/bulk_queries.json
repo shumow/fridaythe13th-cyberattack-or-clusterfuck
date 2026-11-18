@@ -1,0 +1,38 @@
+{
+  "comment": "Fixed patterns and periods for PROTOCOL-4.md, written before any content query on the bulk table. Patterns are Python regular expressions applied to the title after lower-casing and collapsing whitespace.",
+  "table": "gdelt-local/data/articles/*/*.parquet",
+  "totals": "gdelt-local/data/daily_totals.parquet",
+  "population": {
+    "primary": "source_country = 'US' AND title IS NOT NULL",
+    "all_countries": "title IS NOT NULL"
+  },
+  "title_patterns": {
+    "OUT": "\\b(outages?|ground stop)\\b",
+    "ATT": "\\bcyber[ -]?attacks?\\b|\\bhack(s|ed|ers?|ing)?\\b",
+    "ATT_STRICT": "\\bcyber[ -]?attacks?\\b",
+    "NOT_TECH": "\\b(power|electric|electrical|electricity|utility|utilities|storms?|hurricanes?|tornado(es)?|weather|winds?|snow|ice|wildfires?|water|gas)\\b"
+  },
+  "themes": {
+    "ATT": ["CYBER_ATTACK", "WB_2457_CYBER_CRIME", "TAX_FNCACT_HACKER", "TAX_FNCACT_HACKERS"],
+    "ATT_STRICT": ["CYBER_ATTACK"],
+    "POWER": ["POWER_OUTAGE", "MANMADE_DISASTER_POWER_OUTAGE", "MANMADE_DISASTER_POWER_OUTAGES", "MANMADE_DISASTER_POWER_BLACKOUT"]
+  },
+  "measures": {
+    "OUT_T": "title matches OUT",
+    "OUT_TECH": "title matches OUT and does not match NOT_TECH",
+    "OUT_TECH_TH": "title matches OUT and themes hold none of POWER",
+    "ATT_T": "title matches ATT",
+    "BOTH_T": "OUT_TECH and title matches ATT",
+    "BOTH_T_STRICT": "OUT_TECH and title matches ATT_STRICT",
+    "BOTH_TH": "OUT_TECH and themes hold any of ATT",
+    "BOTH_TH_STRICT": "OUT_TECH and themes hold any of ATT_STRICT"
+  },
+  "periods": {
+    "baseline_first_day": "2026-08-17",
+    "baseline_last_day": "2026-11-08",
+    "target_week": ["2026-11-09", "2026-11-15"],
+    "after": ["2026-11-13", "2026-11-17"],
+    "headline_window": ["2026-11-02", "2026-11-17"],
+    "excluded": ["2026-11-18"]
+  }
+}
