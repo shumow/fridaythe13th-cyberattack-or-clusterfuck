@@ -1,5 +1,14 @@
 # Decisions waiting for Dan
 
+> **Answered, 18 November 2026 (night of the 17th, Pacific).** Dan, in a Code session:
+>
+> - Item 1: freeze now with the judgments, measure for version 2.
+> - Item 2: keep the three states.
+> - Items 3 to 10: freeze the draft as written, with no edits to the rules. The suggested changes in items 5 and 7 to 10 go to version 2 with the measurements.
+> - Raised by Dan before the freeze: the model has no place for a news wave or for misinformation. Agreed as the main addition for version 2; the gap is named in `MODEL-v1.md` under "What freezing does not fix". Until then phantoms and denied reports are logged as `context` rows.
+> - The freeze and the log live on the branch `claude/stoic-feynman-pwhm51`.
+> - Items 11 to 13 are still open.
+
 Written 17 November 2026. The model in this folder is a draft. It freezes when a commit adds `model/model_v1.sha256`, and that commit waits for the answers below. Until then no event from the week can be run through the model, so the log, the dated curves and chapter 3 all wait too. The measurements do not wait.
 
 Each item gives what the draft does now, what the first measurements say about it, and the choices. The first choice listed is the one I would take. "Take the suggestions" is a complete answer.

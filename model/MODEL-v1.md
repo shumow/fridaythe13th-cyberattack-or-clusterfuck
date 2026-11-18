@@ -113,6 +113,7 @@ After every row: P(campaign) and P(at least one attack) for each observer, the p
 - The answers inherit the priors. The movement per row means more than the level.
 - Outages are not Poisson, and attention fades rather than switching off after 14 days.
 - "Stays wrong" is close to unfalsifiable from the denying party's own statements. That is deliberate, and it is the residue this model cannot remove.
+- Misinformation is not modelled. The only week-level question is whether there is a campaign of attacks. A wave of reporting about outages, organic or deliberately pushed, is not a state this version can land in, and a report that turns out to be a phantom can only be logged as context. That layer is for version 2.
 
 ## Open choices
 
