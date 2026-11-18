@@ -12,6 +12,7 @@ On the branch `claude/stoic-feynman-pwhm51` (not yet merged into `model-v1-draft
 - **Half done:** the reclassification search (`measurements/PROTOCOL-3.md`, `RESULTS-3.md`). Eight searches run, twelve candidate cases, no page could be opened from this container, so no delay figure yet. R2 and R3 not started.
 - **Still stopped:** the second-round measurements (`PROTOCOL-2.md`). The archive rate-limits this container; see the dated note in the next block.
 
+- **The picture.** `analysis/model-state.png` is the block diagram of the model's current state, drawn from `output/` by `python3 scripts/draw_state.py` and then `node scripts/render_state.js $PWD/analysis/model-state.svg $PWD/analysis/model-state.png`. Redraw it on a run when an event row or a number on it changes; the wording of the boxes lives in the script. Friday's `analysis/causal-diagram.png` is a record of 13 November and stays as it is.
 - **Bookkeeping.** When a run notices that an account has changed or that two sources disagree, it adds a row to `bookkeeping/inconsistencies.csv`.
 
 ### Story changes, for future research (open)
