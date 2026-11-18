@@ -2,6 +2,8 @@
 
 > "The first casualty when war comes is truth." Attributed to Senator Hiram Johnson, 1918. The attribution is traditional and poorly documented, which suits the chapter.
 
+> **Note, 18 November 2026.** This chapter says the FAA's router was "reportedly Cisco". That came from CBS News as relayed by Wikipedia and was never opened at source. The FAA's own account, [Nationwide Ground Stop: Questions and Answers](https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers) of 15 November, names Juniper routers and two sites, a radar site in Amarillo, Texas and a radio site in El Dorado, Arkansas. The FAA's page is the primary source; the disagreement with the CBS report is unexplained. The text below is left as written and will be corrected in the one-time revision. Nothing in the chapter's argument depends on the vendor: Microsoft's failure was in its own software either way.
+
 Friday's analysis is left exactly as it was written, in [`independence-or-common-cause.md`](independence-or-common-cause.md) and in the README. This chapter records what changed by Tuesday and what it does to the argument. Every number here comes out of [`scripts/the_week_after.py`](../scripts/the_week_after.py); its output is in [`week-after-output.txt`](week-after-output.txt).
 
 ## The short version

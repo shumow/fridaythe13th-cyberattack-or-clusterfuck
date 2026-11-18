@@ -16,7 +16,8 @@
 > - Raised by Dan before the freeze: the model has no place for a news wave or for misinformation. Agreed as the main addition for version 2; the gap is named in `MODEL-v1.md` under "What freezing does not fix". Until then phantoms and denied reports are logged as `context` rows.
 > - The freeze and the log live on the branch `claude/stoic-feynman-pwhm51`.
 > - Item 11: yes. The repo is the source of truth, and `scripts/validate.py` checks that from git history. Dan also wants changing stories and inconsistencies tracked, as bookkeeping for now (`bookkeeping/inconsistencies.csv`), with the fuller version left as an open item for future research in `HANDOFF.md`.
-> - Items 12 and 13 are still open.
+> - Item 12: add a dated note to chapter 2 now. Done on 18 November, with a matching one-line note beside the same claim in the README. The text itself waits for the one-time revision.
+> - Item 13 is still open.
 
 Written 17 November 2026. The model in this folder is a draft. It freezes when a commit adds `model/model_v1.sha256`, and that commit waits for the answers below. Until then no event from the week can be run through the model, so the log, the dated curves and chapter 3 all wait too. The measurements do not wait.
 
