@@ -41,6 +41,7 @@ Status as of Saturday, 14 November 2026.
 - 19 Nov 04:02 UTC. No new panel outage. NSA Net reported back up and running (two sources to CBS), with staggered arrivals continuing and full restoration a day or two off (The Record). One report says Congress has asked for an urgent investigation; not confirmed. P(campaign): 0.03%, 0.3%, 3.1%. P(at least one attack): 3.2%, 9.5%, 29%. From search summaries.
 - 19 Nov 06:02 UTC. No new panel outage. Congress: Cantwell's letter to Duffy and Bedford, Jeffries asks for a Gang of Eight briefing, Himes says no evidence of cyberattacks (context; not scored as independent corroboration, which is a judgment call for Dan). The ransomware listing may have gone up hours before the Chase outage; order not established. A false, pre-announced outage rumour about Britain's National Grid for 19 Nov, denied by the company: the first invented outage in the log. P(campaign): 0.03%, 0.3%, 3.0%. P(at least one attack): 3.1%, 9.4%, 28%. From search summaries.
 - 19 Nov 08:02 UTC. Nothing new; checkpoint only. P(campaign): 0.02%, 0.3%, 2.9%. P(at least one attack): 3.1%, 9.4%, 28%.
+- 19 Nov 10:02 UTC. Nothing new. One lead to check: a blog title lists AWS among the week's failures, with nothing behind it yet. P(campaign): 0.02%, 0.2%, 2.8%. P(at least one attack): 3.1%, 9.3%, 28%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
