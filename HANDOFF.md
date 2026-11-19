@@ -43,6 +43,7 @@ Status as of Saturday, 14 November 2026.
 - 19 Nov 08:02 UTC. Nothing new; checkpoint only. P(campaign): 0.02%, 0.3%, 2.9%. P(at least one attack): 3.1%, 9.4%, 28%.
 - 19 Nov 10:02 UTC. Nothing new. One lead to check: a blog title lists AWS among the week's failures, with nothing behind it yet. P(campaign): 0.02%, 0.2%, 2.8%. P(at least one attack): 3.1%, 9.3%, 28%.
 - 19 Nov 12:03 UTC. A panel outage the log had missed: AWS US-EAST-1 sign-in, Sunday 15 November, about 3 hours 16 minutes, no root cause published. Logged as an event with counted 'no' because national coverage within 48 hours is not established (twelve national domains searched, none had it; five cannot be searched). A correction row would count it. If counted it would be the fourth outage after the ground stop. Nothing new since the last run otherwise. P(campaign): 0.02%, 0.2%, 2.7%. P(at least one attack): 3.1%, 9.3%, 28%.
+- 19 Nov 14:02 UTC. No new panel outage. The cluster now has a Wikipedia article and a trade timeline; both carry the AWS outage and off-panel items this log lacks (Workday, Claude). Microsoft's final report is due 20 November. Off panel today: Archive of Our Own down after a security incident; PlayStation again. P(campaign): 0.02%, 0.2%, 2.6%. P(at least one attack): 3.1%, 9.2%, 28%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
