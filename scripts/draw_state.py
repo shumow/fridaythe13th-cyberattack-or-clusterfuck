@@ -71,7 +71,7 @@ box(40, 100, 1240, 104, "One campaign behind several of them?",
 
 E = [("ms365-nov12", "Microsoft 365", "12 to 13 Nov", ["own gateway software;", "preliminary report published"]),
      ("faa-ground-stop", "FAA ground stop", "13 Nov", ["a new router flooded the", "network; FAA's own account"]),
-     ("chase-nov16", "Chase", "16 Nov", ["a software bug, says Chase;", "a ransomware group claims it"]),
+     ("chase-nov16", "Chase", "16 Nov", ["a software bug, says Chase;", "a vendor attack, it says, is separate"]),
      ("united-nov16", "United Airlines", "16 Nov", ["cause not given;", "\"no indication\" of an attack"]),
      ("nsanet-nov17", "NSA Net", "17 Nov", ["patching, say the NSA and", "the intelligence director"])]
 cx = []
@@ -90,7 +90,7 @@ S = [("Two federal systems", ["hit by security", "incidents in October,", "befor
      ("Amtrak", ["booking down during", "the ground stop:", "a knock-on"], 1, "solid"),
      ("Weather Service", ["reported down;", "the agency denied it"], 1, "dot"),
      ("Six other banks", ["named from user", "reports; most", "denied any fault"], 2, "dot"),
-     ("Ransomware claim", ["leak site names Chase,", "Visa and Mastercard;", "not verified"], 2, "orange"),
+     ("Ransomware claim", ["Chase confirms a data", "theft at its vendors;", "denies a link to the outage"], 2, "orange"),
      ("Apple", ["internal update,", "says Apple;", "not on the panel"], None, ""),
      ("Optimizely", ["a confirmed attack", "on 178 websites,", "news sites among them"], None, "")]
 for i, (name, lines, target, kind) in enumerate(S):
@@ -130,7 +130,7 @@ y = 960
 out.append(f'<line x1="40" y1="{y-26}" x2="1280" y2="{y-26}" stroke="#e4e3dc" stroke-width="1.5"/>')
 line(40, y, 90, y, stroke=GREY, dash="", arrow=False); text(102, y + 5, "led to: a knock-on", 14, 400, GREY, "start")
 line(330, y, 380, y, arrow=False); text(392, y + 5, "asked or reported, not established", 14, 400, GREY, "start")
-line(690, y, 740, y, stroke=ORANGE, dash="7 5", arrow=False, width=2.5); text(752, y + 5, "open: a claim, not verified", 14, 400, GREY, "start")
+line(690, y, 740, y, stroke=ORANGE, dash="7 5", arrow=False, width=2.5); text(752, y + 5, "open: a claim or a denied link", 14, 400, GREY, "start")
 out.append(f'<rect x="990" y="{y-9}" width="46" height="18" rx="5" fill="#fff" stroke="{LINE}" stroke-width="2" stroke-dasharray="6 5"/>')
 text(1048, y + 5, "context, not scored", 14, 400, GREY, "start")
 text(40, 1005, f"Model v1 frozen 18 Nov 2026, 10:00 UTC. Rows known before the freeze are scored in hindsight. Log row {last['row_id']}.", 12, 400, GREY, "start")
