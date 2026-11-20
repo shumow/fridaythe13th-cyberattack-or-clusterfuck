@@ -52,6 +52,7 @@ Status as of Saturday, 14 November 2026.
 - 20 Nov 02:02 UTC. Nothing new; checkpoint only. P(campaign): 0.02%, 0.2%, 2.0%. P(at least one attack): 3.0%, 8.9%, 27%.
 - 20 Nov 04:02 UTC. No new panel outage. The ransomware group has started publishing data: alleged Mastercard customer records, possibly all three; authenticity not verified; the vendor is still unnamed. Context, not scored. P(campaign): 0.02%, 0.2%, 1.9%. P(at least one attack): 3.0%, 8.9%, 26%.
 - 20 Nov 06:02 UTC. Nothing new; checkpoint only. P(campaign): 0.02%, 0.2%, 1.9%. P(at least one attack): 2.9%, 8.8%, 26%.
+- 20 Nov 08:02 UTC. Nothing new; checkpoint only. P(campaign): 0.02%, 0.2%, 1.8%. P(at least one attack): 2.9%, 8.8%, 26%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
