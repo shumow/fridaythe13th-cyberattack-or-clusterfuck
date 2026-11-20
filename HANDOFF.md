@@ -56,6 +56,7 @@ Status as of Saturday, 14 November 2026.
 - 20 Nov 10:02 UTC. Nothing new; checkpoint only. Microsoft's final report not out yet. P(campaign): 0.01%, 0.1%, 1.7%. P(at least one attack): 2.9%, 8.7%, 26%.
 - 20 Nov 12:02 UTC. No new panel outage. Microsoft's chief executive is reported warning that rushed security patches could cause more outages: the shared-benign-cause story again, from inside one of the affected organisations (context). P(campaign): 0.01%, 0.1%, 1.7%. P(at least one attack): 2.9%, 8.7%, 26%.
 - 20 Nov 14:02 UTC. No confirmed new panel outage. Lead to check: user reports of Outlook trouble today on a tracker page, no Microsoft confirmation. Microsoft's final report still not seen. P(campaign): 0.01%, 0.1%, 1.6%. P(at least one attack): 2.9%, 8.6%, 26%.
+- 20 Nov 16:03 UTC. No confirmed new panel outage. NSA outage reported resolved (CNN, one source). Warner, like Himes, says no attack and warns more outages may come (context, not scored). The Outlook reports of this morning have no confirmation. Microsoft's final report not found. P(campaign): 0.01%, 0.1%, 1.5%. P(at least one attack): 2.9%, 8.6%, 26%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
