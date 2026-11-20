@@ -50,6 +50,7 @@ Status as of Saturday, 14 November 2026.
 - 19 Nov 22:02 UTC. No new panel outage. Trump tells Americans 'to relax' amid reported stockpiling fears: the wave reaching behaviour (context). No NSA statement since Tuesday. P(campaign): 0.02%, 0.2%, 2.2%. P(at least one attack): 3.0%, 9.0%, 27%.
 - 20 Nov 00:02 UTC. Nothing new; checkpoint only. Microsoft's final report, due today, is not out yet. P(campaign): 0.02%, 0.2%, 2.1%. P(at least one attack): 3.0%, 9.0%, 27%.
 - 20 Nov 02:02 UTC. Nothing new; checkpoint only. P(campaign): 0.02%, 0.2%, 2.0%. P(at least one attack): 3.0%, 8.9%, 27%.
+- 20 Nov 04:02 UTC. No new panel outage. The ransomware group has started publishing data: alleged Mastercard customer records, possibly all three; authenticity not verified; the vendor is still unnamed. Context, not scored. P(campaign): 0.02%, 0.2%, 1.9%. P(at least one attack): 3.0%, 8.9%, 26%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
