@@ -1,7 +1,7 @@
 # model v1 sha256 44108dc99cc701eadc2608ee8d0912496ac31638c6d869dd0f8021513a9bcfca
 event_id,org,class,tier,p_real,account_rung,quiet_days,share_stays_wrong_given_attack,p_attack_calm,p_attack_middle,p_attack_suspicious,p_attack_middle_no_campaign,p_premature_middle,p_stays_wrong_middle
-ms365-nov12,Microsoft,cloud_saas,A,0.995,rca_preliminary,7.82292,0.799415,0.00187037,0.00595094,0.0218282,0.00571668,0.00119367,0.00475727
-faa-ground-stop,FAA,aviation_system,A,0.995,mechanism_named,6.63056,0.703484,0.0030615,0.00966993,0.0346832,0.00907914,0.00286729,0.00680264
-chase-nov16,JPMorgan Chase,bank,A,0.995,mechanism_named,3.87639,0.433675,0.00622453,0.0193022,0.0649323,0.0186168,0.0109313,0.00837091
-united-nov16,United Airlines,airline_ops,B,0.995,denial_generic,3.60556,0.265353,0.00566381,0.0176059,0.059709,0.0169497,0.0129341,0.00467178
-nsanet-nov17,NSA,federal_classified,C,0.995,mechanism_named,3.00139,0.937366,0.0127791,0.0391663,0.12612,0.0384267,0.00245313,0.0367131
+ms365-nov12,Microsoft,cloud_saas,A,0.995,rca_preliminary,7.90625,0.80167,0.00186373,0.00592415,0.0216615,0.00569888,0.00117494,0.00474921
+faa-ground-stop,FAA,aviation_system,A,0.995,mechanism_named,6.71389,0.706421,0.0030458,0.00960628,0.0343,0.00903887,0.00282021,0.00678608
+chase-nov16,JPMorgan Chase,bank,A,0.995,mechanism_named,3.95972,0.437146,0.0061712,0.0191231,0.0641796,0.0184659,0.0107635,0.00835959
+united-nov16,United Airlines,airline_ops,B,0.995,denial_generic,3.68889,0.268114,0.00560194,0.0174012,0.0588794,0.0167728,0.0127357,0.00466551
+nsanet-nov17,NSA,federal_classified,C,0.995,mechanism_named,3.08472,0.93819,0.0127613,0.0390936,0.125699,0.0383824,0.00241638,0.0366772
