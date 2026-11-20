@@ -49,6 +49,7 @@ Status as of Saturday, 14 November 2026.
 - 19 Nov 20:03 UTC. A second panel outage found late: the IRS's income-verification service, degraded from 15 November to noon Eastern today, a fault in a secure mailbox system, public only today (event row 89, counted 'no' on a strict reading of the 48-hour rule). Visa and Mastercard have also disclosed the vendor attack; Mastercard confirms a small set of emails. NSA reported 'still disrupted' on day three, against yesterday's 'back up'. Two events now wait on Dan's word to be counted: AWS (row 77) and the IRS (row 89). P(campaign): 0.02%, 0.2%, 2.3%. P(at least one attack): 3.0%, 9.1%, 27%.
 - 19 Nov 22:02 UTC. No new panel outage. Trump tells Americans 'to relax' amid reported stockpiling fears: the wave reaching behaviour (context). No NSA statement since Tuesday. P(campaign): 0.02%, 0.2%, 2.2%. P(at least one attack): 3.0%, 9.0%, 27%.
 - 20 Nov 00:02 UTC. Nothing new; checkpoint only. Microsoft's final report, due today, is not out yet. P(campaign): 0.02%, 0.2%, 2.1%. P(at least one attack): 3.0%, 9.0%, 27%.
+- 20 Nov 02:02 UTC. Nothing new; checkpoint only. P(campaign): 0.02%, 0.2%, 2.0%. P(at least one attack): 3.0%, 8.9%, 27%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
