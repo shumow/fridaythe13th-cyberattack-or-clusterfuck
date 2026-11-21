@@ -70,6 +70,7 @@ Status as of Saturday, 14 November 2026.
 - 21 Nov 14:02 UTC. Nothing new; checkpoint only. Bloomberg dates the wave from 11 November, a day before the log's first event; worth a look. P(campaign): 0.01%, 0.08%, 1.0%. P(at least one attack): 2.7%, 8.1%, 24%.
 - 21 Nov 16:02 UTC. Nothing new; checkpoint only. The 11 November start date does not hold up: other sources start with Microsoft on the 12th. P(campaign): 0.01%, 0.08%, 0.9%. P(at least one attack): 2.7%, 8.1%, 24%.
 - 21 Nov 18:03 UTC. No new panel outage. Still unclear whether Microsoft's final report is out: nothing seen states it in terms, so no rca_final row. A '911 disruption' is mentioned in one roundup with nothing behind it (lead). P(campaign): 0.01%, 0.08%, 0.9%. P(at least one attack): 2.7%, 8.1%, 24%.
+- 21 Nov 20:02 UTC. **Microsoft's final report is out** (GeekWire, 21 Nov, via a summary): same cause, 13 planned fixes, no evidence of malicious activity. Logged as rca_final (row 129). The one-time revision of Friday's analysis now waits only for the FAA's findings. No new panel outage. P(campaign): 0.01%, 0.07%, 0.8%. P(at least one attack): 2.6%, 7.9%, 23%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 

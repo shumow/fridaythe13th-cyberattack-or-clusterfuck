@@ -69,7 +69,7 @@ box(40, 100, 1240, 104, "One campaign behind several of them?",
      f"calm {pct(last['p_campaign_calm'])}   ·   middle {pct(last['p_campaign_middle'])}   ·   "
      f"suspicious {pct(last['p_campaign_suspicious'])}"], stroke=GREY, dash="2 5", tsize=18)
 
-E = [("ms365-nov12", "Microsoft 365", "12 to 13 Nov", ["own gateway software;", "preliminary report published"]),
+E = [("ms365-nov12", "Microsoft 365", "12 to 13 Nov", ["own gateway software;", "final report published"]),
      ("faa-ground-stop", "FAA ground stop", "13 Nov", ["a new router flooded the", "network; FAA's own account"]),
      ("chase-nov16", "Chase", "16 Nov", ["a software bug, says Chase;", "a vendor attack, it says, is separate"]),
      ("united-nov16", "United Airlines", "16 Nov", ["cause not given;", "\"no indication\" of an attack"]),
