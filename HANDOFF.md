@@ -62,6 +62,7 @@ Status as of Saturday, 14 November 2026.
 - 20 Nov 22:02 UTC. Nothing new; checkpoint only. Microsoft's final report still not reported published on its due date. P(campaign): 0.01%, 0.1%, 1.3%. P(at least one attack): 2.8%, 8.5%, 25%.
 - 21 Nov 00:02 UTC. Nothing new; checkpoint only. No summary of Microsoft's final report has appeared. P(campaign): 0.01%, 0.1%, 1.3%. P(at least one attack): 2.8%, 8.4%, 25%.
 - 21 Nov 02:02 UTC. Nothing new; checkpoint only. P(campaign): 0.01%, 0.1%, 1.2%. P(at least one attack): 2.8%, 8.4%, 25%.
+- 21 Nov 04:02 UTC. No new panel outage. The National Cyber Director was fired on 20 November, the day Trump called the outages 'separate events'; no reason seen (lead, not scored; headline only). P(campaign): 0.01%, 0.1%, 1.2%. P(at least one attack): 2.8%, 8.3%, 25%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
