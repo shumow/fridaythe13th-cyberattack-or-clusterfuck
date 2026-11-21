@@ -66,6 +66,7 @@ Status as of Saturday, 14 November 2026.
 - 21 Nov 06:02 UTC. No new panel outage. The cyber director's firing confirmed by several outlets; Trump: 'I didn't think that person was good enough'; another account says he resigned; Schumer asks why fire him if the outages are business as usual (context). P(campaign): 0.01%, 0.10%, 1.1%. P(at least one attack): 2.8%, 8.3%, 25%.
 - 21 Nov 08:02 UTC. Nothing new; checkpoint only. P(campaign): 0.01%, 0.09%, 1.1%. P(at least one attack): 2.8%, 8.3%, 25%.
 - 21 Nov 10:02 UTC. No new panel outage. Lead: the FAA is reported about to announce its root cause. P(campaign): 0.01%, 0.09%, 1.1%. P(at least one attack): 2.8%, 8.2%, 24%.
+- 21 Nov 12:02 UTC. Nothing new; checkpoint only. FAA root cause announced as coming, not out. P(campaign): 0.01%, 0.09%, 1.0%. P(at least one attack): 2.7%, 8.2%, 24%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
