@@ -68,6 +68,7 @@ Status as of Saturday, 14 November 2026.
 - 21 Nov 10:02 UTC. No new panel outage. Lead: the FAA is reported about to announce its root cause. P(campaign): 0.01%, 0.09%, 1.1%. P(at least one attack): 2.8%, 8.2%, 24%.
 - 21 Nov 12:02 UTC. Nothing new; checkpoint only. FAA root cause announced as coming, not out. P(campaign): 0.01%, 0.09%, 1.0%. P(at least one attack): 2.7%, 8.2%, 24%.
 - 21 Nov 14:02 UTC. Nothing new; checkpoint only. Bloomberg dates the wave from 11 November, a day before the log's first event; worth a look. P(campaign): 0.01%, 0.08%, 1.0%. P(at least one attack): 2.7%, 8.1%, 24%.
+- 21 Nov 16:02 UTC. Nothing new; checkpoint only. The 11 November start date does not hold up: other sources start with Microsoft on the 12th. P(campaign): 0.01%, 0.08%, 0.9%. P(at least one attack): 2.7%, 8.1%, 24%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
