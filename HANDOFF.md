@@ -79,6 +79,7 @@ Status as of Saturday, 14 November 2026.
 - 22 Nov 08:02 UTC. **An apparent intrusion into the FBI's national crime database (NCIC)**, reported 20 November by CNN, AP and Fox from unnamed sources; FBI silent; no outage established, so not an event and not scored (row 138). The first reported intrusion into a panel federal system inside the window. No new panel outage. P(campaign): 0.01%, 0.06%, 0.6%. P(at least one attack): 2.6%, 7.7%, 23%.
 - 22 Nov 10:02 UTC. Nothing new; checkpoint only. No outage of the FBI database reported; FBI still silent. P(campaign): 0.01%, 0.05%, 0.6%. P(at least one attack): 2.6%, 7.7%, 23%.
 - 22 Nov 12:02 UTC. Nothing new; checkpoint only. P(campaign): 0.00%, 0.05%, 0.6%. P(at least one attack): 2.6%, 7.7%, 23%.
+- 22 Nov 14:02 UTC. Nothing new; checkpoint only. Off-panel additions in a roundup: Ticketmaster, Claude on the 17th and 19th. P(campaign): 0.00%, 0.05%, 0.6%. P(at least one attack): 2.6%, 7.6%, 23%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
