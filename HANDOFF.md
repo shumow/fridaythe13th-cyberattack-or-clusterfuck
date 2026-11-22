@@ -82,6 +82,7 @@ Status as of Saturday, 14 November 2026.
 - 22 Nov 14:02 UTC. Nothing new; checkpoint only. Off-panel additions in a roundup: Ticketmaster, Claude on the 17th and 19th. P(campaign): 0.00%, 0.05%, 0.6%. P(at least one attack): 2.6%, 7.6%, 23%.
 - 22 Nov 16:02 UTC. No new panel outage. A tracker lists three breaches apart from the outages: the vendor, the FBI, and a USDA breach not seen before (lead; no detail). P(campaign): 0.00%, 0.05%, 0.6%. P(at least one attack): 2.5%, 7.6%, 23%.
 - 22 Nov 18:03 UTC. **USDA systems offline for days after a security incident** (reported 19 to 20 November): password resets took down applications, farmer payments among them. The first outage in the window with a security incident as its own stated cause. Logged as context (row 143) only because USDA is not on the fixed federal list; the frozen panel wording would count it. Dan's decision. Numbers unchanged. P(campaign): 0.00%, 0.04%, 0.5%. P(at least one attack): 2.5%, 7.6%, 22%.
+- 22 Nov 20:02 UTC. No new outage on the panel as run. USDA: NBC carried it, so the national-coverage leg is met; only the fixed list keeps it out. Start put at 16 or 19 November; restoration expected over the weekend, not confirmed. P(campaign): 0.00%, 0.04%, 0.5%. P(at least one attack): 2.5%, 7.5%, 22%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
