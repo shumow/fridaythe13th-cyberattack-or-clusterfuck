@@ -73,6 +73,7 @@ Status as of Saturday, 14 November 2026.
 - 21 Nov 20:02 UTC. **Microsoft's final report is out** (GeekWire, 21 Nov, via a summary): same cause, 13 planned fixes, no evidence of malicious activity. Logged as rca_final (row 129). The one-time revision of Friday's analysis now waits only for the FAA's findings. No new panel outage. P(campaign): 0.01%, 0.07%, 0.8%. P(at least one attack): 2.6%, 7.9%, 23%.
 - 21 Nov 22:02 UTC. No new panel outage. GeekWire's own headline confirms Microsoft's final report; detail logged as context. FAA still investigating. P(campaign): 0.01%, 0.07%, 0.8%. P(at least one attack): 2.6%, 7.9%, 23%.
 - 22 Nov 00:02 UTC. No new panel outage. A report that Walmart shoppers stocked up on emergency supplies after the outages: the first claimed measure of the wave changing behaviour (headline only). P(campaign): 0.01%, 0.07%, 0.8%. P(at least one attack): 2.6%, 7.8%, 23%.
+- 22 Nov 02:02 UTC. Nothing new; checkpoint only. P(campaign): 0.01%, 0.06%, 0.7%. P(at least one attack): 2.6%, 7.8%, 23%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
