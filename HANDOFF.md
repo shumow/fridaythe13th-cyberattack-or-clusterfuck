@@ -76,6 +76,7 @@ Status as of Saturday, 14 November 2026.
 - 22 Nov 02:02 UTC. Nothing new; checkpoint only. P(campaign): 0.01%, 0.06%, 0.7%. P(at least one attack): 2.6%, 7.8%, 23%.
 - 22 Nov 04:02 UTC. Nothing new; checkpoint only. A tracker starts the wave with a Polish government platform on 10 to 11 November, which explains the earlier start date. P(campaign): 0.01%, 0.06%, 0.7%. P(at least one attack): 2.6%, 7.8%, 23%.
 - 22 Nov 06:02 UTC. No new panel outage. Lead to check: an NBC headline that the FBI is investigating a potential breach of its crime database (a breach, not an outage; date unknown). P(campaign): 0.01%, 0.06%, 0.7%. P(at least one attack): 2.6%, 7.7%, 23%.
+- 22 Nov 08:02 UTC. **An apparent intrusion into the FBI's national crime database (NCIC)**, reported 20 November by CNN, AP and Fox from unnamed sources; FBI silent; no outage established, so not an event and not scored (row 138). The first reported intrusion into a panel federal system inside the window. No new panel outage. P(campaign): 0.01%, 0.06%, 0.6%. P(at least one attack): 2.6%, 7.7%, 23%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
