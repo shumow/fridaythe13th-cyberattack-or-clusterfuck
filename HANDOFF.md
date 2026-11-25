@@ -95,6 +95,7 @@ Status as of Saturday, 14 November 2026.
 - 25 Nov 08:02 UTC. Nothing new; checkpoint only. P(campaign): 0.00%, 0.02%, 0.3%. P(at least one attack): 2.9%, 8.7%, 25%.
 - 25 Nov 10:02 UTC. No new panel outage; the claimed new Microsoft outage has no support. Microsoft declares an internal 'Code Red' over the 12 to 13 November outage (Reuters). P(campaign): 0.00%, 0.02%, 0.3%. P(at least one attack): 2.9%, 8.7%, 25%.
 - 25 Nov 12:02 UTC. No new panel outage. Lead: Delta's outage said to be a 'database issue' in the weight-and-balance system, United's 'similar'; speaker unclear, so not scored yet. P(campaign): 0.00%, 0.02%, 0.3%. P(at least one attack): 2.9%, 8.7%, 25%.
+- 25 Nov 14:02 UTC. Nothing new; checkpoint only. Delta's 'database issue' is one report's wording, not Delta's. P(campaign): 0.00%, 0.02%, 0.3%. P(at least one attack): 2.9%, 8.6%, 25%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
