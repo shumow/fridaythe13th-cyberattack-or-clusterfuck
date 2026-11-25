@@ -93,6 +93,7 @@ Status as of Saturday, 14 November 2026.
 - 25 Nov 04:03 UTC. **A seventh counted outage: an FAA equipment outage at Chicago O'Hare on 24 November**, arrivals stopped for about 90 minutes, said by the FAA to be specific to that airport (event row 177). Lead: one aggregator relays unnamed suspicion that the CIA breach used the Artex tool; not an attribution. P(campaign): 0.01%, 0.05%, 0.6%. P(at least one attack): 3.6%, 11%, 30%. Five outages in the 11.3 days since the ground stop: a 36% event with nothing unusual.
 - 25 Nov 06:03 UTC. **Correction: the O'Hare event is uncounted again.** CNN's source puts the equipment outage at about 25 minutes, under the 30-minute rule; Fox had about 90. Duration disputed, so uncounted by a correction row, like AWS and the IRS. Counting it two hours earlier on one outlet's figure was the session's error. Back to six counted outages, four since the ground stop. No new panel outage. P(campaign): 0.00%, 0.03%, 0.3%. P(at least one attack): 3.0%, 8.8%, 25%.
 - 25 Nov 08:02 UTC. Nothing new; checkpoint only. P(campaign): 0.00%, 0.02%, 0.3%. P(at least one attack): 2.9%, 8.7%, 25%.
+- 25 Nov 10:02 UTC. No new panel outage; the claimed new Microsoft outage has no support. Microsoft declares an internal 'Code Red' over the 12 to 13 November outage (Reuters). P(campaign): 0.00%, 0.02%, 0.3%. P(at least one attack): 2.9%, 8.7%, 25%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
