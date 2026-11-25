@@ -59,7 +59,7 @@ def line(x1, y1, x2, y2, stroke=GREY, dash="2 5", arrow=True, width=2):
 
 
 W, H = 1320, 1030
-text(40, 44, "Five outages, no wire between them, and one question above them", 25, 700, INK, "start")
+text(40, 44, "Six outages, no wire between them, and one question above them", 25, 700, INK, "start")
 text(40, 72, f"What the frozen model (version 1) holds as of {last['as_of'].replace('T', ' ').replace('Z', ' UTC')}. "
      "Percentages on the outages are the middle observer's chance that it was an attack.", 14, 400, GREY, "start")
 
@@ -70,19 +70,22 @@ box(40, 100, 1240, 104, "One campaign behind several of them?",
      f"suspicious {pct(last['p_campaign_suspicious'])}"], stroke=GREY, dash="2 5", tsize=18)
 
 E = [("ms365-nov12", "Microsoft 365", "12 to 13 Nov", ["own gateway software;", "final report published"]),
-     ("faa-ground-stop", "FAA ground stop", "13 Nov", ["a new router flooded the", "network; FAA's own account"]),
-     ("chase-nov16", "Chase", "16 Nov", ["a software bug, says Chase;", "a vendor attack, it says, is separate"]),
-     ("united-nov16", "United Airlines", "16 Nov", ["cause not given;", "\"no indication\" of an attack"]),
-     ("nsanet-nov17", "NSA Net", "17 Nov", ["patching, say the NSA and", "the intelligence director"])]
+     ("faa-ground-stop", "FAA ground stop", "13 Nov", ["a new router flooded the", "network, says the FAA"]),
+     ("chase-nov16", "Chase", "16 Nov", ["a software bug, says Chase;", "vendor attack \"separate\""]),
+     ("united-nov16", "United Airlines", "16 Nov", ["weight system; cause not", "given; \"no indication\""]),
+     ("nsanet-nov17", "NSA Net", "17 Nov", ["patching, say the NSA and", "the intelligence director"]),
+     ("delta-nov22", "Delta Air Lines", "22 Nov", ["weight system;", "no cause given"])]
 cx = []
 for i, (eid, name, when, lines) in enumerate(E):
-    x = 40 + i * 252
-    cx.append(x + 116)
-    line(x + 116, 204, x + 116, 296)
-    box(x, 300, 232, 132, name, [when] + lines, big=pct(ev[eid]["p_attack_middle"]))
-text(282, 244, "no shared vendor,", 12, 400, GREY)
-text(282, 260, "change or wire", 12, 400, GREY)
-out.append(f'<path d="M276 270 l12 12 m0 -12 l-12 12" stroke="{INK}" stroke-width="2" fill="none"/>')
+    bw = (1240 - 16 * (len(E) - 1)) / len(E)
+    x = 40 + i * (bw + 16)
+    cx.append(x + bw / 2)
+    line(x + bw / 2, 204, x + bw / 2, 296)
+    box(x, 300, bw, 132, name, [when] + lines, big=pct(ev[eid]["p_attack_middle"]), tsize=15)
+mx = (cx[0] + cx[1]) / 2
+text(mx, 244, "no shared", 12, 400, GREY)
+text(mx, 260, "vendor or wire", 12, 400, GREY)
+out.append(f'<path d="M{mx - 6} 270 l12 12 m0 -12 l-12 12" stroke="{INK}" stroke-width="2" fill="none"/>')
 
 # context rows
 text(40, 650, "Logged around them as context. Version 1 does not score these, apart from the ransomware claim.", 14, 700, GREY, "start")
@@ -109,12 +112,12 @@ for i, (name, lines, target, kind) in enumerate(S):
 # the missing layer
 out.append(f'<rect x="40" y="684" width="1240" height="92" rx="10" fill="#fcebe3" stroke="{ORANGE}" '
            f'stroke-width="2" stroke-dasharray="7 5"/>')
-text(660, 714, "Not in version 1: the news layer", 18, 700)
+text(660, 714, "Not in version 1: the news layer, and the intrusions", 18, 700)
 text(660, 738, "Are the reports themselves the event? A wave of coverage, organic or pushed, with phantom outages in it.", 14, 400, GREY)
-text(660, 758, "Agreed for version 2, with knock-ons, denied reports and a campaign window that opens on 1 October.", 14, 400, GREY)
+text(660, 758, "Also outside it: the reported intrusions (Chase's vendor, FBI, USDA, CIA) that are not outages. Both are for version 2.", 14, 400, GREY)
 
 # outputs
-O = [("At least one of the five was an attack",
+O = [("At least one of the six was an attack",
       [f"calm {pct(last['p_any_attack_calm'])}  ·  suspicious {pct(last['p_any_attack_suspicious'])}"],
       "middle " + pct(last["p_any_attack_middle"])),
      ("This many after a big one, nothing unusual",
