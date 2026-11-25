@@ -59,7 +59,7 @@ def line(x1, y1, x2, y2, stroke=GREY, dash="2 5", arrow=True, width=2):
 
 
 W, H = 1320, 1030
-text(40, 44, "Six outages, no wire between them, and one question above them", 25, 700, INK, "start")
+text(40, 44, "Seven outages, no wire between them, and one question above them", 25, 700, INK, "start")
 text(40, 72, f"What the frozen model (version 1) holds as of {last['as_of'].replace('T', ' ').replace('Z', ' UTC')}. "
      "Percentages on the outages are the middle observer's chance that it was an attack.", 14, 400, GREY, "start")
 
@@ -69,19 +69,20 @@ box(40, 100, 1240, 104, "One campaign behind several of them?",
      f"calm {pct(last['p_campaign_calm'])}   ·   middle {pct(last['p_campaign_middle'])}   ·   "
      f"suspicious {pct(last['p_campaign_suspicious'])}"], stroke=GREY, dash="2 5", tsize=18)
 
-E = [("ms365-nov12", "Microsoft 365", "12 to 13 Nov", ["own gateway software;", "final report published"]),
-     ("faa-ground-stop", "FAA ground stop", "13 Nov", ["a new router flooded the", "network, says the FAA"]),
-     ("chase-nov16", "Chase", "16 Nov", ["a software bug, says Chase;", "vendor attack \"separate\""]),
-     ("united-nov16", "United Airlines", "16 Nov", ["weight system; cause not", "given; \"no indication\""]),
-     ("nsanet-nov17", "NSA Net", "17 Nov", ["patching, say the NSA and", "the intelligence director"]),
-     ("delta-nov22", "Delta Air Lines", "22 Nov", ["weight system;", "no cause given"])]
+E = [("ms365-nov12", "Microsoft 365", "12 to 13 Nov", ["own gateway software;", "final report out"]),
+     ("faa-ground-stop", "FAA ground stop", "13 Nov", ["a new router flooded", "the network, says FAA"]),
+     ("chase-nov16", "Chase", "16 Nov", ["software bug, says Chase;", "vendor attack \"separate\""]),
+     ("united-nov16", "United Airlines", "16 Nov", ["weight system; no cause;", "\"no indication\""]),
+     ("nsanet-nov17", "NSA Net", "17 Nov", ["patching, say the NSA", "and the director"]),
+     ("delta-nov22", "Delta Air Lines", "22 Nov", ["weight system;", "no cause given"]),
+     ("faa-ohare-nov24", "FAA at O'Hare", "24 Nov", ["surface tracking", "equipment; one airport"])]
 cx = []
 for i, (eid, name, when, lines) in enumerate(E):
     bw = (1240 - 16 * (len(E) - 1)) / len(E)
     x = 40 + i * (bw + 16)
     cx.append(x + bw / 2)
     line(x + bw / 2, 204, x + bw / 2, 296)
-    box(x, 300, bw, 132, name, [when] + lines, big=pct(ev[eid]["p_attack_middle"]), tsize=15)
+    box(x, 300, bw, 132, name, [when] + lines, big=pct(ev[eid]["p_attack_middle"]), tsize=14)
 mx = (cx[0] + cx[1]) / 2
 text(mx, 244, "no shared", 12, 400, GREY)
 text(mx, 260, "vendor or wire", 12, 400, GREY)
@@ -117,7 +118,7 @@ text(660, 738, "Are the reports themselves the event? A wave of coverage, organi
 text(660, 758, "Also outside it: the reported intrusions (Chase's vendor, FBI, USDA, CIA) that are not outages. Both are for version 2.", 14, 400, GREY)
 
 # outputs
-O = [("At least one of the six was an attack",
+O = [("At least one of the seven was an attack",
       [f"calm {pct(last['p_any_attack_calm'])}  ·  suspicious {pct(last['p_any_attack_suspicious'])}"],
       "middle " + pct(last["p_any_attack_middle"])),
      ("This many after a big one, nothing unusual",
