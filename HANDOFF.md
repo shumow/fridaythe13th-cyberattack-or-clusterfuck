@@ -94,6 +94,7 @@ Status as of Saturday, 14 November 2026.
 - 25 Nov 06:03 UTC. **Correction: the O'Hare event is uncounted again.** CNN's source puts the equipment outage at about 25 minutes, under the 30-minute rule; Fox had about 90. Duration disputed, so uncounted by a correction row, like AWS and the IRS. Counting it two hours earlier on one outlet's figure was the session's error. Back to six counted outages, four since the ground stop. No new panel outage. P(campaign): 0.00%, 0.03%, 0.3%. P(at least one attack): 3.0%, 8.8%, 25%.
 - 25 Nov 08:02 UTC. Nothing new; checkpoint only. P(campaign): 0.00%, 0.02%, 0.3%. P(at least one attack): 2.9%, 8.7%, 25%.
 - 25 Nov 10:02 UTC. No new panel outage; the claimed new Microsoft outage has no support. Microsoft declares an internal 'Code Red' over the 12 to 13 November outage (Reuters). P(campaign): 0.00%, 0.02%, 0.3%. P(at least one attack): 2.9%, 8.7%, 25%.
+- 25 Nov 12:02 UTC. No new panel outage. Lead: Delta's outage said to be a 'database issue' in the weight-and-balance system, United's 'similar'; speaker unclear, so not scored yet. P(campaign): 0.00%, 0.02%, 0.3%. P(at least one attack): 2.9%, 8.7%, 25%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
