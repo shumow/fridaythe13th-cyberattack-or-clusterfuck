@@ -97,6 +97,7 @@ Status as of Saturday, 14 November 2026.
 - 25 Nov 12:02 UTC. No new panel outage. Lead: Delta's outage said to be a 'database issue' in the weight-and-balance system, United's 'similar'; speaker unclear, so not scored yet. P(campaign): 0.00%, 0.02%, 0.3%. P(at least one attack): 2.9%, 8.7%, 25%.
 - 25 Nov 14:02 UTC. Nothing new; checkpoint only. Delta's 'database issue' is one report's wording, not Delta's. P(campaign): 0.00%, 0.02%, 0.3%. P(at least one attack): 2.9%, 8.6%, 25%.
 - 25 Nov 16:02 UTC. Nothing new; checkpoint only. P(campaign): 0.00%, 0.02%, 0.2%. P(at least one attack): 2.9%, 8.6%, 25%.
+- 25 Nov 18:02 UTC. Nothing new; checkpoint only. O'Hare: the stop ran about 67 minutes by the FAA's times, the equipment outage itself still only has the 25-minute figure; stays uncounted. P(campaign): 0.00%, 0.02%, 0.2%. P(at least one attack): 2.9%, 8.5%, 25%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
