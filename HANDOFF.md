@@ -89,6 +89,7 @@ Status as of Saturday, 14 November 2026.
 - 24 Nov 20:03 UTC. No new panel outage. The Illinois dam: an attempt on 16 November that the state says it stopped, no disruption. Background found late: the FBI issued an advisory on 13 November, the day of the ground stop, about an AI hacking tool (ARTEX) in criminal and state-aligned use since August. P(campaign): 0.00%, 0.02%, 0.2%. P(at least one attack): 2.3%, 7.0%, 21%.
 - 24 Nov 22:02 UTC. No new panel outage. Clayton declines to explain the FBI and USDA incidents ('in due course') while repeating that the outages are maintenance. P(campaign): 0.00%, 0.02%, 0.2%. P(at least one attack): 2.3%, 6.9%, 21%.
 - 25 Nov 00:03 UTC. **A sixth counted outage: Delta, Sunday 22 November**, weight-and-balance system, Atlanta ground stop, no cause given (event row 167; missed for three days; the same function failed at United on the 16th). **A CIA unclassified system and the intelligence director's office reported breached** (24 November, AP and Washington Post; context row 168, not scored). TikTok down on the 24th (off panel). P(campaign): 0.00%, 0.03%, 0.3%. P(at least one attack): 3.0%, 8.9%, 26%. These still exclude every intrusion.
+- 25 Nov 02:02 UTC. No new panel outage. CIA and ODNI breach: four sources to CNN; officials say unclassified only and resolved; not tied to the FBI intrusion. Delta: still no cause, no word on a shared vendor with United. P(campaign): 0.00%, 0.03%, 0.3%. P(at least one attack): 3.0%, 8.9%, 26%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
