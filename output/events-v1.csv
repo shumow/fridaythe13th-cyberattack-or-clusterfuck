@@ -1,8 +1,9 @@
 # model v1 sha256 44108dc99cc701eadc2608ee8d0912496ac31638c6d869dd0f8021513a9bcfca
 event_id,org,class,tier,p_real,account_rung,quiet_days,share_stays_wrong_given_attack,p_attack_calm,p_attack_middle,p_attack_suspicious,p_attack_middle_no_campaign,p_premature_middle,p_stays_wrong_middle
-ms365-nov12,Microsoft,cloud_saas,A,0.995,rca_final,13.0729,0.964217,0.00125459,0.00390464,0.0132355,0.00387778,0.000139721,0.00376492
-faa-ground-stop,FAA,aviation_system,A,0.995,mechanism_named,11.8806,0.852391,0.00243875,0.00743594,0.0236175,0.00735588,0.00109761,0.00633833
-chase-nov16,JPMorgan Chase,bank,A,0.995,mechanism_named,9.12639,0.650825,0.00403759,0.0123203,0.0391134,0.012236,0.00430193,0.00801834
-united-nov16,United Airlines,airline_ops,B,0.995,denial_generic,8.85556,0.467847,0.00312726,0.00956592,0.0306245,0.0094926,0.00509053,0.00447538
-nsanet-nov17,NSA,federal_classified,C,0.995,mechanism_named,8.25139,0.973281,0.0120111,0.0364542,0.113476,0.0363464,0.000974013,0.0354802
-delta-nov22,Delta Air Lines,airline_ops,B,0.995,none,3.21944,0.233418,0.00638045,0.0193563,0.0602806,0.0192522,0.0148382,0.00451811
+ms365-nov12,Microsoft,cloud_saas,A,0.995,rca_final,13.1562,0.964701,0.00132599,0.00442932,0.0166568,0.0038746,0.000156352,0.00427297
+faa-ground-stop,FAA,aviation_system,A,0.995,mechanism_named,11.9639,0.854159,0.0026545,0.00899337,0.0330309,0.00733843,0.0013116,0.00768177
+chase-nov16,JPMorgan Chase,bank,A,0.995,mechanism_named,9.20972,0.654027,0.00424992,0.0139127,0.0488157,0.012173,0.00481341,0.00909927
+united-nov16,United Airlines,airline_ops,B,0.995,denial_generic,8.93889,0.471364,0.00330481,0.01093,0.0390904,0.00941944,0.00577799,0.005152
+nsanet-nov17,NSA,federal_classified,C,0.995,mechanism_named,8.33472,0.973646,0.0123081,0.0385547,0.125314,0.0363221,0.00101607,0.0375386
+delta-nov22,Delta Air Lines,airline_ops,B,0.995,none,3.30278,0.235954,0.00660058,0.02119,0.071569,0.0190432,0.0161901,0.00499986
+fincen-nov24,Treasury (Financial Crimes Enforcement Network),federal_civil,B,0.995,none,0.876389,0.3,0.232982,0.483327,0.753966,0.481283,0.338329,0.144998

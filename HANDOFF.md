@@ -98,6 +98,7 @@ Status as of Saturday, 14 November 2026.
 - 25 Nov 14:02 UTC. Nothing new; checkpoint only. Delta's 'database issue' is one report's wording, not Delta's. P(campaign): 0.00%, 0.02%, 0.3%. P(at least one attack): 2.9%, 8.6%, 25%.
 - 25 Nov 16:02 UTC. Nothing new; checkpoint only. P(campaign): 0.00%, 0.02%, 0.2%. P(at least one attack): 2.9%, 8.6%, 25%.
 - 25 Nov 18:02 UTC. Nothing new; checkpoint only. O'Hare: the stop ran about 67 minutes by the FAA's times, the equipment outage itself still only has the 25-minute figure; stays uncounted. P(campaign): 0.00%, 0.02%, 0.2%. P(at least one attack): 2.9%, 8.5%, 25%.
+- 25 Nov 20:02 UTC. LARGE: Treasury's FinCEN says it found unauthorised access and took systems offline (notice of 24 Nov evening; ABC News). Counted as the seventh event, and its own account scored as attack_attribution_credible, a judgment for Dan to confirm or void. P(campaign): 0.06%, 0.4%, 2.6%. P(at least one attack): 25%, 53%, 81%; nearly all of that is this one event. Also: NYT sources tie the CIA breach to the ARTEX tool, China suspected, unconfirmed (context).
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
