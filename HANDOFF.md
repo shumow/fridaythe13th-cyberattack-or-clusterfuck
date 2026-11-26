@@ -105,6 +105,7 @@ Status as of Saturday, 14 November 2026.
 - 26 Nov 04:01 UTC. Nothing new; checkpoint only. P(campaign): 0.05%, 0.3%, 2.1%. P(at least one attack): 25%, 52%, 81%.
 - 26 Nov 06:02 UTC. Nothing new; checkpoint only. FinCEN still offline. P(campaign): 0.05%, 0.3%, 2.1%. P(at least one attack): 25%, 52%, 81%.
 - 26 Nov 08:02 UTC. No panel outage. Off panel: Allstate's website and app down since Monday 23 Nov, three days, no cause given (context; found late). P(campaign): 0.04%, 0.3%, 2.0%. P(at least one attack): 25%, 52%, 81%.
+- 26 Nov 10:02 UTC. Nothing new; checkpoint only. Allstate still down, no cause. P(campaign): 0.04%, 0.3%, 1.9%. P(at least one attack): 25%, 52%, 81%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
