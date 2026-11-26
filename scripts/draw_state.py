@@ -74,7 +74,7 @@ E = [("ms365-nov12", "Microsoft 365", "12 to 13 Nov", ["own gateway software;", 
      ("chase-nov16", "Chase", "16 Nov", ["software bug, says Chase;", "vendor attack \"separate\""]),
      ("united-nov16", "United Airlines", "16 Nov", ["weight system; no cause;", "\"no indication\""]),
      ("nsanet-nov17", "NSA Net", "17 Nov", ["patching, say the NSA", "and the director"]),
-     ("delta-nov22", "Delta Air Lines", "22 Nov", ["weight system;", "no cause given"]),
+     ("delta-nov22", "Delta Air Lines", "22 Nov", ["weight system; no cause;", "\"no sign\" of cyber"]),
      ("fincen-nov24", "Treasury FinCEN", "24 Nov", ["shut down after", "unauthorised access"])]
 cx = []
 for i, (eid, name, when, lines) in enumerate(E):
