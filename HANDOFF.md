@@ -109,6 +109,7 @@ Status as of Saturday, 14 November 2026.
 - 26 Nov 12:02 UTC. No panel outage. Miami ground stop on 25 Nov was a cargo jet off the runway, not a system failure (context). FinCEN unchanged. P(campaign): 0.04%, 0.3%, 1.9%. P(at least one attack): 25%, 52%, 81%.
 - 26 Nov 14:02 UTC. No panel outage. Lead: FinCEN batch filing may have been failing since about 18 Nov, six days before the notice (context, unconfirmed). P(campaign): 0.04%, 0.3%, 1.8%. P(at least one attack): 25%, 52%, 81%.
 - 26 Nov 16:02 UTC. No panel outage. FinCEN timeline firmer: batch failures from 18 Nov, alert 20 Nov, intrusion disclosed 24 Nov; not linked by FinCEN. OPEN: if one disruption from 18 Nov, the 48-hour rule that excluded the IRS would exclude FinCEN too; left counted, for Dan. P(campaign): 0.04%, 0.3%, 1.7%. P(at least one attack): 25%, 52%, 81%.
+- 26 Nov 18:02 UTC. Nothing new; checkpoint only. P(campaign): 0.04%, 0.3%, 1.7%. P(at least one attack): 25%, 52%, 81%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
