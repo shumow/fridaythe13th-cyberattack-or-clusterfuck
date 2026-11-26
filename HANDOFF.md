@@ -102,6 +102,7 @@ Status as of Saturday, 14 November 2026.
 - 25 Nov 22:02 UTC. Nothing new; checkpoint only. FinCEN account reproduced, no further detail. P(campaign): 0.06%, 0.4%, 2.6%. P(at least one attack): 25%, 53%, 81%.
 - 26 Nov 00:02 UTC. No new outage. Delta says no sign of a cybersecurity incident (scored as a generic denial). FinCEN: AP source puts it a day after the CIA breach, no link claimed; entry route and data loss not stated; not restored (context). P(campaign): 0.05%, 0.4%, 2.3%. P(at least one attack): 25%, 52%, 81%.
 - 26 Nov 02:02 UTC. Nothing new; checkpoint only. FinCEN reports no evidence its main databases were breached. P(campaign): 0.05%, 0.4%, 2.2%. P(at least one attack): 25%, 52%, 81%.
+- 26 Nov 04:01 UTC. Nothing new; checkpoint only. P(campaign): 0.05%, 0.3%, 2.1%. P(at least one attack): 25%, 52%, 81%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
