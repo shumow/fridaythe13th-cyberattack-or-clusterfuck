@@ -1,9 +1,9 @@
 # model v1 sha256 44108dc99cc701eadc2608ee8d0912496ac31638c6d869dd0f8021513a9bcfca
 event_id,org,class,tier,p_real,account_rung,quiet_days,share_stays_wrong_given_attack,p_attack_calm,p_attack_middle,p_attack_suspicious,p_attack_middle_no_campaign,p_premature_middle,p_stays_wrong_middle
-ms365-nov12,Microsoft,cloud_saas,A,0.995,rca_final,14.6556,0.972401,0.001272,0.0041041,0.0146558,0.00382199,0.000113269,0.00399083
-faa-ground-stop,FAA,aviation_system,A,0.995,mechanism_named,13.4632,0.88305,0.00244604,0.00788114,0.0270203,0.00705945,0.000921697,0.00695945
-chase-nov16,JPMorgan Chase,bank,A,0.995,mechanism_named,10.709,0.70906,0.00379377,0.0120175,0.0402644,0.0111748,0.00349638,0.00852115
-united-nov16,United Airlines,airline_ops,B,0.995,denial_generic,10.4382,0.534785,0.00281199,0.00897518,0.0305603,0.0082642,0.00417539,0.00479979
-nsanet-nov17,NSA,federal_classified,C,0.995,mechanism_named,9.83403,0.979437,0.012012,0.0370326,0.117716,0.0359147,0.000761518,0.0362711
-delta-nov22,Delta Air Lines,airline_ops,B,0.995,denial_generic,4.80208,0.3067,0.00495999,0.0155956,0.0514078,0.0146317,0.0108124,0.00478315
-fincen-nov24,Treasury (Financial Crimes Enforcement Network),federal_civil,B,0.995,none,2.37569,0.3,0.232766,0.482288,0.750945,0.481283,0.337601,0.144686
+ms365-nov12,Microsoft,cloud_saas,A,0.995,rca_final,14.7396,0.972781,0.0012698,0.00409161,0.0145802,0.00381927,0.000111371,0.00398024
+faa-ground-stop,FAA,aviation_system,A,0.995,mechanism_named,13.5472,0.884513,0.00243735,0.00783777,0.026792,0.0070456,0.000905163,0.0069326
+chase-nov16,JPMorgan Chase,bank,A,0.995,mechanism_named,10.7931,0.711988,0.00377317,0.0119372,0.0399187,0.0111258,0.00343805,0.00849914
+united-nov16,United Airlines,airline_ops,B,0.995,denial_generic,10.5222,0.538325,0.00278952,0.00889114,0.0302114,0.00820766,0.00410482,0.00478633
+nsanet-nov17,NSA,federal_classified,C,0.995,mechanism_named,9.91806,0.979721,0.0119992,0.0369716,0.117421,0.0358934,0.000749733,0.0362218
+delta-nov22,Delta Air Lines,airline_ops,B,0.995,denial_generic,4.88611,0.309735,0.00490604,0.0154114,0.0507352,0.0144858,0.010638,0.00477346
+fincen-nov24,Treasury (Financial Crimes Enforcement Network),federal_civil,B,0.995,none,2.45972,0.3,0.232758,0.482251,0.750836,0.481283,0.337576,0.144675
