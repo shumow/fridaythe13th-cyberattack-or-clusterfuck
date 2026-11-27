@@ -122,6 +122,7 @@ Status as of Saturday, 14 November 2026.
 - 27 Nov 14:02 UTC. Nothing new; checkpoint only. P(campaign): 0.02%, 0.2%, 1.1%. P(at least one attack): 25%, 52%, 80%.
 - 27 Nov 16:02 UTC. No confirmed panel outage. Unconfirmed user reports at Amazon's shop and Kohl's on Black Friday (context, lead). P(campaign): 0.02%, 0.2%, 1.1%. P(at least one attack): 25%, 52%, 80%.
 - 27 Nov 18:02 UTC. Nothing confirmed; checkpoint only. AWS trackers disagree, no official word (lead). P(campaign): 0.02%, 0.2%, 1.1%. P(at least one attack): 25%, 52%, 80%.
+- 27 Nov 20:02 UTC. Nothing new; checkpoint only. P(campaign): 0.02%, 0.2%, 1.0%. P(at least one attack): 25%, 52%, 80%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
