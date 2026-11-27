@@ -123,6 +123,7 @@ Status as of Saturday, 14 November 2026.
 - 27 Nov 16:02 UTC. No confirmed panel outage. Unconfirmed user reports at Amazon's shop and Kohl's on Black Friday (context, lead). P(campaign): 0.02%, 0.2%, 1.1%. P(at least one attack): 25%, 52%, 80%.
 - 27 Nov 18:02 UTC. Nothing confirmed; checkpoint only. AWS trackers disagree, no official word (lead). P(campaign): 0.02%, 0.2%, 1.1%. P(at least one attack): 25%, 52%, 80%.
 - 27 Nov 20:02 UTC. Nothing new; checkpoint only. P(campaign): 0.02%, 0.2%, 1.0%. P(at least one attack): 25%, 52%, 80%.
+- 27 Nov 22:02 UTC. LARGE-ISH: Reuters reports a breach of the Air Force's Cloud One platform (Defense is on the fixed list); found within the past month, effects are blocked updates and lost admin rights, Air Force will not confirm. Logged as context, NOT an event: a decision for Dan. P(campaign): 0.02%, 0.2%, 1.0%. P(at least one attack): 25%, 52%, 80%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 

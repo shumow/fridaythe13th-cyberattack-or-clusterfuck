@@ -115,7 +115,7 @@ out.append(f'<rect x="40" y="684" width="1240" height="92" rx="10" fill="#fcebe3
            f'stroke-width="2" stroke-dasharray="7 5"/>')
 text(660, 714, "Not in version 1: the news layer, and the intrusions", 18, 700)
 text(660, 738, "Are the reports themselves the event? A wave of coverage, organic or pushed, with phantom outages in it.", 14, 400, GREY)
-text(660, 758, "Also outside it: the reported intrusions (Chase's vendor, FBI, USDA, CIA) that are not outages. Both are for version 2.", 14, 400, GREY)
+text(660, 758, "Also outside it: the reported intrusions (Chase's vendor, FBI, USDA, CIA, Air Force) that are not outages. Both are for version 2.", 14, 400, GREY)
 
 # outputs
 O = [("At least one of the seven was an attack",
