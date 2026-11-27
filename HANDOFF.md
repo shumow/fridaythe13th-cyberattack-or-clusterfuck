@@ -113,6 +113,7 @@ Status as of Saturday, 14 November 2026.
 - 26 Nov 20:02 UTC. No panel outage. FAA lead: unnamed sources say a missed configuration setting on the new router (context, not scored). P(campaign): 0.03%, 0.3%, 1.6%. P(at least one attack): 25%, 52%, 81%.
 - 26 Nov 22:01 UTC. Nothing new; checkpoint only. FinCEN batch service and Allstate both still down. P(campaign): 0.03%, 0.2%, 1.5%. P(at least one attack): 25%, 52%, 81%.
 - 27 Nov 00:01 UTC. No panel outage. Unverified breach claims in the trade press (USA Today, Burger King's owner, 1Password): context only. P(campaign): 0.03%, 0.2%, 1.5%. P(at least one attack): 25%, 52%, 81%.
+- 27 Nov 02:02 UTC. Nothing new; checkpoint only. P(campaign): 0.03%, 0.2%, 1.4%. P(at least one attack): 25%, 52%, 81%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
