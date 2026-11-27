@@ -114,6 +114,7 @@ Status as of Saturday, 14 November 2026.
 - 26 Nov 22:01 UTC. Nothing new; checkpoint only. FinCEN batch service and Allstate both still down. P(campaign): 0.03%, 0.2%, 1.5%. P(at least one attack): 25%, 52%, 81%.
 - 27 Nov 00:01 UTC. No panel outage. Unverified breach claims in the trade press (USA Today, Burger King's owner, 1Password): context only. P(campaign): 0.03%, 0.2%, 1.5%. P(at least one attack): 25%, 52%, 81%.
 - 27 Nov 02:02 UTC. Nothing new; checkpoint only. P(campaign): 0.03%, 0.2%, 1.4%. P(at least one attack): 25%, 52%, 81%.
+- 27 Nov 04:01 UTC. Nothing new; checkpoint only. Allstate confirms a nationwide disruption on the record, no cause. P(campaign): 0.03%, 0.2%, 1.4%. P(at least one attack): 25%, 52%, 81%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
