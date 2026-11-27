@@ -120,6 +120,7 @@ Status as of Saturday, 14 November 2026.
 - 27 Nov 10:02 UTC. No panel outage. FAA: CNN source says the failure was recreated in a lab and traced to a router setting, '90% sure' not malicious (scored as an anonymous mechanism). P(campaign): 0.03%, 0.2%, 1.2%. P(at least one attack): 25%, 52%, 81%.
 - 27 Nov 12:02 UTC. No panel outage. Off panel: Lloyds and Bank of Scotland apps down in Britain on Black Friday morning (context). P(campaign): 0.03%, 0.2%, 1.2%. P(at least one attack): 25%, 52%, 80%.
 - 27 Nov 14:02 UTC. Nothing new; checkpoint only. P(campaign): 0.02%, 0.2%, 1.1%. P(at least one attack): 25%, 52%, 80%.
+- 27 Nov 16:02 UTC. No confirmed panel outage. Unconfirmed user reports at Amazon's shop and Kohl's on Black Friday (context, lead). P(campaign): 0.02%, 0.2%, 1.1%. P(at least one attack): 25%, 52%, 80%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
