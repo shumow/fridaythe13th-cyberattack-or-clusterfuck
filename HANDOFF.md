@@ -116,6 +116,7 @@ Status as of Saturday, 14 November 2026.
 - 27 Nov 02:02 UTC. Nothing new; checkpoint only. P(campaign): 0.03%, 0.2%, 1.4%. P(at least one attack): 25%, 52%, 81%.
 - 27 Nov 04:01 UTC. Nothing new; checkpoint only. Allstate confirms a nationwide disruption on the record, no cause. P(campaign): 0.03%, 0.2%, 1.4%. P(at least one attack): 25%, 52%, 81%.
 - 27 Nov 06:02 UTC. Nothing new; checkpoint only. P(campaign): 0.03%, 0.2%, 1.3%. P(at least one attack): 25%, 52%, 81%.
+- 27 Nov 08:01 UTC. Nothing new; checkpoint only (one stale bank-outage post checked and dismissed). P(campaign): 0.03%, 0.2%, 1.3%. P(at least one attack): 25%, 52%, 81%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
