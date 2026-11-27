@@ -118,6 +118,7 @@ Status as of Saturday, 14 November 2026.
 - 27 Nov 06:02 UTC. Nothing new; checkpoint only. P(campaign): 0.03%, 0.2%, 1.3%. P(at least one attack): 25%, 52%, 81%.
 - 27 Nov 08:01 UTC. Nothing new; checkpoint only (one stale bank-outage post checked and dismissed). P(campaign): 0.03%, 0.2%, 1.3%. P(at least one attack): 25%, 52%, 81%.
 - 27 Nov 10:02 UTC. No panel outage. FAA: CNN source says the failure was recreated in a lab and traced to a router setting, '90% sure' not malicious (scored as an anonymous mechanism). P(campaign): 0.03%, 0.2%, 1.2%. P(at least one attack): 25%, 52%, 81%.
+- 27 Nov 12:02 UTC. No panel outage. Off panel: Lloyds and Bank of Scotland apps down in Britain on Black Friday morning (context). P(campaign): 0.03%, 0.2%, 1.2%. P(at least one attack): 25%, 52%, 80%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
