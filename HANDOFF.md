@@ -130,6 +130,7 @@ Status as of Saturday, 14 November 2026.
 - 28 Nov 06:02 UTC. Nothing new; checkpoint only. P(campaign): 0.02%, 0.2%, 1.0%. P(at least one attack): 25%, 52%, 80%.
 - 28 Nov 08:01 UTC. Nothing new; checkpoint only. P(campaign): 0.02%, 0.15%, 1.0%. P(at least one attack): 25%, 52%, 80%.
 - 28 Nov 10:01 UTC. No outage. Air Force report gains detail (flaw exploited to reach the management layer); still unconfirmed, no attribution (context). P(campaign): 0.02%, 0.15%, 1.0%. P(at least one attack): 25%, 52%, 80%.
+- 28 Nov 12:01 UTC. No panel outage. Off panel: Cook County court portal down since 24 Nov after a 'cybersecurity incident'; a suspected cyber incident at Britain's benefits department (context). P(campaign): 0.02%, 0.15%, 0.9%. P(at least one attack): 25%, 52%, 80%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
