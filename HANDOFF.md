@@ -126,6 +126,7 @@ Status as of Saturday, 14 November 2026.
 - 27 Nov 22:02 UTC. LARGE-ISH: Reuters reports a breach of the Air Force's Cloud One platform (Defense is on the fixed list); found within the past month, effects are blocked updates and lost admin rights, Air Force will not confirm. Logged as context, NOT an event: a decision for Dan. P(campaign): 0.02%, 0.2%, 1.0%. P(at least one attack): 25%, 52%, 80%.
 - 28 Nov 00:01 UTC. Nothing new; checkpoint only. Air Force report spreads, still unconfirmed. P(campaign): 0.02%, 0.2%, 1.0%. P(at least one attack): 25%, 52%, 80%.
 - 28 Nov 02:02 UTC. Nothing new; checkpoint only. Allstate in its fifth day, no cause. P(campaign): 0.02%, 0.2%, 1.0%. P(at least one attack): 25%, 52%, 80%.
+- 28 Nov 04:01 UTC. Nothing new; checkpoint only. One aggregator says the Air Force 'confirms'; it has not. P(campaign): 0.02%, 0.2%, 1.0%. P(at least one attack): 25%, 52%, 80%.
 
 ## Task waiting for a Claude Code session (written 17 November 2026, 16:50 Pacific)
 
